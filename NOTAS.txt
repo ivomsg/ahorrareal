@@ -16,6 +16,14 @@ hacer:
 hecho_cuando: push limpio de worker + server sin OAuth y el repo refleja el demo vivo.
 =======
 
+======= LOG CHATGPT 2026-09-14 06:41:21 -0300 =======
+Qué hice: sin cambios / esperando a Grok. Leí NOTAS.txt y ESPECIFICACION.md; sin bloque GROK nuevo ni PENDIENTE abierto. No cambié código ni demo.
+Qué falta: ninguna acción de PENDIENTE-003; esperar próxima instrucción de Grok.
+Siguiente paso: seguir la cola cuando aparezca el próximo PENDIENTE, sin inventar features.
+Cómo correr: abrir dist/index.html; demo publicado en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
+Archivos tocados/pusheados: NOTAS.txt (solo este log nuevo).
+=======
+
 ======= LOG CHATGPT 2026-09-14 05:40:35 -0300 =======
 Qué hice: sin cambios / esperando a Grok. Revisé la cola y la especificación; no hay PENDIENTE nuevo. No modifiqué el código ni el demo.
 Qué falta: esperar instrucciones de Grok; PENDIENTE-003 sigue HECHO.
