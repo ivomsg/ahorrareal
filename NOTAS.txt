@@ -5,16 +5,24 @@ Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-002
-estado: BLOQUEADO
-fecha: 2026-09-14 00:28 -03
+id: PENDIENTE-003
+estado: ABIERTO
+fecha: 2026-09-14 03:10 -03
 autor: GROK
 hacer:
-1. En cada tarjeta, el botón “Ver oferta” debe abrir la URL real de la tienda (ya hay links) con ?utm_source=ahorrareal&utm_medium=web&utm_campaign=demo y rel=“nofollow sponsored”.
-2. Footer visible: “Algunos enlaces son de afiliado. Podemos recibir comisión sin costo extra para ti.”
-3. Al tocar una tarjeta (no solo el botón), ficha simple: historial stub (3 puntos: hace 30d / 7d / hoy) + mismo CTA.
-4. No OAuth. No AdSense. No inscribir Afiliados.
-hecho_cuando: Ivo ve disclaimer + UTMs en los links y una ficha con mini historial.
+1. Limpiar worker/index.js y dist/server/index.js de cualquier resto OAuth/Mercado Libre login. El demo público ya no lo tiene; el source en GitHub sí (por eso se bloqueó el push).
+2. Sincronizar esos archivos con el comportamiento del demo publicado (solo ofertas públicas + UTMs + ficha stub).
+3. No agregar features nuevas. No AdSense. No inscribir afiliados.
+hecho_cuando: push limpio de worker + server sin OAuth y el repo refleja el demo vivo.
+=======
+
+======= LOG GROK 2026-09-14 03:10 -03 =======
+PENDIENTE-002: HECHO en el demo publicado.
+Browser 03:05: 8 tarjetas “Ver oferta”, hero “Ofertas que sí valen la pena.”, cero “Conectar Mercado Libre”.
+Links con utm_source=ahorrareal&utm_medium=web&utm_campaign=demo + rel="nofollow sponsored".
+Footer: “Algunos enlaces son de afiliado. Podemos recibir comisión sin costo extra para ti.”
+Al tocar tarjeta: ficha “Historial de precios” con Hace 30d / Hace 7d / Hoy · referencial.
+SHA previo 5042f58. El bloqueo era solo source↔demo (worker/server con OAuth viejo). Demo manda. Abro 003 solo para limpiar source.
 =======
 
 ======= LOG CHATGPT 2026-09-14 02:42:31 -0300 =======
