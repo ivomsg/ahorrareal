@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c1117" />
+    <meta name="description" content="Ahorra Real: ofertas verificadas, historial de precios y alertas personalizadas para comprar mejor en Chile." />
+    <title>Ahorra Real — Ofertas que sí valen la pena</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --ink: #0c1117;
+        --ink-2: #101821;
+        --panel: #151f29;
+        --panel-2: #1b2732;
+        --line: rgba(226, 239, 244, .1);
+        --muted: #8f9daa;
+        --paper: #f1f6f5;
+        --lime: #d9ff55;
+        --lime-2: #b9e633;
+        --coral: #ff6b4a;
+        --blue: #9bc9ff;
+        --shadow: 0 24px 80px rgba(0, 0, 0, .28);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--paper);
+        background: var(--ink);
+        font-family: "DM Sans", system-ui, sans-serif;
+        line-height: 1.45;
+      }
+      button, input, select { font: inherit; }
+      button { cursor: pointer; }
+      a { color: inherit; text-decoration: none; }
+      .shell { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+      .topbar {
+        position: sticky; top: 0; z-index: 20;
+        border-bottom: 1px solid var(--line);
+        background: rgba(12, 17, 23, .86);
+        backdrop-filter: blur(18px);
+      }
+      .topbar-inner { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+      .brand { display: inline-flex; align-items: center; gap: 11px; font-family: "Space Grotesk", sans-serif; font-weight: 700; letter-spacing: -.04em; font-size: 21px; }
+      .brand-mark { width: 31px; height: 31px; display: grid; place-items: center; color: var(--ink); background: var(--lime); border-radius: 10px; font-size: 17px; font-weight: 700; transform: rotate(-4deg); }
+      .brand em { color: var(--lime); font-style: normal; }
+      .nav { display: flex; align-items: center; gap: 28px; color: var(--muted); font-size: 14px; }
+      .nav a:hover { color: var(--paper); }
+      .nav .nav-cta { color: var(--ink); background: var(--lime); padding: 10px 15px; border-radius: 10px; font-weight: 700; }
+      .hero { padding: 68px 0 34px; position: relative; overflow: hidden; }
+      .hero::before { content: ""; position: absolute; width: 560px; height: 560px; right: -250px; top: -240px; background: radial-gradient(circle, rgba(217,255,85,.15), transparent 65%); pointer-events: none; }
+      .eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--lime); font-size: 12px; letter-spacing: .13em; text-transform: uppercase; font-weight: 700; }
+      .eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 5px rgba(217,255,85,.1); }
+      h1, h2, h3, p { margin-top: 0; }
+      h1, h2, h3 { font-family: "Space Grotesk", sans-serif; letter-spacing: -.045em; }
+      h1 { max-width: 760px; margin: 19px 0 16px; font-size: clamp(42px, 7vw, 78px); line-height: .98; font-weight: 600; }
+      h1 span { color: var(--lime); }
+      .hero-copy { max-width: 630px; color: var(--muted); font-size: 18px; }
+      .hero-tools { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+      .search { flex: 1 1 390px; min-width: 260px; position: relative; }
+      .search input { width: 100%; height: 54px; border: 1px solid var(--line); border-radius: 14px; color: var(--paper); background: var(--panel); outline: none; padding: 0 18px 0 48px; }
+      .search input:focus { border-color: rgba(217,255,85,.65); box-shadow: 0 0 0 4px rgba(217,255,85,.08); }
+      .search svg { position: absolute; left: 17px; top: 17px; color: var(--muted); }
+      .primary, .secondary { height: 54px; border-radius: 14px; padding: 0 20px; border: 1px solid transparent; font-weight: 700; transition: transform .2s, background .2s; }
+      .primary { color: var(--ink); background: var(--lime); }
+      .secondary { color: var(--paper); background: transparent; border-color: var(--line); }
+      .primary:hover, .secondary:hover { transform: translateY(-2px); }
+      .secondary:hover { border-color: rgba(217,255,85,.4); }
+      .trust-row { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 20px; color: var(--muted); font-size: 13px; }
+      .trust-row strong { color: var(--paper); font-weight: 600; }
+      .trust-row span { display: inline-flex; align-items: center; gap: 7px; }
+      .mini-check { color: var(--lime); font-weight: 700; }
+      .demo-note { margin-top: 24px; border: 1px solid rgba(155,201,255,.2); background: rgba(155,201,255,.06); color: #c7d9ea; border-radius: 12px; padding: 11px 14px; font-size: 12px; display: inline-flex; gap: 9px; align-items: center; }
+      .section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; margin: 34px 0 17px; }
+      .section-head h2 { margin: 0; font-size: 28px; font-weight: 600; }
+      .section-head p { color: var(--muted); margin: 0; font-size: 14px; }
+      .section-head a { color: var(--lime); font-size: 13px; font-weight: 700; white-space: nowrap; }
+      .market-bar { display: flex; gap: 9px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+      .chip { border: 1px solid var(--line); color: var(--muted); background: transparent; border-radius: 100px; padding: 9px 14px; font-size: 13px; white-space: nowrap; }
+      .chip:hover, .chip.active { color: var(--ink); border-color: var(--lime); background: var(--lime); }
+      .deal-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; margin-top: 18px; }
+      .deal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .deal-card { position: relative; overflow: hidden; min-height: 275px; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid var(--line); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
+      .deal-card:hover { transform: translateY(-3px); border-color: rgba(217,255,85,.42); }
+      .deal-card.hidden { display: none; }
+      .card-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+      .store { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+      .badge { color: var(--ink); background: var(--lime); border-radius: 7px; padding: 5px 8px; font-size: 12px; font-weight: 800; }
+      .badge.hot { background: var(--coral); color: white; }
+      .product { margin: 22px 0 7px; min-height: 46px; font-size: 17px; line-height: 1.2; font-weight: 600; }
+      .meta { color: var(--muted); font-size: 12px; }
+      .price-row { display: flex; align-items: baseline; gap: 9px; margin-top: 14px; }
+      .price { font-family: "Space Grotesk", sans-serif; font-size: 25px; font-weight: 700; letter-spacing: -.05em; }
+      .old-price { color: var(--muted); text-decoration: line-through; font-size: 12px; }
+      .card-bottom { display: flex; justify-content: space-between; align-items: end; gap: 10px; margin-top: 15px; }
+      .score { display: flex; align-items: center; gap: 7px; color: var(--lime); font-size: 12px; font-weight: 700; }
+      .score-bar { width: 72px; height: 5px; border-radius: 4px; background: rgba(217,255,85,.16); overflow: hidden; }
+      .score-bar i { display: block; height: 100%; width: 91%; background: var(--lime); border-radius: inherit; }
+      .score-bar i.mid { width: 76%; }
+      .card-action { border: 0; background: transparent; color: var(--paper); font-size: 12px; font-weight: 700; padding: 4px 0; }
+      .card-action:hover { color: var(--lime); }
+      .spark { position: absolute; right: 17px; bottom: 53px; width: 88px; height: 30px; opacity: .85; }
+      .aside { display: grid; gap: 14px; }
+      .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
+      .panel h3 { margin-bottom: 7px; font-size: 20px; font-weight: 600; }
+      .panel p { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+      .insight { display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+      .insight:first-of-type { border-top: 0; padding-top: 0; }
+      .icon-box { flex: 0 0 32px; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 10px; color: var(--ink); background: var(--lime); font-weight: 800; font-size: 13px; }
+      .insight strong { display: block; font-size: 13px; margin-bottom: 2px; }
+      .insight span { display: block; color: var(--muted); font-size: 12px; }
+      .alert-panel { background: var(--lime); color: var(--ink); border: 0; }
+      .alert-panel p { color: rgba(12,17,23,.72); }
+      .alert-form { display: grid; gap: 9px; }
+      .alert-form input { height: 43px; width: 100%; border: 1px solid rgba(12,17,23,.18); border-radius: 10px; background: rgba(255,255,255,.55); color: var(--ink); padding: 0 12px; outline: none; }
+      .alert-form button { height: 43px; border-radius: 10px; border: 0; background: var(--ink); color: var(--lime); font-weight: 700; }
+      .how { margin: 72px 0 64px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 34px; align-items: center; }
+      .how h2 { max-width: 450px; font-size: 43px; line-height: 1.03; margin-bottom: 15px; }
+      .how-copy { color: var(--muted); max-width: 460px; }
+      .steps { display: grid; gap: 11px; }
+      .step { display: grid; grid-template-columns: 37px 1fr; gap: 13px; align-items: start; padding: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; }
+      .step-num { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: var(--lime); font-weight: 800; font-size: 12px; }
+      .step strong { font-size: 14px; display: block; margin-bottom: 3px; }
+      .step span { color: var(--muted); font-size: 13px; }
+      footer { border-top: 1px solid var(--line); padding: 25px 0 36px; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
+      .modal-wrap { position: fixed; inset: 0; z-index: 50; display: none; place-items: center; padding: 20px; background: rgba(0,0,0,.66); }
+      .modal-wrap.open { display: grid; }
+      .modal { width: min(430px, 100%); background: var(--panel-2); border: 1px solid var(--line); border-radius: 20px; padding: 24px; box-shadow: var(--shadow); }
+      .modal h3 { font-size: 24px; margin: 0 0 8px; }
+      .modal p { color: var(--muted); font-size: 14px; }
+      .modal-row { display: flex; gap: 10px; margin-top: 18px; }
+      .modal-row input { flex: 1; min-width: 0; height: 45px; border: 1px solid var(--line); border-radius: 10px; padding: 0 12px; background: var(--ink); color: var(--paper); outline: none; }
+      .modal-close { margin-top: 16px; border: 0; background: transparent; color: var(--muted); font-size: 12px; }
+      .empty { display: none; grid-column: 1 / -1; border: 1px dashed var(--line); padding: 30px; text-align: center; border-radius: 16px; color: var(--muted); }
+      @media (max-width: 850px) {
+        .nav a:not(.nav-cta) { display: none; }
+        .deal-layout, .how { grid-template-columns: 1fr; }
+        .aside { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .alert-panel { grid-column: span 2; }
+      }
+      @media (max-width: 580px) {
+        .shell { width: min(100% - 28px, 1180px); }
+        .topbar-inner { height: 64px; }
+        .nav-cta { padding: 9px 11px !important; font-size: 12px; }
+        .hero { padding-top: 49px; }
+        h1 { font-size: 47px; }
+        .hero-copy { font-size: 16px; }
+        .deal-grid { grid-template-columns: 1fr; }
+        .aside { grid-template-columns: 1fr; }
+        .alert-panel { grid-column: auto; }
+        .how { margin: 48px 0; }
+        .how h2 { font-size: 35px; }
+        footer { display: block; }
+        footer span { display: block; margin-top: 7px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="#inicio" aria-label="Ahorra Real inicio"><span class="brand-mark">$</span><span>ahorra<em>real</em></span></a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#ofertas">Ofertas</a>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a class="nav-cta" href="#alertas">Crear alerta</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero shell">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Compra con datos, no con ruido</div>
+        <h1>Ofertas que <span>sí valen</span> la pena.</h1>
+        <p class="hero-copy">Comparamos precios, revisamos el historial y te avisamos cuando aparece una oportunidad real en Chile. Menos spam. Mejores decisiones.</p>
+        <div class="hero-tools">
+          <label class="search" aria-label="Buscar productos">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+            <input id="search" type="search" placeholder="Busca un producto: lavadora, iPhone, taladro..." autocomplete="off" />
+          </label>
+          <button class="primary" id="searchButton">Buscar ofertas</button>
+        </div>
+        <div class="trust-row" aria-label="Indicadores de confianza">
+          <span><b class="mini-check">✓</b> Historial de precios</span>
+          <span><b class="mini-check">✓</b> Condiciones visibles</span>
+          <span><b class="mini-check">✓</b> Sin ofertas infladas</span>
+        </div>
+        <div class="demo-note"><span>◆</span> Vista de demostración · los productos mostrados son ilustrativos</div>
+      </section>
+
+      <section class="shell" id="ofertas">
+        <div class="section-head">
+          <div><h2>Oportunidades detectadas</h2><p>Ordenadas por ahorro real, no por porcentaje decorativo.</p></div>
+          <a href="#alertas">Personaliza tus alertas →</a>
+        </div>
+        <div class="market-bar" role="tablist" aria-label="Filtrar por categoría">
+          <button class="chip active" data-category="all">Todas</button>
+          <button class="chip" data-category="hogar">Hogar</button>
+          <button class="chip" data-category="tecnologia">Tecnología</button>
+          <button class="chip" data-category="herramientas">Herramientas</button>
+          <button class="chip" data-category="electro">Electrodomésticos</button>
+        </div>
+
+        <div class="deal-layout">
+          <div class="deal-grid" id="dealGrid">
+            <article class="deal-card" data-category="hogar electro" data-search="lavadora carga frontal 10 kg">
+              <div class="card-top"><span class="store">Demo · Retail Chile</span><span class="badge">−31%</span></div>
+              <h3 class="product">Lavadora carga frontal 10 kg</h3>
+              <span class="meta">Hogar · despacho incluido en la muestra</span>
+              <div class="price-row"><strong class="price">$349.990</strong><span class="old-price">$509.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><button class="card-action alert-trigger" data-product="Lavadora 10 kg">Activar alerta →</button></div>
+              <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 7 12 9 21 6 30 20 40 17 51 24 60 21 70 26 87 16" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
+            </article>
+
+            <article class="deal-card" data-category="tecnologia" data-search="iphone 16 128 gb">
+              <div class="card-top"><span class="store">Demo · Tienda verificada</span><span class="badge hot">−24%</span></div>
+              <h3 class="product">iPhone 16 128 GB</h3>
+              <span class="meta">Tecnología · precio final referencial</span>
+              <div class="price-row"><strong class="price">$599.990</strong><span class="old-price">$789.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Mínimo 90 días</div><button class="card-action alert-trigger" data-product="iPhone 16 128 GB">Activar alerta →</button></div>
+              <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 11 13 13 23 10 32 18 41 16 50 21 60 18 70 22 87 8" stroke="#ff6b4a" stroke-width="2"/><path d="M1 29h86" stroke="#ff6b4a" stroke-opacity=".16"/></svg>
+            </article>
+
+            <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador bateria 18v">
+              <div class="card-top"><span class="store">Demo · Ferretería Chile</span><span class="badge">−38%</span></div>
+              <h3 class="product">Taladro atornillador a batería 18V</h3>
+              <span class="meta">Herramientas · incluye dos baterías</span>
+              <div class="price-row"><strong class="price">$79.990</strong><span class="old-price">$129.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen momento</div><button class="card-action alert-trigger" data-product="Taladro 18V">Activar alerta →</button></div>
+              <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 20 12 16 21 20 30 10 40 15 50 12 59 18 69 9 87 12" stroke="#9bc9ff" stroke-width="2"/><path d="M1 29h86" stroke="#9bc9ff" stroke-opacity=".16"/></svg>
+            </article>
+
+            <article class="deal-card" data-category="hogar" data-search="cama europea 2 plazas colchón">
+              <div class="card-top"><span class="store">Demo · Casa &amp; descanso</span><span class="badge">−29%</span></div>
+              <h3 class="product">Cama europea 2 plazas + colchón</h3>
+              <span class="meta">Hogar · comparar antes de comprar</span>
+              <div class="price-row"><strong class="price">$199.990</strong><span class="old-price">$279.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Ahorro real</div><button class="card-action alert-trigger" data-product="Cama europea 2 plazas">Activar alerta →</button></div>
+              <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 5 12 9 22 6 30 15 42 12 52 23 61 17 71 21 87 11" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
+            </article>
+            <div class="empty" id="empty">No encontramos ofertas de muestra con ese filtro. Prueba otra búsqueda.</div>
+          </div>
+
+          <aside class="aside">
+            <div class="panel">
+              <h3>Qué hacemos distinto</h3>
+              <p>Una oferta no es buena porque diga “−50%”. La medimos contra su propio historial.</p>
+              <div class="insight"><span class="icon-box">01</span><div><strong>Precio real</strong><span>Comparamos contra los últimos 90 días.</span></div></div>
+              <div class="insight"><span class="icon-box">02</span><div><strong>Contexto completo</strong><span>Tarjeta, despacho y condiciones visibles.</span></div></div>
+              <div class="insight"><span class="icon-box">03</span><div><strong>Menos ruido</strong><span>Recibes solo lo que te interesa.</span></div></div>
+            </div>
+            <div class="panel alert-panel" id="alertas">
+              <h3>Compra cuando baje</h3>
+              <p>Déjanos un producto y te avisaremos cuando aparezca a un precio que tenga sentido.</p>
+              <form class="alert-form" id="alertForm">
+                <input id="alertInput" type="text" placeholder="Ej: refrigerador bajo $400.000" aria-label="Producto para alerta" required />
+                <button type="submit">Crear alerta de prueba</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="shell how" id="como-funciona">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> La lógica detrás de cada alerta</div>
+          <h2>Comprar mejor no debería requerir 20 pestañas.</h2>
+          <p class="how-copy">Ahorra Real convierte precios dispersos en una decisión simple: qué es, cuánto costaba de verdad y si ahora es un buen momento para comprar.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><div><strong>Buscas o defines un objetivo</strong><span>Por producto, categoría o presupuesto máximo.</span></div></div>
+          <div class="step"><span class="step-num">2</span><div><strong>Verificamos la oportunidad</strong><span>Precio histórico, tiendas, stock y condiciones.</span></div></div>
+          <div class="step"><span class="step-num">3</span><div><strong>Te avisamos sin spam</strong><span>Solo cuando la compra realmente mejora.</span></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell"><strong>ahorra<span style="color:var(--lime)">real</span></strong><span>Prototipo de validación · Chile</span></footer>
+
+    <div class="modal-wrap" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal">
+        <h3 id="modalTitle">Activa una alerta</h3>
+        <p id="modalText">Te avisaremos cuando el precio de este producto llegue a un nivel realmente bueno.</p>
+        <div class="modal-row"><input type="email" id="modalEmail" placeholder="tu@email.com" aria-label="Correo electrónico" /><button class="primary" id="modalSubmit">Avisarme</button></div>
+        <button class="modal-close" id="modalClose">Cerrar</button>
+      </div>
+    </div>
+
+    <script>
+      const cards = [...document.querySelectorAll('.deal-card')];
+      const chips = [...document.querySelectorAll('.chip')];
+      const search = document.getElementById('search');
+      const empty = document.getElementById('empty');
+      let category = 'all';
+
+      function applyFilters() {
+        const term = search.value.trim().toLowerCase();
+        let visible = 0;
+        cards.forEach(card => {
+          const categories = card.dataset.category.split(' ');
+          const matchesCategory = category === 'all' || categories.includes(category);
+          const matchesText = !term || card.dataset.search.includes(term) || card.textContent.toLowerCase().includes(term);
+          const show = matchesCategory && matchesText;
+          card.classList.toggle('hidden', !show);
+          if (show) visible++;
+        });
+        empty.style.display = visible ? 'none' : 'block';
+      }
+      chips.forEach(chip => chip.addEventListener('click', () => {
+        chips.forEach(item => item.classList.remove('active'));
+        chip.classList.add('active');
+        category = chip.dataset.category;
+        applyFilters();
+      }));
+      search.addEventListener('input', applyFilters);
+      document.getElementById('searchButton').addEventListener('click', () => {
+        document.getElementById('ofertas').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        applyFilters();
+      });
+
+      const modal = document.getElementById('modal');
+      const modalText = document.getElementById('modalText');
+      document.querySelectorAll('.alert-trigger').forEach(button => button.addEventListener('click', () => {
+        modalText.textContent = 'Te avisaremos cuando ' + button.dataset.product + ' llegue a un nivel realmente bueno.';
+        modal.classList.add('open');
+        document.getElementById('modalEmail').focus();
+      }));
+      document.getElementById('modalClose').addEventListener('click', () => modal.classList.remove('open'));
+      modal.addEventListener('click', event => { if (event.target === modal) modal.classList.remove('open'); });
+      document.getElementById('modalSubmit').addEventListener('click', () => {
+        const email = document.getElementById('modalEmail');
+        if (!email.value || !email.checkValidity()) { email.reportValidity(); return; }
+        modalText.textContent = 'Listo. La alerta quedó preparada para esta demo.';
+        document.getElementById('modalSubmit').textContent = 'Alerta creada';
+        setTimeout(() => { modal.classList.remove('open'); document.getElementById('modalSubmit').textContent = 'Avisarme'; }, 1300);
+      });
+      document.getElementById('alertForm').addEventListener('submit', event => {
+        event.preventDefault();
+        const input = document.getElementById('alertInput');
+        if (!input.value.trim()) return;
+        input.value = '';
+        input.placeholder = 'Alerta preparada para esta demo ✓';
+      });
+    </script>
+  </body>
+</html>
