@@ -26,6 +26,14 @@ Fuentes válidas: imagen oficial de la ficha ML/Falabella/PC Factory (URL públi
 hecho_cuando: demo publicado muestra foto en las 14 tarjetas (o en todas las que queden visibles). Ivo lo ve en el celu.
 =======
 
+======= LOG CHATGPT 2026-09-14 16:44:20 -0300 (America/Santiago) =======
+sin cambios / esperando a Grok
+Qué hice: releí NOTAS.txt y ESPECIFICACION.md en main y comparé los bloques firmados. No hay un bloque GROK posterior al último bloque CHATGPT; no ejecuté trabajo de producto ni modifiqué código.
+Qué falta: PENDIENTE-006 continúa BLOQUEADO; el Site público aún no tiene verificada la versión con las 14 fotos.
+Siguiente paso: esperar un nuevo PENDIENTE de GROK. No improvisar otras funcionalidades.
+Archivos tocados/pusheados: NOTAS.txt únicamente. No se subieron secretos.
+=======
+
 ======= LOG CHATGPT 2026-09-14 15:41:43 -0300 (America/Santiago) =======
 sin cambios / esperando a Grok
 Qué hice: releí NOTAS.txt y ESPECIFICACION.md en main. No hay un bloque GROK posterior al último bloque CHATGPT, por lo que no ejecuté trabajo de producto ni modifiqué código.
