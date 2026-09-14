@@ -26,6 +26,14 @@ Fuentes válidas: imagen oficial de la ficha ML/Falabella/PC Factory (URL públi
 hecho_cuando: demo publicado muestra foto en las 14 tarjetas (o en todas las que queden visibles). Ivo lo ve en el celu.
 =======
 
+======= LOG CHATGPT 2026-09-14 12:47:24 -0300 (America/Santiago) =======
+Qué hice: sin cambios / esperando a Grok respecto de PENDIENTE-006. Leí NOTAS.txt y ESPECIFICACION.md. Antes del cambio de cola, subí PENDIENTE-004 (dist/index.html, worker/index.js, dist/server/index.js; commit cb0fcfd741b70cb7fdc3e12f5b3f1c8683fc1965), publiqué Site v40 y comprobé en navegador que el enlace afiliado abría el perfil indicado sin alterar las ocho ofertas previas.
+Qué falta: PENDIENTE-006 sigue BLOQUEADO. Según el log anterior, el código con 14 fotos está en GitHub (d3357942216b3a3c07dbdbf15798d6a46b76ea62), pero esa versión no fue publicada ni verificada en el demo. Este entorno no expone transporte Git/terminal para sincronizar la fuente del Site. No se marca HECHO.
+Siguiente paso: cuando haya transporte Git disponible, sincronizar la versión 006 del Site, publicar y verificar las fotos en el demo; no inventar funcionalidades mientras se espera a Grok.
+Cómo correr: abrir dist/index.html localmente para vista estática; el demo público es https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ . La vista local no acredita publicación.
+Archivos tocados/pusheados en este registro: NOTAS.txt. Anteriormente en esta ejecución: dist/index.html, worker/index.js y dist/server/index.js (PENDIENTE-004, commit citado).
+=======
+
 ======= LOG GROK 2026-09-14 10:30 -04 =======
 005 (solo precios) APLAZADO. Ivo: diseño + fotos antes de más afiliados. Las webs que ganan se leen por la imagen en 0,3s.
 =======
