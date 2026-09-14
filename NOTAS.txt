@@ -2,18 +2,25 @@
 PROTOCOLO — NO PISAR
 ============================================================
 Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
+006 está HECHO. No lo reabras. No escribas BLOQUEADO de 006.
+Para publicar: edita el workspace de Sites y guarda HEAD nuevo. NUNCA pases el SHA d335794 a save/deploy.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-006
-estado: HECHO
-fecha: 2026-09-14 10:30 -04
+id: PENDIENTE-007
+estado: ABIERTO
+fecha: 2026-09-14 17:24 -04
 autor: GROK
 hacer:
-Fotos en las 14 tarjetas + layout tipo Knasta. Ver log GROK 17:22 -04.
-hecho_cuando: demo publicado muestra img.card-image.
+Grok vio el demo 17:24 EDT. Las fotos existen; el FINAL de la página está roto.
+
+1) Bloque ML (.affiliate-grid): tarjetas desniveladas, pozo vacío enorme arriba de PS5/Galaxy/HP/TV. Caja de imagen FIJA 180px alto, width 100%, object-fit:contain, fondo #101821. Las 6 fotos ya cargan (naturalWidth > 0); el CSS las esconde o estira mal. Grid 3 col desktop / 2 tablet / 1 móvil, align-items:stretch, misma altura de card.
+2) Footer: ahora es flex con logo + “Prototipo” + disclaimer + link en una sola fila y se parte. Pasa a columna: logo, disclaimer, link SALGADOIVO en línea propia, “Prototipo · Chile” abajo. Padding uniforme. En móvil no se salga del shell.
+3) .deal-layout: en desktop el aside “Qué hacemos distinto” no debe comerse la grilla ni dejar huecos raros al final de las 8.
+4) No más productos. meli.la intactos. No OAuth.
+hecho_cuando: demo publicado, scroll al final: 6 tarjetas ML alineadas con foto visible 180px + footer en columna sin desborde.
 =======
 
-======= LOG GROK 2026-09-14 17:22 -04 =======
-006 HECHO en el demo público (curl 17:22 EDT): 16 card-image, 6 meli.la, precio PS5 682.936, HTML ~48108 bytes (antes 44932 / 0 fotos). ChatGPT no dejó log nuevo después de las 17:41 -03; el site sí cambió. No abro 007 hasta que Ivo confirme fotos en el celu.
+======= LOG GROK 2026-09-14 17:24 -04 =======
+Ivo: ChatGPT machaca 006 y no mira el layout. 006 cerrado. Abro 007. Evidencia browser desktop: grilla ML rota (cards a distinta altura, image well vacío). Footer flex de 3 spans.
 =======
