@@ -133,6 +133,15 @@
       footer { border-top: 1px solid var(--line); padding: 25px 0 36px; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
       .affiliate-notice { max-width: 490px; color: var(--paper); }
       .affiliate-profile { display: block; width: fit-content; margin-top: 8px; color: var(--lime); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+      .affiliate-section { margin-top: 56px; }
+      .affiliate-section .section-head { margin-top: 0; }
+      .affiliate-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .affiliate-card { min-height: 252px; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid rgba(217,255,85,.2); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
+      .affiliate-card:hover { transform: translateY(-3px); border-color: rgba(217,255,85,.55); }
+      .affiliate-tag { color: var(--ink); background: var(--lime); border-radius: 7px; padding: 5px 8px; font-size: 12px; font-weight: 800; }
+      .affiliate-card .product { min-height: 58px; }
+      .affiliate-card .price { font-size: 20px; color: var(--lime); }
+      .affiliate-label { color: var(--muted); font-size: 12px; }
       .offer-detail-wrap { position: fixed; inset: 0; z-index: 70; display: none; place-items: center; padding: 18px; background: rgba(0,0,0,.72); }
       .offer-detail-wrap.open { display: grid; }
       .offer-detail { position: relative; width: min(540px, 100%); max-height: calc(100vh - 36px); overflow: auto; padding: 24px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel-2); box-shadow: var(--shadow); }
@@ -166,6 +175,7 @@
         .deal-layout, .how { grid-template-columns: 1fr; }
         .aside { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         .alert-panel { grid-column: span 2; }
+        .affiliate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       }
       @media (max-width: 580px) {
         .shell { width: min(100% - 28px, 1180px); }
@@ -175,6 +185,7 @@
         h1 { font-size: 47px; }
         .hero-copy { font-size: 16px; }
         .deal-grid { grid-template-columns: 1fr; }
+        .affiliate-grid { grid-template-columns: 1fr; }
         .aside { grid-template-columns: 1fr; }
         .alert-panel { grid-column: auto; }
         .how { margin: 48px 0; }
@@ -324,6 +335,61 @@
               </form>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section class="shell affiliate-section" id="mercadolibre-afiliado">
+        <div class="section-head">
+          <div><h2>En Mercado Libre (afiliado)</h2><p>Enlaces directos de Ivo · confirma precio, stock y despacho en Mercado Libre.</p></div>
+        </div>
+        <div class="affiliate-grid">
+          <article class="affiliate-card">
+            <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
+            <h3 class="product">PS5 Digital Slim + Astro Bot + GT7</h3>
+            <span class="meta">Consolas · bundle</span>
+            <div class="price-row"><strong class="price">Ver en ML</strong></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/1r96pJD" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+          </article>
+
+          <article class="affiliate-card">
+            <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
+            <h3 class="product">Samsung Galaxy A07 128GB</h3>
+            <span class="meta">Tecnología · smartphone</span>
+            <div class="price-row"><strong class="price">Ver en ML</strong></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2wuwFUn" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+          </article>
+
+          <article class="affiliate-card">
+            <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
+            <h3 class="product">Notebook HP 15-fc0043la Ryzen 3 8/512</h3>
+            <span class="meta">Tecnología · notebook</span>
+            <div class="price-row"><strong class="price">Ver en ML</strong></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2C1hjcX" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+          </article>
+
+          <article class="affiliate-card">
+            <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
+            <h3 class="product">Smart TV iFFALCON 32″ HD Google TV</h3>
+            <span class="meta">Hogar · televisión</span>
+            <div class="price-row"><strong class="price">Ver en ML</strong></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/27Z6Ees" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+          </article>
+
+          <article class="affiliate-card">
+            <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
+            <h3 class="product">Xiaomi Smart Camera C201</h3>
+            <span class="meta">Hogar · cámara inteligente</span>
+            <div class="price-row"><strong class="price">Ver en ML</strong></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2tJbVHa" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+          </article>
+
+          <article class="affiliate-card">
+            <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
+            <h3 class="product">Secador Siegen SG-3035</h3>
+            <span class="meta">Belleza · secador de pelo</span>
+            <div class="price-row"><strong class="price">Ver en ML</strong></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2WYBEUt" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+          </article>
         </div>
       </section>
 
