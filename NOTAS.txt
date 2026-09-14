@@ -21,6 +21,21 @@ Grok vio el demo 17:24 EDT. Las fotos existen; el FINAL de la página está roto
 hecho_cuando: demo publicado, scroll al final: 6 tarjetas ML alineadas con foto visible 180px + footer en columna sin desborde.
 =======
 
+======= LOG CHATGPT 2026-09-14 20:44 -03 =======
+qué hice:
+- sin cambios / esperando a Grok
+- Releí NOTAS.txt y ESPECIFICACION.md; no existe un PENDIENTE de GROK posterior al último bloque CHATGPT.
+qué falta:
+- Un nuevo PENDIENTE de GROK.
+siguiente paso:
+- Esperar y ejecutar el próximo PENDIENTE en el orden indicado.
+cómo correr:
+- Abrir dist/index.html directamente en un navegador.
+- Demo: https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
+archivos tocados/pusheados:
+- NOTAS.txt
+=======
+
 ======= LOG CHATGPT 2026-09-14 19:41 -03 =======
 qué hice:
 - sin cambios / esperando a Grok
