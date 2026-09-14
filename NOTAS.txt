@@ -7,23 +7,27 @@ Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-004
 estado: ABIERTO
-fecha: 2026-09-14 09:43 -03
+fecha: 2026-09-14 09:54 -03
 autor: GROK
 hacer:
-Ivo mandó links de afiliado ML. OJO: son del PERFIL social, no de un producto.
-URL base (sin forceInApp):
+A) Footer o header: “Ver más en Mercado Libre (afiliado)” →
 https://www.mercadolibre.cl/social/salgadoivo?matt_word=salgadoivo&matt_tool=82431153
-IDs: matt_word=salgadoivo · matt_tool=82431153 · perfil SALGADOIVO
+rel=nofollow sponsored. SIN forceInApp.
 
-1. NO reemplaces los “Ver oferta” de Falabella / PC Factory / Sodimac / Ripley por este perfil. Esas tarjetas deben seguir yendo a la ficha de esa tienda.
-2. En footer (y opcional header): link “Ver más en Mercado Libre (afiliado)” a la URL base de arriba. rel=“nofollow sponsored”. Quita forceInApp=true (rompe la web, abre la app).
-3. Si alguna tarjeta ya apunta a mercadolibre.cl, usa la URL base + utm_source=ahorrareal&utm_medium=web&utm_campaign=afiliado.
-4. Disclaimer de afiliado se queda.
-5. No OAuth, no AdSense, no inventes 8 productos ML.
-hecho_cuando: en el demo publicado el footer (o header) abre el perfil SALGADOIVO trackeado, sin forceInApp, y las 8 ofertas de otras tiendas no se rompieron.
+B) Agrega un bloque “En Mercado Libre (afiliado)” con estas 6 tarjetas. “Ver oferta” = el meli.la EXACTO (no lo reescribas a /social ni agregues forceInApp):
+- PS5 Digital Slim + Astro Bot + GT7 — https://meli.la/1r96pJD
+- Samsung Galaxy A07 128GB — https://meli.la/2wuwFUn
+- Notebook HP 15-fc0043la Ryzen 3 8/512 — https://meli.la/2C1hjcX
+- Smart TV iFFALCON 32” HD Google TV — https://meli.la/27Z6Ees
+- Xiaomi Smart Camera C201 — https://meli.la/2tJbVHa
+- Secador Siegen SG-3035 — https://meli.la/2WYBEUt
+Tienda: Mercado Libre. rel=nofollow sponsored. Precios: “ver en ML” si no tienes cifra; no inventes descuento.
+
+C) NO toques las 8 ofertas Falabella/PC Factory/Sodimac/Ripley.
+D) Disclaimer de afiliado se queda. No OAuth. No AdSense.
+hecho_cuando: demo publicado muestra las 6 tarjetas ML con meli.la + footer perfil, y las 8 originales intactas.
 =======
 
-======= LOG GROK 2026-09-14 09:43 -03 =======
-Links de Ivo = /social/salgadoivo (perfil vacío), no fichas de iPhone/lavadora. Sirven para trackear visitas a su central. Para cobrar por producto hay que usar Generador de links con la URL de CADA ítem.
-003 sigue HECHO. Abro 004 acotado.
+======= LOG GROK 2026-09-14 09:54 -03 =======
+Ivo mandó 5 meli.la más + el PS5. Son el formato correcto de Compartir. Amplío 004 (sigue ABIERTO) en vez de abrir 005.
 =======
