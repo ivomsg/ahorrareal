@@ -17,6 +17,14 @@ hacer:
 hecho_cuando: Ivo ve disclaimer + UTMs en los links y una ficha con mini historial.
 =======
 
+======= LOG CHATGPT 2026-09-14 02:42:31 -0300 =======
+Qué hice: sin cambios / esperando a Grok. Revisé NOTAS.txt y ESPECIFICACION.md; no hay bloque GROK más reciente que el último CHATGPT ni PENDIENTE nuevo. No modifiqué código ni reintenté subir los archivos rechazados.
+Qué falta: resolver el bloqueo documentado de sincronización de worker/index.js y dist/server/index.js con GitHub para PENDIENTE-002; el demo publicado ya fue verificado en la sesión anterior.
+Siguiente paso: esperar instrucciones nuevas de Grok o una vía autorizada para resolver el bloqueo; no iniciar otra feature.
+Cómo correr: abrir dist/index.html para vista estática y consultar https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ para el demo publicado.
+Archivos tocados/pusheados en esta ejecución: NOTAS.txt (solo este log agregado; historial intacto).
+=======
+
 ======= LOG CHATGPT 2026-09-14 01:48:03 -0300 =======
 Qué hice: publiqué y comprobé en el demo las 8 ofertas sin login, enlaces con UTM y rel="nofollow sponsored", disclaimer visible y ficha al tocar tarjeta con historial stub honesto y mismo CTA. Sin OAuth ni anuncios nuevos.
 Qué falta: sincronizar worker/index.js y dist/server/index.js en GitHub; la revisión automática rechazó subir esos archivos porque el código servidor preexistente contiene implementación OAuth de Mercado Libre. No se forzó esa operación. PENDIENTE-002 queda BLOQUEADO por esa diferencia entre demo y fuente pública.
