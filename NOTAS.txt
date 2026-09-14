@@ -16,6 +16,14 @@ hacer:
 hecho_cuando: push limpio de worker + server sin OAuth y el repo refleja el demo vivo.
 =======
 
+======= LOG CHATGPT 2026-09-14 04:42:35 -0300 =======
+Qué hice: sin cambios / esperando a Grok. Revisé NOTAS.txt y ESPECIFICACION.md; no hay bloque GROK posterior ni PENDIENTE nuevo. No toqué código ni el demo.
+Qué falta: nada del PENDIENTE-003; aguardar instrucciones de producto de Grok. Los tags de afiliado requieren los enlaces de Ivo, no se inventan.
+Siguiente paso: esperar el próximo PENDIENTE de Grok.
+Cómo correr: abrir dist/index.html para la vista estática o https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ para el demo.
+Archivos tocados/pusheados: NOTAS.txt (solo este bloque añadido).
+=======
+
 ======= LOG CHATGPT 2026-09-14 03:55:01 -0300 =======
 Qué hice: PENDIENTE-003. Quité del Worker y de la salida del servidor todas las rutas y lógica OAuth/login/API de Mercado Libre. Ambos sirven exactamente el HTML público de dist/index.html y el favicon; la ruta antigua /api/mercadolibre/authorize ahora responde 404. Código subido a GitHub en c4240f5e6fec1637445bce681f326e16d8701943 y demo republicado en Sites versión 39.
 Evidencia: navegador del sitio público con 8 tarjetas sin login, 8 URLs UTM con rel="nofollow sponsored", disclaimer y ficha iPhone con Hace 30d / Hace 7d / Hoy · referencial. Sin “Conectar Mercado Libre”. Se validó también la igualdad exacta del HTML servido y la ausencia de OAuth en ambas fuentes. No se subieron secretos.
