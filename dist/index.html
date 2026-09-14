@@ -87,6 +87,8 @@
       .deal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
       .deal-card { position: relative; overflow: hidden; min-height: 275px; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid var(--line); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
       .deal-card:hover { transform: translateY(-3px); border-color: rgba(217,255,85,.42); }
+      .deal-card:not(.live-card) { cursor: pointer; }
+      .deal-card:not(.live-card):focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
       .deal-card.hidden { display: none; }
       .card-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
       .store { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
@@ -129,6 +131,26 @@
       .step strong { font-size: 14px; display: block; margin-bottom: 3px; }
       .step span { color: var(--muted); font-size: 13px; }
       footer { border-top: 1px solid var(--line); padding: 25px 0 36px; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
+      .affiliate-notice { max-width: 490px; color: var(--paper); }
+      .offer-detail-wrap { position: fixed; inset: 0; z-index: 70; display: none; place-items: center; padding: 18px; background: rgba(0,0,0,.72); }
+      .offer-detail-wrap.open { display: grid; }
+      .offer-detail { position: relative; width: min(540px, 100%); max-height: calc(100vh - 36px); overflow: auto; padding: 24px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel-2); box-shadow: var(--shadow); }
+      .offer-detail h2 { margin: 4px 40px 8px 0; font-size: 25px; }
+      .offer-detail h3 { margin: 22px 0 12px; font-size: 18px; }
+      .offer-detail-kicker { margin: 0; color: var(--lime); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+      .offer-detail-close { position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: var(--paper); background: transparent; font-size: 25px; }
+      .offer-detail-close:focus-visible, .offer-detail-link:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
+      .offer-detail-store, .offer-detail-note { color: var(--muted); font-size: 13px; }
+      .offer-detail-price { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+      .offer-detail-price strong { font-family: "Space Grotesk", sans-serif; font-size: 26px; }
+      .offer-detail-price span { color: var(--muted); font-size: 13px; }
+      .offer-history { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
+      .offer-history div { padding: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--ink); }
+      .offer-history span, .offer-history strong { display: block; }
+      .offer-history span { margin-bottom: 6px; color: var(--muted); font-size: 12px; }
+      .offer-history strong { font-size: 14px; }
+      .offer-detail-note { margin: 12px 0 0; }
+      .offer-detail-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 20px; padding: 0 17px; border-radius: 10px; background: var(--lime); color: var(--ink); font-weight: 700; }
       .modal-wrap { position: fixed; inset: 0; z-index: 50; display: none; place-items: center; padding: 20px; background: rgba(0,0,0,.66); }
       .modal-wrap.open { display: grid; }
       .modal { width: min(430px, 100%); background: var(--panel-2); border: 1px solid var(--line); border-radius: 20px; padding: 24px; box-shadow: var(--shadow); }
@@ -158,6 +180,8 @@
         .how h2 { font-size: 35px; }
         footer { display: block; }
         footer span { display: block; margin-top: 7px; }
+        .offer-detail { padding: 20px 16px; }
+        .offer-history { grid-template-columns: 1fr; }
       }
     </style>
   </head>
@@ -213,7 +237,7 @@
               <h3 class="product">Lavadora-secadora carga frontal 12/7 kg</h3>
               <span class="meta">Hogar · Inverter · despacho sujeto a comuna</span>
               <div class="price-row"><strong class="price">$439.990</strong><span class="old-price">Antes $699.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 7 12 9 21 6 30 20 40 17 51 24 60 21 70 26 87 16" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
 
@@ -222,7 +246,7 @@
               <h3 class="product">iPhone 16 128 GB</h3>
               <span class="meta">Tecnología · desbloqueado · 128 GB</span>
               <div class="price-row"><strong class="price">$839.990</strong><span class="old-price">Antes $949.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 11 13 13 23 10 32 18 41 16 50 21 60 18 70 22 87 8" stroke="#ff6b4a" stroke-width="2"/><path d="M1 29h86" stroke="#ff6b4a" stroke-opacity=".16"/></svg>
             </article>
 
@@ -231,7 +255,7 @@
               <h3 class="product">Notebook IdeaPad Slim 3 i5 8GB / 512GB</h3>
               <span class="meta">Tecnología · 14″ WUXGA · Windows 11</span>
               <div class="price-row"><strong class="price">$529.990</strong><span class="old-price">Antes $559.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 20 12 16 21 20 30 10 40 15 50 12 59 18 69 9 87 12" stroke="#9bc9ff" stroke-width="2"/><path d="M1 29h86" stroke="#9bc9ff" stroke-opacity=".16"/></svg>
             </article>
 
@@ -240,7 +264,7 @@
               <h3 class="product">Smart TV TCL 55″ LED 4K Google TV</h3>
               <span class="meta">Hogar · V6C · precio final referencial</span>
               <div class="price-row"><strong class="price">$289.990</strong><span class="old-price">Antes $369.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 5 12 9 22 6 30 15 42 12 52 23 61 17 71 21 87 11" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
 
@@ -249,7 +273,7 @@
               <h3 class="product">Taladro atornillador inalámbrico 18V</h3>
               <span class="meta">Herramientas · kit con 2 baterías</span>
               <div class="price-row"><strong class="price">$629.990</strong><span class="old-price">Antes $799.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen momento</div><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen momento</div><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 20 12 16 21 20 30 10 40 15 50 12 59 18 69 9 87 12" stroke="#9bc9ff" stroke-width="2"/><path d="M1 29h86" stroke="#9bc9ff" stroke-opacity=".16"/></svg>
             </article>
 
@@ -258,7 +282,7 @@
               <h3 class="product">Freidora de aire 5 L · 1350W</h3>
               <span class="meta">Electrodomésticos · control 80–200 °C</span>
               <div class="price-row"><strong class="price">$43.990</strong><span class="old-price">Antes $50.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 7 12 9 21 6 30 20 40 17 51 24 60 21 70 26 87 16" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
 
@@ -267,7 +291,7 @@
               <h3 class="product">Monitor Samsung 24″ FHD 75Hz IPS</h3>
               <span class="meta">Tecnología · FreeSync · 5 ms</span>
               <div class="price-row"><strong class="price">$139.990</strong><span class="old-price">Antes $159.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 11 13 13 23 10 32 18 41 16 50 21 60 18 70 22 87 8" stroke="#ff6b4a" stroke-width="2"/><path d="M1 29h86" stroke="#ff6b4a" stroke-opacity=".16"/></svg>
             </article>
 
@@ -276,7 +300,7 @@
               <h3 class="product">Aspiradora robot Xiaomi S40 Pro</h3>
               <span class="meta">Hogar · aspira y trapea · 15.000 Pa</span>
               <div class="price-row"><strong class="price">$259.990</strong><span class="old-price">Antes $289.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 5 12 9 22 6 30 15 42 12 52 23 61 17 71 21 87 11" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
             <div class="empty" id="empty">No encontramos ofertas de muestra con ese filtro. Prueba otra búsqueda.</div>
@@ -316,7 +340,7 @@
       </section>
     </main>
 
-    <footer class="shell"><strong>ahorra<span style="color:var(--lime)">real</span></strong><span>Prototipo de validación · Chile</span></footer>
+    <footer class="shell"><strong>ahorra<span style="color:var(--lime)">real</span></strong><span>Prototipo de validación · Chile</span><span class="affiliate-notice">Algunos enlaces son de afiliado. Podemos recibir comisión sin costo extra para ti.</span></footer>
 
     <div class="modal-wrap" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="modal">
@@ -325,6 +349,24 @@
         <div class="modal-row"><input type="email" id="modalEmail" placeholder="tu@email.com" aria-label="Correo electrónico" /><button class="primary" id="modalSubmit">Avisarme</button></div>
         <button class="modal-close" id="modalClose">Cerrar</button>
       </div>
+    </div>
+
+    <div class="offer-detail-wrap" id="offerDetail" aria-hidden="true">
+      <section class="offer-detail" role="dialog" aria-modal="true" aria-labelledby="offerDetailTitle">
+        <button class="offer-detail-close" id="offerDetailClose" type="button" aria-label="Cerrar ficha">×</button>
+        <p class="offer-detail-kicker">Ficha de oferta</p>
+        <h2 id="offerDetailTitle"></h2>
+        <p class="offer-detail-store" id="offerDetailStore"></p>
+        <div class="offer-detail-price"><strong id="offerDetailPrice"></strong><span id="offerDetailBefore"></span></div>
+        <h3>Historial de precios</h3>
+        <div class="offer-history" role="list">
+          <div role="listitem"><span>Hace 30d</span><strong>Sin registro</strong></div>
+          <div role="listitem"><span>Hace 7d</span><strong>Sin registro</strong></div>
+          <div role="listitem"><span>Hoy · referencial</span><strong id="offerDetailToday"></strong></div>
+        </div>
+        <p class="offer-detail-note">Historial de muestra: no hay precios verificados para hace 30 ni 7 días. El precio “antes” proviene de la oferta de referencia, no de un registro histórico.</p>
+        <a class="offer-detail-link" id="offerDetailLink" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a>
+      </section>
     </div>
 
     <script>
@@ -382,6 +424,83 @@
         input.value = '';
         input.placeholder = 'Alerta preparada para esta demo ✓';
       });
+    </script>
+    <script>
+      (() => {
+        const grid = document.getElementById('dealGrid');
+        const detail = document.getElementById('offerDetail');
+        const close = document.getElementById('offerDetailClose');
+        const detailLink = document.getElementById('offerDetailLink');
+        let trigger = null;
+
+        function trackedUrl(raw) {
+          try {
+            const url = new URL(raw);
+            if (url.protocol !== 'https:') return null;
+            url.searchParams.set('utm_source', 'ahorrareal');
+            url.searchParams.set('utm_medium', 'web');
+            url.searchParams.set('utm_campaign', 'demo');
+            return url.href;
+          } catch (_) { return null; }
+        }
+
+        function updateOfferLinks() {
+          grid.querySelectorAll('.deal-card a.card-action.live-link').forEach(link => {
+            const href = trackedUrl(link.getAttribute('href'));
+            if (href && link.href !== href) link.href = href;
+            link.rel = 'nofollow sponsored noopener noreferrer';
+          });
+        }
+
+        function openDetail(card) {
+          const link = card.querySelector('a.card-action.live-link');
+          if (!link) return;
+          const href = trackedUrl(link.href);
+          if (!href) return;
+          trigger = card;
+          document.getElementById('offerDetailTitle').textContent = card.querySelector('.product').textContent.trim();
+          document.getElementById('offerDetailStore').textContent = card.querySelector('.store').textContent.trim();
+          const price = card.querySelector('.price').textContent.trim();
+          document.getElementById('offerDetailPrice').textContent = price;
+          document.getElementById('offerDetailToday').textContent = price;
+          document.getElementById('offerDetailBefore').textContent = card.querySelector('.old-price')?.textContent.trim() || '';
+          detailLink.href = href;
+          detail.classList.add('open');
+          detail.setAttribute('aria-hidden', 'false');
+          close.focus();
+        }
+
+        function closeDetail() {
+          detail.classList.remove('open');
+          detail.setAttribute('aria-hidden', 'true');
+          trigger?.focus();
+        }
+
+        grid.querySelectorAll('.deal-card:not(.live-card)').forEach(card => {
+          card.tabIndex = 0;
+          card.setAttribute('role', 'button');
+          card.setAttribute('aria-haspopup', 'dialog');
+          card.setAttribute('aria-label', 'Ver ficha de ' + card.querySelector('.product').textContent.trim());
+        });
+        updateOfferLinks();
+        new MutationObserver(updateOfferLinks).observe(grid, { childList: true, subtree: true });
+        grid.addEventListener('click', event => {
+          if (event.target.closest('a, button')) return;
+          const card = event.target.closest('.deal-card:not(.live-card)');
+          if (card && grid.contains(card)) openDetail(card);
+        });
+        grid.addEventListener('keydown', event => {
+          if ((event.key === 'Enter' || event.key === ' ') && event.target.matches('.deal-card:not(.live-card)')) {
+            event.preventDefault();
+            openDetail(event.target);
+          }
+        });
+        close.addEventListener('click', closeDetail);
+        detail.addEventListener('click', event => { if (event.target === detail) closeDetail(); });
+        document.addEventListener('keydown', event => {
+          if (event.key === 'Escape' && detail.classList.contains('open')) closeDetail();
+        });
+      })();
     </script>
   </body>
 </html>

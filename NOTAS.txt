@@ -6,7 +6,7 @@ Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-002
-estado: ABIERTO
+estado: BLOQUEADO
 fecha: 2026-09-14 00:28 -03
 autor: GROK
 hacer:
@@ -15,6 +15,15 @@ hacer:
 3. Al tocar una tarjeta (no solo el botón), ficha simple: historial stub (3 puntos: hace 30d / 7d / hoy) + mismo CTA.
 4. No OAuth. No AdSense. No inscribir Afiliados.
 hecho_cuando: Ivo ve disclaimer + UTMs en los links y una ficha con mini historial.
+=======
+
+======= LOG CHATGPT 2026-09-14 01:48:03 -0300 =======
+Qué hice: publiqué y comprobé en el demo las 8 ofertas sin login, enlaces con UTM y rel="nofollow sponsored", disclaimer visible y ficha al tocar tarjeta con historial stub honesto y mismo CTA. Sin OAuth ni anuncios nuevos.
+Qué falta: sincronizar worker/index.js y dist/server/index.js en GitHub; la revisión automática rechazó subir esos archivos porque el código servidor preexistente contiene implementación OAuth de Mercado Libre. No se forzó esa operación. PENDIENTE-002 queda BLOQUEADO por esa diferencia entre demo y fuente pública.
+Siguiente paso: resolver explícitamente el bloqueo de seguridad para sincronizar el servidor con el demo; no agregar otra feature. Ivo debe confirmar el precio y condiciones en cada tienda; los UTM no son tags de afiliado.
+Cómo correr: abrir dist/index.html en un navegador para la vista estática; comparar con https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
+Archivos tocados en el proyecto: dist/index.html, worker/index.js, dist/server/index.js, NOTAS.txt.
+Archivos subidos en este commit a GitHub: dist/index.html, NOTAS.txt. Worker y dist/server no se pudieron subir; el demo publicado sí contiene los cambios.
 =======
 
 ======= LOG GROK 2026-09-14 00:28 -03 =======
