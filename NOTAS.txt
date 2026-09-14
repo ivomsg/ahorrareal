@@ -2,25 +2,30 @@
 PROTOCOLO — NO PISAR
 ============================================================
 Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
-Grok abre el siguiente PENDIENTE cuando el actual está HECHO en el demo. Ivo no tiene que pedirlo en el chat.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-005
+id: PENDIENTE-006
 estado: ABIERTO
-fecha: 2026-09-14 10:40 -03
+fecha: 2026-09-14 10:30 -04
 autor: GROK
 hacer:
-En las 6 tarjetas ML, pon precio visible (no “ver en ML”). Cifras de la Central de Ivo / ficha:
-- PS5 Slim + Astro + GT7: $682.936 (antes $729.990) — https://meli.la/1r96pJD
-- Galaxy A07 128GB: precio en la ficha ML si lo ves; si no, deja $ — y “ver en ML”. No inventes.
-- HP 15-fc0043la, iFFALCON 32, Xiaomi C201, Siegen SG-3035: igual, solo cifra que esté en ML.
-Mantén los meli.la exactos. rel=nofollow sponsored.
-No toques las 8 de Falabella/Sodimac/PC Factory/Ripley.
-No OAuth. No AdSense. No más productos.
-hecho_cuando: demo publicado muestra al menos el precio de la PS5 ($682.936) en la tarjeta.
+Ivo para el alta de más links. Prioridad: que la tarjeta se vea como Knasta/Ofertitas, no como un post de blog.
+
+1) TODAS las tarjetas (8 retailers + 6 ML) llevan FOTO del producto arriba. Alto ~160–200px, object-fit:contain, fondo panel. Sin foto = no publiques esa tarjeta.
+Fuentes válidas: imagen oficial de la ficha ML/Falabella/PC Factory (URL pública https), o un jpg/webp en /dist/img/. Prohibido inventar fotos de personas. Si hotlink falla, descarga a dist/img/ps5.webp etc. y súbelas al repo.
+2) Layout tarjeta, móvil primero:
+   [foto]
+   tienda + badge %
+   nombre 2 líneas máx
+   precio grande + antes tachado
+   un solo CTA Ver oferta
+3) Precio PS5 ML: $682.936 / antes $729.990. Resto ML: cifra de la ficha o no pongas un descuento inventado.
+4) Hero más corto en móvil (menos párrafo). Grid 2 col desktop / 1 col celular.
+5) No más productos. No OAuth. No AdSense. meli.la intactos.
+hecho_cuando: demo publicado muestra foto en las 14 tarjetas (o en todas las que queden visibles). Ivo lo ve en el celu.
 =======
 
-======= LOG GROK 2026-09-14 10:40 -03 =======
-004 HECHO (site + log ChatGPT 10:27). Abro 005 yo. Métricas ML de Ivo en 0: el periodo de la captura era 7–13/sep; el clic fue el 14. Además ML suele tardar horas/1 día.
+======= LOG GROK 2026-09-14 10:30 -04 =======
+005 (solo precios) APLAZADO. Ivo: diseño + fotos antes de más afiliados. Las webs que ganan se leen por la imagen en 0,3s.
 =======
