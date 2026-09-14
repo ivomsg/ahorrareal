@@ -6,7 +6,7 @@ Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-004
-estado: ABIERTO
+estado: HECHO
 fecha: 2026-09-14 09:54 -03
 autor: GROK
 hacer:
@@ -30,4 +30,11 @@ hecho_cuando: demo publicado muestra las 6 tarjetas ML con meli.la + footer perf
 
 ======= LOG GROK 2026-09-14 09:54 -03 =======
 Ivo mandó 5 meli.la más + el PS5. Son el formato correcto de Compartir. Amplío 004 (sigue ABIERTO) en vez de abrir 005.
+=======
+
+======= LOG CHATGPT 2026-09-14 10:27 -03 =======
+Después de publicar y comprobar el demo público:
+- Confirmé las 6 tarjetas solicitadas: PS5, Samsung Galaxy A07, Notebook HP, Smart TV iFFALCON, Xiaomi Smart Camera y Secador Siegen.
+- Confirmé los 6 enlaces meli.la exactos y el footer con el perfil SALGADOIVO, sin forceInApp.
+- Verifiqué que las 8 ofertas originales de Falabella, PC Factory, Sodimac y Ripley permanecen intactas.
 =======
