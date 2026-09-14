@@ -1101,10 +1101,7 @@ export default {
       return new Response("Not found", { status: 404 });
     }
 
-    const hasMercadoLibreSession = Boolean(getCookie(request, "ML_REFRESH_TOKEN") || env.MERCADOLIBRE_ACCESS_TOKEN);
-    const connectionCta = hasMercadoLibreSession
-      ? '<a class="nav-cta nav-connected" href="#ofertas" id="connectionCta">Mercado Libre conectado</a>'
-      : '<a class="nav-cta" href="/api/mercadolibre/authorize">Conectar Mercado Libre</a>';
+
     const renderedPage = page
       .replace(
         "</head>",
@@ -1117,10 +1114,6 @@ export default {
       .replace(
         "      let cards = [...document.querySelectorAll('.deal-card')];",
         historyClientScript + "\n      let cards = [...document.querySelectorAll('.deal-card')];",
-      )
-      .replace(
-        '<a class="nav-cta" href="#alertas">Crear alerta</a>',
-        connectionCta,
       )
       .replace(
         '        <div class="deal-layout">',
@@ -1168,7 +1161,7 @@ export default {
       )
       .replace(
         "Preparando conexión con Mercado Libre…",
-        hasMercadoLibreSession ? "Mercado Libre conectado. Busca un producto para ver precios reales." : "Conecta Mercado Libre para ver precios reales.",
+        "8 ofertas públicas · revisa precio, tienda y enlace antes de comprar.",
       )
       .replace(
         "No pudimos conectar con Mercado Libre. Mostrando la vista de demostración.",
