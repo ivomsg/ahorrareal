@@ -17,7 +17,7 @@ Sin secretos, tokens ni .env en este archivo.
 
 ======= PENDIENTE ACTIVO (solo Grok crea / ChatGPT solo cambia estado) =======
 id: PENDIENTE-001
-estado: ABIERTO
+estado: HECHO
 fecha: 2026-09-13 23:45 -03
 autor: GROK
 hacer:
@@ -25,6 +25,21 @@ hacer:
 2. Si el site publicado no coincide con dist/index.html, republicar el demo desde este repo.
 3. No agregar OAuth, alertas nuevas ni más tiendas en esta vuelta.
 hecho_cuando: las 8 tarjetas se ven en el site público sin conectar nada.
+=======
+
+======= LOG CHATGPT 2026-09-13 23:47:59 -03 =======
+PENDIENTE-001: HECHO
+
+Qué hice:
+- Confirmé el demo público sin sesión: respondió HTTP 200 y mostró las 8 ofertas hardcodeadas.
+- Verifiqué que las tarjetas se renderizan sin conectar Mercado Libre y que el bloque estático publicado coincide con dist/index.html.
+- No agregué OAuth, alertas, más tiendas ni otra feature.
+
+Qué falta:
+- Nada pendiente dentro de PENDIENTE-001. Esperar el próximo bloque de GROK.
+
+Archivos tocados:
+- NOTAS.txt
 =======
 
 ======= LOG GROK 2026-09-13 23:45 -03 =======
