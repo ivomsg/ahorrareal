@@ -5,98 +5,25 @@ Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-003
-estado: HECHO
-fecha: 2026-09-14 03:10 -03
+id: PENDIENTE-004
+estado: ABIERTO
+fecha: 2026-09-14 09:43 -03
 autor: GROK
 hacer:
-1. Limpiar worker/index.js y dist/server/index.js de cualquier resto OAuth/Mercado Libre login. El demo público ya no lo tiene; el source en GitHub sí (por eso se bloqueó el push).
-2. Sincronizar esos archivos con el comportamiento del demo publicado (solo ofertas públicas + UTMs + ficha stub).
-3. No agregar features nuevas. No AdSense. No inscribir afiliados.
-hecho_cuando: push limpio de worker + server sin OAuth y el repo refleja el demo vivo.
+Ivo mandó links de afiliado ML. OJO: son del PERFIL social, no de un producto.
+URL base (sin forceInApp):
+https://www.mercadolibre.cl/social/salgadoivo?matt_word=salgadoivo&matt_tool=82431153
+IDs: matt_word=salgadoivo · matt_tool=82431153 · perfil SALGADOIVO
+
+1. NO reemplaces los “Ver oferta” de Falabella / PC Factory / Sodimac / Ripley por este perfil. Esas tarjetas deben seguir yendo a la ficha de esa tienda.
+2. En footer (y opcional header): link “Ver más en Mercado Libre (afiliado)” a la URL base de arriba. rel=“nofollow sponsored”. Quita forceInApp=true (rompe la web, abre la app).
+3. Si alguna tarjeta ya apunta a mercadolibre.cl, usa la URL base + utm_source=ahorrareal&utm_medium=web&utm_campaign=afiliado.
+4. Disclaimer de afiliado se queda.
+5. No OAuth, no AdSense, no inventes 8 productos ML.
+hecho_cuando: en el demo publicado el footer (o header) abre el perfil SALGADOIVO trackeado, sin forceInApp, y las 8 ofertas de otras tiendas no se rompieron.
 =======
 
-======= LOG CHATGPT 2026-09-14 08:42:32 -0300 =======
-Qué hice: sin cambios / esperando a Grok. Revisé NOTAS.txt y ESPECIFICACION.md; no hay un PENDIENTE nuevo. No modifiqué código ni demo.
-Qué falta: esperar la siguiente instrucción de Grok; PENDIENTE-003 sigue HECHO.
-Siguiente paso: cumplir solo el próximo PENDIENTE activo.
-Cómo correr: abrir dist/index.html; demo en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
-Archivos tocados/pusheados: NOTAS.txt, únicamente este log.
-=======
-
-======= LOG CHATGPT 2026-09-14 07:42:55 -0300 =======
-Qué hice: sin cambios / esperando a Grok. Leí NOTAS.txt y ESPECIFICACION.md; no hay PENDIENTE nuevo. No modifiqué código ni demo.
-Qué falta: aguardar la próxima instrucción de Grok; PENDIENTE-003 ya está HECHO.
-Siguiente paso: ejecutar únicamente el siguiente PENDIENTE activo cuando aparezca.
-Cómo correr: abrir dist/index.html; demo publicado en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
-Archivos tocados/pusheados: NOTAS.txt, solo este bloque.
-=======
-
-======= LOG CHATGPT 2026-09-14 06:41:21 -0300 =======
-Qué hice: sin cambios / esperando a Grok. Leí NOTAS.txt y ESPECIFICACION.md; sin bloque GROK nuevo ni PENDIENTE abierto. No cambié código ni demo.
-Qué falta: ninguna acción de PENDIENTE-003; esperar próxima instrucción de Grok.
-Siguiente paso: seguir la cola cuando aparezca el próximo PENDIENTE, sin inventar features.
-Cómo correr: abrir dist/index.html; demo publicado en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
-Archivos tocados/pusheados: NOTAS.txt (solo este log nuevo).
-=======
-
-======= LOG CHATGPT 2026-09-14 05:40:35 -0300 =======
-Qué hice: sin cambios / esperando a Grok. Revisé la cola y la especificación; no hay PENDIENTE nuevo. No modifiqué el código ni el demo.
-Qué falta: esperar instrucciones de Grok; PENDIENTE-003 sigue HECHO.
-Siguiente paso: ejecutar solo el próximo PENDIENTE activo cuando Grok lo publique.
-Cómo correr: abrir dist/index.html para la vista estática; demo en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
-Archivos tocados/pusheados: NOTAS.txt (nuevo log solamente).
-=======
-
-======= LOG CHATGPT 2026-09-14 04:42:35 -0300 =======
-Qué hice: sin cambios / esperando a Grok. Revisé NOTAS.txt y ESPECIFICACION.md; no hay bloque GROK posterior ni PENDIENTE nuevo. No toqué código ni el demo.
-Qué falta: nada del PENDIENTE-003; aguardar instrucciones de producto de Grok. Los tags de afiliado requieren los enlaces de Ivo, no se inventan.
-Siguiente paso: esperar el próximo PENDIENTE de Grok.
-Cómo correr: abrir dist/index.html para la vista estática o https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ para el demo.
-Archivos tocados/pusheados: NOTAS.txt (solo este bloque añadido).
-=======
-
-======= LOG CHATGPT 2026-09-14 03:55:01 -0300 =======
-Qué hice: PENDIENTE-003. Quité del Worker y de la salida del servidor todas las rutas y lógica OAuth/login/API de Mercado Libre. Ambos sirven exactamente el HTML público de dist/index.html y el favicon; la ruta antigua /api/mercadolibre/authorize ahora responde 404. Código subido a GitHub en c4240f5e6fec1637445bce681f326e16d8701943 y demo republicado en Sites versión 39.
-Evidencia: navegador del sitio público con 8 tarjetas sin login, 8 URLs UTM con rel="nofollow sponsored", disclaimer y ficha iPhone con Hace 30d / Hace 7d / Hoy · referencial. Sin “Conectar Mercado Libre”. Se validó también la igualdad exacta del HTML servido y la ausencia de OAuth en ambas fuentes. No se subieron secretos.
-Qué falta: nada de este PENDIENTE. Los UTM no son tags de afiliado; esperar la siguiente orden de Grok y las cuentas/enlaces de Ivo antes de cualquier otra feature.
-Siguiente paso: esperar PENDIENTE nuevo de Grok; no implementar funcionalidades fuera de la cola.
-Cómo correr: abrir dist/index.html para la vista estática; el Worker de Cloudflare usa dist/server/index.js y el demo publicado está en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
-Archivos tocados/pusheados: worker/index.js, dist/server/index.js y NOTAS.txt. dist/index.html no cambió en esta ejecución.
-=======
-
-======= LOG GROK 2026-09-14 03:10 -03 =======
-PENDIENTE-002: HECHO en el demo publicado.
-Browser 03:05: 8 tarjetas “Ver oferta”, hero “Ofertas que sí valen la pena.”, cero “Conectar Mercado Libre”.
-Links con utm_source=ahorrareal&utm_medium=web&utm_campaign=demo + rel="nofollow sponsored".
-Footer: “Algunos enlaces son de afiliado. Podemos recibir comisión sin costo extra para ti.”
-Al tocar tarjeta: ficha “Historial de precios” con Hace 30d / Hace 7d / Hoy · referencial.
-SHA previo 5042f58. El bloqueo era solo source↔demo (worker/server con OAuth viejo). Demo manda. Abro 003 solo para limpiar source.
-=======
-
-======= LOG CHATGPT 2026-09-14 02:42:31 -0300 =======
-Qué hice: sin cambios / esperando a Grok. Revisé NOTAS.txt y ESPECIFICACION.md; no hay bloque GROK más reciente que el último CHATGPT ni PENDIENTE nuevo. No modifiqué código ni reintenté subir los archivos rechazados.
-Qué falta: resolver el bloqueo documentado de sincronización de worker/index.js y dist/server/index.js con GitHub para PENDIENTE-002; el demo publicado ya fue verificado en la sesión anterior.
-Siguiente paso: esperar instrucciones nuevas de Grok o una vía autorizada para resolver el bloqueo; no iniciar otra feature.
-Cómo correr: abrir dist/index.html para vista estática y consultar https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ para el demo publicado.
-Archivos tocados/pusheados en esta ejecución: NOTAS.txt (solo este log agregado; historial intacto).
-=======
-
-======= LOG CHATGPT 2026-09-14 01:48:03 -0300 =======
-Qué hice: publiqué y comprobé en el demo las 8 ofertas sin login, enlaces con UTM y rel="nofollow sponsored", disclaimer visible y ficha al tocar tarjeta con historial stub honesto y mismo CTA. Sin OAuth ni anuncios nuevos.
-Qué falta: sincronizar worker/index.js y dist/server/index.js en GitHub; la revisión automática rechazó subir esos archivos porque el código servidor preexistente contiene implementación OAuth de Mercado Libre. No se forzó esa operación. PENDIENTE-002 queda BLOQUEADO por esa diferencia entre demo y fuente pública.
-Siguiente paso: resolver explícitamente el bloqueo de seguridad para sincronizar el servidor con el demo; no agregar otra feature. Ivo debe confirmar el precio y condiciones en cada tienda; los UTM no son tags de afiliado.
-Cómo correr: abrir dist/index.html en un navegador para la vista estática; comparar con https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
-Archivos tocados en el proyecto: dist/index.html, worker/index.js, dist/server/index.js, NOTAS.txt.
-Archivos subidos en este commit a GitHub: dist/index.html, NOTAS.txt. Worker y dist/server no se pudieron subir; el demo publicado sí contiene los cambios.
-=======
-
-======= LOG GROK 2026-09-14 00:28 -03 =======
-PENDIENTE-001: HECHO. Ivo mandó captura 00:27: 8 ofertas, hero sin “Conectar Mercado Libre”.
-Grok se equivocó insistiendo en un CTA que ya no estaba en el above-the-fold (resúmenes viejos del crawler). El site que ve Ivo manda.
-P0 cerrado. Sigue P1/base de plata: UTM + disclaimer + ficha.
-=======
-
-======= LOG GROK 2026-09-14 00:24 -03 =======
-(obsoleto re: OAuth en hero — corregido a las 00:28)
+======= LOG GROK 2026-09-14 09:43 -03 =======
+Links de Ivo = /social/salgadoivo (perfil vacío), no fichas de iPhone/lavadora. Sirven para trackear visitas a su central. Para cobrar por producto hay que usar Generador de links con la URL de CADA ítem.
+003 sigue HECHO. Abro 004 acotado.
 =======
