@@ -104,6 +104,7 @@
       .score-bar i.mid { width: 76%; }
       .card-action { border: 0; background: transparent; color: var(--paper); font-size: 12px; font-weight: 700; padding: 4px 0; }
       .card-action:hover { color: var(--lime); }
+      .live-link { color: var(--lime); text-decoration: none; }
       .spark { position: absolute; right: 17px; bottom: 53px; width: 88px; height: 30px; opacity: .85; }
       .aside { display: grid; gap: 14px; }
       .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
@@ -189,7 +190,7 @@
           <span><b class="mini-check">✓</b> Condiciones visibles</span>
           <span><b class="mini-check">✓</b> Sin ofertas infladas</span>
         </div>
-        <div class="demo-note"><span>◆</span> Vista de demostración · los productos mostrados son ilustrativos</div>
+        <div class="demo-note"><span>◆</span> Vista pública de demostración · 8 ofertas hardcodeadas · precios de referencia, confirma en la tienda</div>
       </section>
 
       <section class="shell" id="ofertas">
@@ -207,39 +208,75 @@
 
         <div class="deal-layout">
           <div class="deal-grid" id="dealGrid">
-            <article class="deal-card" data-category="hogar electro" data-search="lavadora carga frontal 10 kg">
-              <div class="card-top"><span class="store">Demo · Retail Chile</span><span class="badge">−31%</span></div>
-              <h3 class="product">Lavadora carga frontal 10 kg</h3>
-              <span class="meta">Hogar · despacho incluido en la muestra</span>
-              <div class="price-row"><strong class="price">$349.990</strong><span class="old-price">$509.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><button class="card-action alert-trigger" data-product="Lavadora 10 kg">Activar alerta →</button></div>
+            <article class="deal-card" data-category="hogar electro" data-search="lavadora secadora carga frontal 12 kg lg">
+              <div class="card-top"><span class="store">LG · Falabella</span><span class="badge">−37%</span></div>
+              <h3 class="product">Lavadora-secadora carga frontal 12/7 kg</h3>
+              <span class="meta">Hogar · Inverter · despacho sujeto a comuna</span>
+              <div class="price-row"><strong class="price">$439.990</strong><span class="old-price">Antes $699.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 7 12 9 21 6 30 20 40 17 51 24 60 21 70 26 87 16" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
 
             <article class="deal-card" data-category="tecnologia" data-search="iphone 16 128 gb">
-              <div class="card-top"><span class="store">Demo · Tienda verificada</span><span class="badge hot">−24%</span></div>
+              <div class="card-top"><span class="store">Apple · Falabella</span><span class="badge hot">−12%</span></div>
               <h3 class="product">iPhone 16 128 GB</h3>
-              <span class="meta">Tecnología · precio final referencial</span>
-              <div class="price-row"><strong class="price">$599.990</strong><span class="old-price">$789.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Mínimo 90 días</div><button class="card-action alert-trigger" data-product="iPhone 16 128 GB">Activar alerta →</button></div>
+              <span class="meta">Tecnología · desbloqueado · 128 GB</span>
+              <div class="price-row"><strong class="price">$839.990</strong><span class="old-price">Antes $949.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 11 13 13 23 10 32 18 41 16 50 21 60 18 70 22 87 8" stroke="#ff6b4a" stroke-width="2"/><path d="M1 29h86" stroke="#ff6b4a" stroke-opacity=".16"/></svg>
             </article>
 
-            <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador bateria 18v">
-              <div class="card-top"><span class="store">Demo · Ferretería Chile</span><span class="badge">−38%</span></div>
-              <h3 class="product">Taladro atornillador a batería 18V</h3>
-              <span class="meta">Herramientas · incluye dos baterías</span>
-              <div class="price-row"><strong class="price">$79.990</strong><span class="old-price">$129.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen momento</div><button class="card-action alert-trigger" data-product="Taladro 18V">Activar alerta →</button></div>
+            <article class="deal-card" data-category="tecnologia" data-search="notebook lenovo ideapad slim 3 i5 8gb 512gb 14">
+              <div class="card-top"><span class="store">Lenovo · PC Factory</span><span class="badge">−5%</span></div>
+              <h3 class="product">Notebook IdeaPad Slim 3 i5 8GB / 512GB</h3>
+              <span class="meta">Tecnología · 14″ WUXGA · Windows 11</span>
+              <div class="price-row"><strong class="price">$529.990</strong><span class="old-price">Antes $559.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 20 12 16 21 20 30 10 40 15 50 12 59 18 69 9 87 12" stroke="#9bc9ff" stroke-width="2"/><path d="M1 29h86" stroke="#9bc9ff" stroke-opacity=".16"/></svg>
             </article>
 
-            <article class="deal-card" data-category="hogar" data-search="cama europea 2 plazas colchón">
-              <div class="card-top"><span class="store">Demo · Casa &amp; descanso</span><span class="badge">−29%</span></div>
-              <h3 class="product">Cama europea 2 plazas + colchón</h3>
-              <span class="meta">Hogar · comparar antes de comprar</span>
-              <div class="price-row"><strong class="price">$199.990</strong><span class="old-price">$279.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Ahorro real</div><button class="card-action alert-trigger" data-product="Cama europea 2 plazas">Activar alerta →</button></div>
+            <article class="deal-card" data-category="hogar electro" data-search="smart tv 55 led 4k tcl google tv">
+              <div class="card-top"><span class="store">TCL · Falabella</span><span class="badge hot">−22%</span></div>
+              <h3 class="product">Smart TV TCL 55″ LED 4K Google TV</h3>
+              <span class="meta">Hogar · V6C · precio final referencial</span>
+              <div class="price-row"><strong class="price">$289.990</strong><span class="old-price">Antes $369.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 5 12 9 22 6 30 15 42 12 52 23 61 17 71 21 87 11" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
+            </article>
+
+            <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador inalambrico 18v 2 baterias">
+              <div class="card-top"><span class="store">Sodimac · Herramientas</span><span class="badge">−21%</span></div>
+              <h3 class="product">Taladro atornillador inalámbrico 18V</h3>
+              <span class="meta">Herramientas · kit con 2 baterías</span>
+              <div class="price-row"><strong class="price">$629.990</strong><span class="old-price">Antes $799.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen momento</div><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 20 12 16 21 20 30 10 40 15 50 12 59 18 69 9 87 12" stroke="#9bc9ff" stroke-width="2"/><path d="M1 29h86" stroke="#9bc9ff" stroke-opacity=".16"/></svg>
+            </article>
+
+            <article class="deal-card" data-category="hogar electro" data-search="freidora de aire 5 litros 1350w">
+              <div class="card-top"><span class="store">New Line · Ripley</span><span class="badge">−14%</span></div>
+              <h3 class="product">Freidora de aire 5 L · 1350W</h3>
+              <span class="meta">Electrodomésticos · control 80–200 °C</span>
+              <div class="price-row"><strong class="price">$43.990</strong><span class="old-price">Antes $50.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 7 12 9 21 6 30 20 40 17 51 24 60 21 70 26 87 16" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
+            </article>
+
+            <article class="deal-card" data-category="tecnologia" data-search="monitor samsung 24 fhd 75hz ips">
+              <div class="card-top"><span class="store">Samsung · PC Factory</span><span class="badge">−13%</span></div>
+              <h3 class="product">Monitor Samsung 24″ FHD 75Hz IPS</h3>
+              <span class="meta">Tecnología · FreeSync · 5 ms</span>
+              <div class="price-row"><strong class="price">$139.990</strong><span class="old-price">Antes $159.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
+              <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 11 13 13 23 10 32 18 41 16 50 21 60 18 70 22 87 8" stroke="#ff6b4a" stroke-width="2"/><path d="M1 29h86" stroke="#ff6b4a" stroke-opacity=".16"/></svg>
+            </article>
+
+            <article class="deal-card" data-category="hogar electro" data-search="aspiradora robot xiaomi s40 pro">
+              <div class="card-top"><span class="store">Xiaomi · Falabella</span><span class="badge hot">−10%</span></div>
+              <h3 class="product">Aspiradora robot Xiaomi S40 Pro</h3>
+              <span class="meta">Hogar · aspira y trapea · 15.000 Pa</span>
+              <div class="price-row"><strong class="price">$259.990</strong><span class="old-price">Antes $289.990</span></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi" target="_blank" rel="noopener noreferrer sponsored">Ver oferta ↗</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 5 12 9 22 6 30 15 42 12 52 23 61 17 71 21 87 11" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
             <div class="empty" id="empty">No encontramos ofertas de muestra con ese filtro. Prueba otra búsqueda.</div>

@@ -1,0 +1,40 @@
+# NOTAS DE CONSTRUCCIÓN — AHORRA REAL
+
+## 2026-09-14 — CHATGPT
+
+### Hecho
+
+- Dejé la vista pública con 8 ofertas hardcodeadas visibles sin login: lavadora-secadora, iPhone, notebook, Smart TV, taladro, freidora de aire, monitor y aspiradora robot.
+- Cada tarjeta muestra precio actual, “Antes”, tienda y enlace externo real a Falabella, PC Factory, Sodimac o Ripley.
+- Corregí el Worker para que conserve las ofertas estáticas al cargar la página; ya no las reemplaza por un estado vacío antes de una búsqueda en vivo.
+- Actualicé el HTML estático, el Worker, la salida de servidor y el README. No agregué OAuth ni alertas en esta sesión.
+- No se incluyeron `.env`, tokens, client secrets ni refresh tokens de Mercado Libre. Las referencias a `MERCADOLIBRE_*` siguen siendo únicamente variables de entorno esperadas por el Worker.
+
+### Falta
+
+- Validar periódicamente precio, stock, despacho y condiciones: los importes hardcodeados son una fotografía de referencia y pueden cambiar en las tiendas.
+- OAuth y búsqueda en vivo de Mercado Libre.
+- Alertas y seguimiento de precios.
+
+### Cómo correr
+
+1. Para revisar la vista pública localmente, desde la raíz ejecuta `python3 -m http.server 4173 --directory dist` y abre `http://localhost:4173/`.
+2. Para probar el Worker/API, usa el despliegue de Sites configurado en `.openai/hosting.json`; las credenciales de Mercado Libre deben existir solo como secretos o variables del entorno de ejecución.
+3. Demo publicado: https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
+
+### Archivos pusheados en esta sesión
+
+- `.gitignore`
+- `.openai/hosting.json`
+- `NOTAS.txt`
+- `README.md`
+- `db/schema.ts`
+- `dist/.openai/hosting.json`
+- `dist/favicon.svg`
+- `dist/index.html`
+- `dist/server/index.js`
+- `drizzle.config.ts`
+- `drizzle/0000_harsh_cammi.sql`
+- `drizzle/meta/0000_snapshot.json`
+- `drizzle/meta/_journal.json`
+- `worker/index.js`

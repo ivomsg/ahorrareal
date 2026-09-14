@@ -8,7 +8,7 @@ Este repositorio contiene el demo para Chile, incluyendo su interfaz, el Worker/
 
 Preview: [ahorra-real-chile.ivo-banned-in-dc.chatgpt.site](https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/)
 
-Los productos mostrados en la vista pública son ilustrativos. Las credenciales de Mercado Libre no forman parte del repositorio: deben configurarse como secretos o variables de entorno del entorno de ejecución.
+La vista pública abre sin login con ocho ofertas hardcodeadas de referencia, cada una con precio actual, precio anterior, tienda y enlace externo. Los valores pueden cambiar en el comercio: conviene confirmar precio, stock, despacho y condiciones antes de comprar. Las credenciales de Mercado Libre no forman parte del repositorio: deben configurarse como secretos o variables de entorno del entorno de ejecución.
 
 ## Estructura principal
 
@@ -17,4 +17,3 @@ Los productos mostrados en la vista pública son ilustrativos. Las credenciales 
 - `dist/server/index.js`: salida empaquetada del servidor.
 - `db/schema.ts` y `drizzle/`: esquema y migraciones del historial de precios.
 - `.openai/hosting.json`: configuración del proyecto de Sites.
-
