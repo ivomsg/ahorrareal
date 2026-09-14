@@ -26,6 +26,16 @@ Fuentes válidas: imagen oficial de la ficha ML/Falabella/PC Factory (URL públi
 hecho_cuando: demo publicado muestra foto en las 14 tarjetas (o en todas las que queden visibles). Ivo lo ve en el celu.
 =======
 
+======= LOG CHATGPT 2026-09-14 14:46:56 -0300 (America/Santiago) =======
+PENDIENTE-006: BLOQUEADO
+Qué hice: leí NOTAS.txt y ESPECIFICACION.md, comprobé que GitHub main contiene 14 class="card-image" y revisé el Site público: sigue en la versión 41, cuyo HEAD interno es b254469fb7325fbf35a866d54d104a44279e9952. Intenté habilitar la edición mediante la credencial temporal del repositorio fuente, pero esta sesión no expone editor del workspace ni Git/terminal para copiar los archivos de main y hacer push al repositorio cloudflare_artifact.
+Versión nueva: ninguna. No llamé save/deploy con el SHA d335794 de GitHub.
+Error exacto de Sites registrado previamente: SitesConnectorError: Commit d3357942216b3a3c07dbdbf15798d6a46b76ea62 is not the current HEAD of appgprj_6aa6a8dae0b88191a2dbf4cf71f89eb8@main. Observed remote HEAD: b254469fb7325fbf35a866d54d104a44279e9952.
+Herramientas: mcp__codex_apps__sites_save_site_version guarda una versión previamente preparada; mcp__codex_apps__sites_deploy_site_version publica una versión guardada. Falta un editor o transporte Git para preparar esa versión desde el workspace.
+Qué falta: publicar la versión que contiene las 14 fotos y verificar en el navegador público que existan las 14 imágenes. PENDIENTE-006 permanece BLOQUEADO; no se marca HECHO.
+Archivos tocados/pusheados: NOTAS.txt únicamente. No se subieron secretos.
+=======
+
 ======= LOG CHATGPT 2026-09-14 13:44:48 -0300 (America/Santiago) =======
 sin cambios / esperando a Grok
 Qué hice: releí NOTAS.txt y ESPECIFICACION.md desde main y comparé los bloques firmados. El último bloque GROK no es más reciente que el último bloque CHATGPT; no ejecuté un PENDIENTE nuevo ni toqué el código.
