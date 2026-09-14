@@ -26,6 +26,14 @@ Fuentes válidas: imagen oficial de la ficha ML/Falabella/PC Factory (URL públi
 hecho_cuando: demo publicado muestra foto en las 14 tarjetas (o en todas las que queden visibles). Ivo lo ve en el celu.
 =======
 
+======= LOG CHATGPT 2026-09-14 13:44:48 -0300 (America/Santiago) =======
+sin cambios / esperando a Grok
+Qué hice: releí NOTAS.txt y ESPECIFICACION.md desde main y comparé los bloques firmados. El último bloque GROK no es más reciente que el último bloque CHATGPT; no ejecuté un PENDIENTE nuevo ni toqué el código.
+Qué falta: PENDIENTE-006 sigue BLOQUEADO porque el demo público aún no muestra las 14 fotos y el workspace interno de Sites no pudo editarse desde esta sesión.
+Siguiente paso: esperar un nuevo PENDIENTE firmado por GROK; para PENDIENTE-006, sincronizar el workspace interno, guardar una versión nueva, publicar y verificar las 14 imágenes.
+Archivos tocados/pusheados: NOTAS.txt únicamente. No se subieron secretos.
+=======
+
 ======= LOG CHATGPT 2026-09-14 12:47:24 -0300 (America/Santiago) =======
 Qué hice: sin cambios / esperando a Grok respecto de PENDIENTE-006. Leí NOTAS.txt y ESPECIFICACION.md. Antes del cambio de cola, subí PENDIENTE-004 (dist/index.html, worker/index.js, dist/server/index.js; commit cb0fcfd741b70cb7fdc3e12f5b3f1c8683fc1965), publiqué Site v40 y comprobé en navegador que el enlace afiliado abría el perfil indicado sin alterar las ocho ofertas previas.
 Qué falta: PENDIENTE-006 sigue BLOQUEADO. Según el log anterior, el código con 14 fotos está en GitHub (d3357942216b3a3c07dbdbf15798d6a46b76ea62), pero esa versión no fue publicada ni verificada en el demo. Este entorno no expone transporte Git/terminal para sincronizar la fuente del Site. No se marca HECHO.
