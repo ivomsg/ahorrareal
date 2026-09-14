@@ -83,7 +83,7 @@
       .market-bar { display: flex; gap: 9px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
       .chip { border: 1px solid var(--line); color: var(--muted); background: transparent; border-radius: 100px; padding: 9px 14px; font-size: 13px; white-space: nowrap; }
       .chip:hover, .chip.active { color: var(--ink); border-color: var(--lime); background: var(--lime); }
-      .deal-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; margin-top: 18px; }
+      .deal-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; align-items: start; margin-top: 18px; }
       .deal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
       .card-image { display: block; width: calc(100% + 36px); height: 180px; margin: -18px -18px 16px; object-fit: contain; background: var(--panel); border-bottom: 1px solid var(--line); }
       .deal-card { position: relative; overflow: hidden; min-height: 275px; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid var(--line); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
@@ -109,7 +109,7 @@
       .card-action:hover { color: var(--lime); }
       .live-link { color: var(--lime); text-decoration: none; }
       .spark { position: absolute; right: 17px; bottom: 53px; width: 88px; height: 30px; opacity: .85; }
-      .aside { display: grid; gap: 14px; }
+      .aside { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
       .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
       .panel h3 { margin-bottom: 7px; font-size: 20px; font-weight: 600; }
       .panel p { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
@@ -131,17 +131,22 @@
       .step-num { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: var(--lime); font-weight: 800; font-size: 12px; }
       .step strong { font-size: 14px; display: block; margin-bottom: 3px; }
       .step span { color: var(--muted); font-size: 13px; }
-      footer { border-top: 1px solid var(--line); padding: 25px 0 36px; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
-      .affiliate-notice { max-width: 490px; color: var(--paper); }
-      .affiliate-profile { display: block; width: fit-content; margin-top: 8px; color: var(--lime); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+      footer { border-top: 1px solid var(--line); padding: 28px 0 36px; color: var(--muted); font-size: 12px; }
+      .site-footer { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+      .footer-brand { color: var(--paper); font-size: 14px; }
+      .affiliate-notice { max-width: 620px; margin: 0; color: var(--paper); }
+      .affiliate-profile { display: block; width: fit-content; max-width: 100%; margin: 0; color: var(--lime); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+      .footer-meta { margin-top: 3px; }
       .affiliate-section { margin-top: 56px; }
       .affiliate-section .section-head { margin-top: 0; }
-      .affiliate-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-      .affiliate-card { min-height: 252px; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid rgba(217,255,85,.2); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
+      .affiliate-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
+      .affiliate-card { display: flex; flex-direction: column; min-width: 0; min-height: 100%; overflow: hidden; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid rgba(217,255,85,.2); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
       .affiliate-card:hover { transform: translateY(-3px); border-color: rgba(217,255,85,.55); }
       .affiliate-tag { color: var(--ink); background: var(--lime); border-radius: 7px; padding: 5px 8px; font-size: 12px; font-weight: 800; }
-      .affiliate-card .product { min-height: auto; }
+      .affiliate-card .card-image { flex: 0 0 180px; width: calc(100% + 36px); height: 180px; margin: -18px -18px 16px; object-fit: contain; object-position: center; background: #101821; }
+      .affiliate-card .product { min-height: 2.4em; margin: 18px 0 7px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
       .affiliate-card .price { font-size: 20px; color: var(--lime); }
+      .affiliate-card .card-bottom { margin-top: auto; padding-top: 15px; }
       .affiliate-label { color: var(--muted); font-size: 12px; }
       .offer-detail-wrap { position: fixed; inset: 0; z-index: 70; display: none; place-items: center; padding: 18px; background: rgba(0,0,0,.72); }
       .offer-detail-wrap.open { display: grid; }
@@ -175,7 +180,7 @@
         .nav a:not(.nav-cta) { display: none; }
         .deal-layout, .how { grid-template-columns: 1fr; }
         .aside { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .alert-panel { grid-column: span 2; }
+        .alert-panel { grid-column: auto; }
         .affiliate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       }
       @media (max-width: 580px) {
@@ -192,8 +197,7 @@
         .alert-panel { grid-column: auto; }
         .how { margin: 48px 0; }
         .how h2 { font-size: 35px; }
-        footer { display: block; }
-        footer span { display: block; margin-top: 7px; }
+        .site-footer { display: flex; width: min(100% - 28px, 1180px); padding-top: 24px; padding-bottom: 30px; overflow-wrap: anywhere; }
         .offer-detail { padding: 20px 16px; }
         .offer-history { grid-template-columns: 1fr; }
       }
@@ -423,7 +427,12 @@
       </section>
     </main>
 
-    <footer class="shell"><strong>ahorra<span style="color:var(--lime)">real</span></strong><span>Prototipo de validación · Chile</span><span class="affiliate-notice">Algunos enlaces son de afiliado. Podemos recibir comisión sin costo extra para ti.<a class="affiliate-profile" href="https://www.mercadolibre.cl/social/salgadoivo?matt_word=salgadoivo&amp;matt_tool=82431153" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver más en Mercado Libre (afiliado)</a></span></footer>
+    <footer class="shell site-footer">
+      <strong class="footer-brand">ahorra<span style="color:var(--lime)">real</span></strong>
+      <p class="affiliate-notice">Algunos enlaces son de afiliado. Podemos recibir comisión sin costo extra para ti.</p>
+      <a class="affiliate-profile" href="https://www.mercadolibre.cl/social/salgadoivo?matt_word=salgadoivo&amp;matt_tool=82431153" target="_blank" rel="nofollow sponsored noopener noreferrer">SALGADOIVO · Ver más en Mercado Libre (afiliado)</a>
+      <span class="footer-meta">Prototipo de validación · Chile</span>
+    </footer>
 
     <div class="modal-wrap" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="modal">
