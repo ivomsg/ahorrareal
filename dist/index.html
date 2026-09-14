@@ -85,6 +85,7 @@
       .chip:hover, .chip.active { color: var(--ink); border-color: var(--lime); background: var(--lime); }
       .deal-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; margin-top: 18px; }
       .deal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .card-image { display: block; width: calc(100% + 36px); height: 180px; margin: -18px -18px 16px; object-fit: contain; background: var(--panel); border-bottom: 1px solid var(--line); }
       .deal-card { position: relative; overflow: hidden; min-height: 275px; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid var(--line); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
       .deal-card:hover { transform: translateY(-3px); border-color: rgba(217,255,85,.42); }
       .deal-card:not(.live-card) { cursor: pointer; }
@@ -135,11 +136,11 @@
       .affiliate-profile { display: block; width: fit-content; margin-top: 8px; color: var(--lime); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
       .affiliate-section { margin-top: 56px; }
       .affiliate-section .section-head { margin-top: 0; }
-      .affiliate-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .affiliate-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
       .affiliate-card { min-height: 252px; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid rgba(217,255,85,.2); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
       .affiliate-card:hover { transform: translateY(-3px); border-color: rgba(217,255,85,.55); }
       .affiliate-tag { color: var(--ink); background: var(--lime); border-radius: 7px; padding: 5px 8px; font-size: 12px; font-weight: 800; }
-      .affiliate-card .product { min-height: 58px; }
+      .affiliate-card .product { min-height: auto; }
       .affiliate-card .price { font-size: 20px; color: var(--lime); }
       .affiliate-label { color: var(--muted); font-size: 12px; }
       .offer-detail-wrap { position: fixed; inset: 0; z-index: 70; display: none; place-items: center; padding: 18px; background: rgba(0,0,0,.72); }
@@ -181,10 +182,11 @@
         .shell { width: min(100% - 28px, 1180px); }
         .topbar-inner { height: 64px; }
         .nav-cta { padding: 9px 11px !important; font-size: 12px; }
-        .hero { padding-top: 49px; }
+        .hero { padding-top: 32px; padding-bottom: 22px; }
         h1 { font-size: 47px; }
-        .hero-copy { font-size: 16px; }
+        .hero-copy { font-size: 16px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .deal-grid { grid-template-columns: 1fr; }
+        .card-image { height: 170px; }
         .affiliate-grid { grid-template-columns: 1fr; }
         .aside { grid-template-columns: 1fr; }
         .alert-panel { grid-column: auto; }
@@ -213,7 +215,7 @@
       <section class="hero shell">
         <div class="eyebrow"><span class="eyebrow-dot"></span> Compra con datos, no con ruido</div>
         <h1>Ofertas que <span>sí valen</span> la pena.</h1>
-        <p class="hero-copy">Comparamos precios, revisamos el historial y te avisamos cuando aparece una oportunidad real en Chile. Menos spam. Mejores decisiones.</p>
+        <p class="hero-copy">Comparamos precios y mostramos oportunidades reales en Chile. Menos spam. Mejores decisiones.</p>
         <div class="hero-tools">
           <label class="search" aria-label="Buscar productos">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
@@ -226,7 +228,7 @@
           <span><b class="mini-check">✓</b> Condiciones visibles</span>
           <span><b class="mini-check">✓</b> Sin ofertas infladas</span>
         </div>
-        <div class="demo-note"><span>◆</span> Vista pública de demostración · 8 ofertas hardcodeadas · precios de referencia, confirma en la tienda</div>
+        <div class="demo-note"><span>◆</span> Vista pública de demostración · 14 ofertas de referencia · precios de referencia, confirma en la tienda</div>
       </section>
 
       <section class="shell" id="ofertas">
@@ -245,74 +247,82 @@
         <div class="deal-layout">
           <div class="deal-grid" id="dealGrid">
             <article class="deal-card" data-category="hogar electro" data-search="lavadora secadora carga frontal 12 kg lg">
+              <img class="card-image" src="https://media.falabella.com/falabellaCL/16731299_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Lavadora-secadora carga frontal 12/7 kg" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">LG · Falabella</span><span class="badge">−37%</span></div>
               <h3 class="product">Lavadora-secadora carga frontal 12/7 kg</h3>
               <span class="meta">Hogar · Inverter · despacho sujeto a comuna</span>
               <div class="price-row"><strong class="price">$439.990</strong><span class="old-price">Antes $699.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 7 12 9 21 6 30 20 40 17 51 24 60 21 70 26 87 16" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
 
             <article class="deal-card" data-category="tecnologia" data-search="iphone 16 128 gb">
+              <img class="card-image" src="https://media.falabella.com/falabellaCL/17273278_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="iPhone 16 128 GB" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Apple · Falabella</span><span class="badge hot">−12%</span></div>
               <h3 class="product">iPhone 16 128 GB</h3>
               <span class="meta">Tecnología · desbloqueado · 128 GB</span>
               <div class="price-row"><strong class="price">$839.990</strong><span class="old-price">Antes $949.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 11 13 13 23 10 32 18 41 16 50 21 60 18 70 22 87 8" stroke="#ff6b4a" stroke-width="2"/><path d="M1 29h86" stroke="#ff6b4a" stroke-opacity=".16"/></svg>
             </article>
 
             <article class="deal-card" data-category="tecnologia" data-search="notebook lenovo ideapad slim 3 i5 8gb 512gb 14">
+              <img class="card-image" src="https://p3-ofp.static.pub//fes/cms/2025/02/06/zuuuahb3p1wn1dwbt4luewmt77unqy546098.png" alt="Notebook IdeaPad Slim 3 i5 8GB / 512GB" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Lenovo · PC Factory</span><span class="badge">−5%</span></div>
               <h3 class="product">Notebook IdeaPad Slim 3 i5 8GB / 512GB</h3>
               <span class="meta">Tecnología · 14″ WUXGA · Windows 11</span>
               <div class="price-row"><strong class="price">$529.990</strong><span class="old-price">Antes $559.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 20 12 16 21 20 30 10 40 15 50 12 59 18 69 9 87 12" stroke="#9bc9ff" stroke-width="2"/><path d="M1 29h86" stroke="#9bc9ff" stroke-opacity=".16"/></svg>
             </article>
 
             <article class="deal-card" data-category="hogar electro" data-search="smart tv 55 led 4k tcl google tv">
+              <img class="card-image" src="https://media.falabella.com/falabellaCL/80527209_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Smart TV TCL 55″ LED 4K Google TV" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">TCL · Falabella</span><span class="badge hot">−22%</span></div>
               <h3 class="product">Smart TV TCL 55″ LED 4K Google TV</h3>
               <span class="meta">Hogar · V6C · precio final referencial</span>
               <div class="price-row"><strong class="price">$289.990</strong><span class="old-price">Antes $369.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 5 12 9 22 6 30 15 42 12 52 23 61 17 71 21 87 11" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
 
             <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador inalambrico 18v 2 baterias">
+              <img class="card-image" src="https://cdnx.jumpseller.com/toolcenter/image/61550316/thumb/306/306?1742414401=" alt="Taladro atornillador inalámbrico 18V" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Sodimac · Herramientas</span><span class="badge">−21%</span></div>
               <h3 class="product">Taladro atornillador inalámbrico 18V</h3>
               <span class="meta">Herramientas · kit con 2 baterías</span>
               <div class="price-row"><strong class="price">$629.990</strong><span class="old-price">Antes $799.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen momento</div><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen momento</div><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 20 12 16 21 20 30 10 40 15 50 12 59 18 69 9 87 12" stroke="#9bc9ff" stroke-width="2"/><path d="M1 29h86" stroke="#9bc9ff" stroke-opacity=".16"/></svg>
             </article>
 
             <article class="deal-card" data-category="hogar electro" data-search="freidora de aire 5 litros 1350w">
+              <img class="card-image" src="https://media.falabella.com/falabellaCL/146689231_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Freidora de aire 5 L · 1350W" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">New Line · Ripley</span><span class="badge">−14%</span></div>
               <h3 class="product">Freidora de aire 5 L · 1350W</h3>
               <span class="meta">Electrodomésticos · control 80–200 °C</span>
               <div class="price-row"><strong class="price">$43.990</strong><span class="old-price">Antes $50.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 7 12 9 21 6 30 20 40 17 51 24 60 21 70 26 87 16" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
 
             <article class="deal-card" data-category="tecnologia" data-search="monitor samsung 24 fhd 75hz ips">
+              <img class="card-image" src="https://media.falabella.com/falabellaCL/144574206_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Monitor Samsung 24″ FHD 75Hz IPS" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Samsung · PC Factory</span><span class="badge">−13%</span></div>
               <h3 class="product">Monitor Samsung 24″ FHD 75Hz IPS</h3>
               <span class="meta">Tecnología · FreeSync · 5 ms</span>
               <div class="price-row"><strong class="price">$139.990</strong><span class="old-price">Antes $159.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 11 13 13 23 10 32 18 41 16 50 21 60 18 70 22 87 8" stroke="#ff6b4a" stroke-width="2"/><path d="M1 29h86" stroke="#ff6b4a" stroke-opacity=".16"/></svg>
             </article>
 
             <article class="deal-card" data-category="hogar electro" data-search="aspiradora robot xiaomi s40 pro">
+              <img class="card-image" src="https://media.falabella.com/falabellaCL/80758823_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Aspiradora robot Xiaomi S40 Pro" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Xiaomi · Falabella</span><span class="badge hot">−10%</span></div>
               <h3 class="product">Aspiradora robot Xiaomi S40 Pro</h3>
               <span class="meta">Hogar · aspira y trapea · 15.000 Pa</span>
               <div class="price-row"><strong class="price">$259.990</strong><span class="old-price">Antes $289.990</span></div>
-              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+              <div class="card-bottom"><div class="score"><span class="score-bar"><i mid></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
               <svg class="spark" viewBox="0 0 88 30" fill="none"><path d="M1 5 12 9 22 6 30 15 42 12 52 23 61 17 71 21 87 11" stroke="#d9ff55" stroke-width="2"/><path d="M1 29h86" stroke="#d9ff55" stroke-opacity=".16"/></svg>
             </article>
             <div class="empty" id="empty">No encontramos ofertas de muestra con ese filtro. Prueba otra búsqueda.</div>
@@ -344,51 +354,57 @@
         </div>
         <div class="affiliate-grid">
           <article class="affiliate-card">
+              <img class="card-image" src="https://blog.latam.playstation.com/tachyon/sites/3/2025/06/75b2736f4d402d3445de343b4e0804c63db2fe6d-scaled.jpg?crop_strategy=smart&amp;resize=1088%2C612" alt="PS5 Digital Slim + Astro Bot + GT7" loading="lazy" decoding="async" />
             <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
             <h3 class="product">PS5 Digital Slim + Astro Bot + GT7</h3>
             <span class="meta">Consolas · bundle</span>
-            <div class="price-row"><strong class="price">Ver en ML</strong></div>
-            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/1r96pJD" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+            <div class="price-row"><strong class="price">$682.936</strong><span class="old-price">Antes $729.990</span></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/1r96pJD" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
           </article>
 
           <article class="affiliate-card">
+              <img class="card-image" src="https://media.falabella.com/falabellaCL/147722336_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Samsung Galaxy A07 128GB" loading="lazy" decoding="async" />
             <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
             <h3 class="product">Samsung Galaxy A07 128GB</h3>
             <span class="meta">Tecnología · smartphone</span>
             <div class="price-row"><strong class="price">Ver en ML</strong></div>
-            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2wuwFUn" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2wuwFUn" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
           </article>
 
           <article class="affiliate-card">
+              <img class="card-image" src="https://thinkerfriends.com/wp-content/uploads/2025/04/5-1-600x400.jpg" alt="Notebook HP 15-fc0043la Ryzen 3 8/512" loading="lazy" decoding="async" />
             <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
             <h3 class="product">Notebook HP 15-fc0043la Ryzen 3 8/512</h3>
             <span class="meta">Tecnología · notebook</span>
             <div class="price-row"><strong class="price">Ver en ML</strong></div>
-            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2C1hjcX" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2C1hjcX" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
           </article>
 
           <article class="affiliate-card">
+              <img class="card-image" src="https://m.media-amazon.com/images/I/81Tw-XYc0vL.jpg" alt="Smart TV iFFALCON 32″ HD Google TV" loading="lazy" decoding="async" />
             <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
             <h3 class="product">Smart TV iFFALCON 32″ HD Google TV</h3>
             <span class="meta">Hogar · televisión</span>
             <div class="price-row"><strong class="price">Ver en ML</strong></div>
-            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/27Z6Ees" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/27Z6Ees" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
           </article>
 
           <article class="affiliate-card">
+              <img class="card-image" src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-smart-camera-c201/pc/edbe9464471e4f823b2dae5b1a0ff336.jpg" alt="Xiaomi Smart Camera C201" loading="lazy" decoding="async" />
             <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
             <h3 class="product">Xiaomi Smart Camera C201</h3>
             <span class="meta">Hogar · cámara inteligente</span>
             <div class="price-row"><strong class="price">Ver en ML</strong></div>
-            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2tJbVHa" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2tJbVHa" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
           </article>
 
           <article class="affiliate-card">
+              <img class="card-image" src="https://media.falabella.com/falabellaCL/5696196_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Secador Siegen SG-3035" loading="lazy" decoding="async" />
             <div class="card-top"><span class="store">Mercado Libre</span><span class="affiliate-tag">Afiliado</span></div>
             <h3 class="product">Secador Siegen SG-3035</h3>
             <span class="meta">Belleza · secador de pelo</span>
             <div class="price-row"><strong class="price">Ver en ML</strong></div>
-            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2WYBEUt" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta ↗</a></div>
+            <div class="card-bottom"><span class="affiliate-label">Enlace de afiliado</span><a class="card-action live-link" href="https://meli.la/2WYBEUt" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
           </article>
         </div>
       </section>
