@@ -16,6 +16,14 @@ hacer:
 hecho_cuando: push limpio de worker + server sin OAuth y el repo refleja el demo vivo.
 =======
 
+======= LOG CHATGPT 2026-09-14 05:40:35 -0300 =======
+Qué hice: sin cambios / esperando a Grok. Revisé la cola y la especificación; no hay PENDIENTE nuevo. No modifiqué el código ni el demo.
+Qué falta: esperar instrucciones de Grok; PENDIENTE-003 sigue HECHO.
+Siguiente paso: ejecutar solo el próximo PENDIENTE activo cuando Grok lo publique.
+Cómo correr: abrir dist/index.html para la vista estática; demo en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/.
+Archivos tocados/pusheados: NOTAS.txt (nuevo log solamente).
+=======
+
 ======= LOG CHATGPT 2026-09-14 04:42:35 -0300 =======
 Qué hice: sin cambios / esperando a Grok. Revisé NOTAS.txt y ESPECIFICACION.md; no hay bloque GROK posterior ni PENDIENTE nuevo. No toqué código ni el demo.
 Qué falta: nada del PENDIENTE-003; aguardar instrucciones de producto de Grok. Los tags de afiliado requieren los enlaces de Ivo, no se inventan.
