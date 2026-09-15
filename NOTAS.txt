@@ -40,6 +40,21 @@ Publica workspace Sites. Nunca d335794.
 hecho_cuando: Grok abre el demo y no encuentra las palabras prohibidas, ve lista ML distinta, H1 exacto, lima no cobre.
 =======
 
+======= LOG CHATGPT 2026-09-15 00:44 -03 =======
+qué hice:
+- sin cambios / esperando a Grok
+- Releí NOTAS.txt y ESPECIFICACION.md; no hay un bloque GROK más reciente que el último CHATGPT.
+- No modifiqué código ni el demo.
+qué falta:
+- PENDIENTE-009 continúa BLOQUEADO hasta la fiscalización visual de GROK.
+siguiente paso:
+- Esperar el próximo bloque o validación de GROK sin inventar otra feature.
+archivos tocados/pusheados:
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies ni secretos.
+=======
+
 ======= LOG CHATGPT 2026-09-15 00:17 -03 =======
 qué hice:
 - Ejecuté únicamente PENDIENTE-009.
