@@ -129,8 +129,10 @@
       .alert-form button { height: 46px; padding: 0 18px; border-radius: 10px; border: 0; background: var(--lime); color: var(--ink); font-weight: 700; }
       .alert-form button:disabled { opacity: .65; cursor: wait; }
       .alert-status { min-height: 1.4em; margin: 11px 0 0 !important; color: var(--paper) !important; }
-      .how { margin: 72px 0 64px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 34px; align-items: center; }
-      .how h2 { max-width: 450px; font-size: 43px; line-height: 1.03; margin-bottom: 15px; }
+      .how.shell, .site-footer.shell { width: min(1180px, 100%); padding-inline: 24px; }
+      .how { margin: 72px auto 64px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 34px; align-items: center; overflow: hidden; }
+      .how > * { min-width: 0; }
+      .how h2 { max-width: 100%; font-size: 43px; line-height: 1.03; margin-bottom: 15px; }
       .how-copy { color: var(--muted); max-width: 460px; }
       .steps { display: grid; gap: 11px; }
       .step { display: grid; grid-template-columns: 37px 1fr; gap: 13px; align-items: start; padding: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; }
@@ -176,9 +178,13 @@
       .offer-detail-note { margin: 12px 0 0; }
       .offer-detail-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 20px; padding: 0 17px; border-radius: 10px; background: var(--lime); color: var(--ink); font-weight: 700; }
       .empty { display: none; grid-column: 1 / -1; border: 1px dashed var(--line); padding: 30px; text-align: center; border-radius: 16px; color: var(--muted); }
+      @media (max-width: 1200px) {
+        .how { grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
+        .how h2, .how-copy { max-width: none; }
+      }
       @media (max-width: 850px) {
         .nav a:not(.nav-cta) { display: none; }
-        .deal-layout, .how { grid-template-columns: 1fr; }
+        .deal-layout { grid-template-columns: 1fr; }
       }
       @media (max-width: 580px) {
         .shell { width: min(100% - 28px, 1180px); }
@@ -373,7 +379,7 @@
 
       <section class="shell affiliate-section" id="mercadolibre-afiliado">
         <div class="section-head">
-          <div><h2>En Mercado Libre</h2><p>Enlaces directos de Ivo · confirma precio, stock y despacho en Mercado Libre.</p></div>
+          <div><h2>En Mercado Libre</h2><p>Confirma precio, stock y despacho en Mercado Libre.</p></div>
         </div>
         <div class="affiliate-list">
           <a class="affiliate-row" href="https://meli.la/1r96pJD" target="_blank" rel="nofollow sponsored noopener noreferrer">
@@ -416,9 +422,8 @@
 
       <section class="shell how" id="como-funciona">
         <div>
-          <div class="eyebrow"><span class="eyebrow-dot"></span> La lógica detrás de cada alerta</div>
-          <h2>Comprar mejor no debería requerir 20 pestañas.</h2>
-          <p class="how-copy">Ahorra Real convierte precios dispersos en una decisión simple: qué es, cuánto costaba de verdad y si ahora es un buen momento para comprar.</p>
+          <h2>Cómo funciona</h2>
+          <p class="how-copy">Precio y contexto para comprar.</p>
         </div>
         <div class="steps">
           <div class="step"><span class="step-num">1</span><div><strong>Buscas o defines un objetivo</strong><span>Por producto, categoría o presupuesto máximo.</span></div></div>
@@ -431,7 +436,7 @@
     <footer class="shell site-footer">
       <strong class="footer-brand">Ahorra Real · Chile</strong>
       <p class="affiliate-notice">Algunos enlaces son de afiliado. Podemos recibir comisión sin costo extra para ti.</p>
-      <a class="affiliate-profile" href="https://www.mercadolibre.cl/social/salgadoivo?matt_word=salgadoivo&amp;matt_tool=82431153" target="_blank" rel="nofollow sponsored noopener noreferrer">SALGADOIVO · Ver más en Mercado Libre (afiliado)</a>
+      <a class="affiliate-profile" href="https://www.mercadolibre.cl/social/salgadoivo?matt_word=salgadoivo&amp;matt_tool=82431153" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver más ofertas en Mercado Libre</a>
     </footer>
 
     <div class="offer-detail-wrap" id="offerDetail" aria-hidden="true">
