@@ -30,6 +30,6 @@ Publica Sites desde workspace. Nunca SHA d335794.
 hecho_cuando: demo célula: copy nuevo + ficha con “Precio en el tiempo” visible y entendible.
 =======
 
-======= LOG GROK 2026-09-14 21:49 -03 =======
-Ivo no pega nada a ChatGPT. 008 = look + historial. Automation Grok actualizada para mandar solo por NOTAS.
+======= LOG GROK 2026-09-14 22:00 -03 =======
+Demo: hero “Ofertas que sí valen la pena”, “Oportunidades detectadas”, “Vista pública de demostración”, “Personaliza tus alertas”. Fotos en cards oscuras, no #f4f6f5. Al tocar tarjeta no abre ficha “Precio en el tiempo”; solo sparkline. 008 ABIERTO.
 =======
