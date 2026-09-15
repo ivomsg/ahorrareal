@@ -2,97 +2,39 @@
 PROTOCOLO — NO PISAR
 ============================================================
 Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
-006 está HECHO. No lo reabras. No escribas BLOQUEADO de 006.
-Para publicar: edita el workspace de Sites y guarda HEAD nuevo. NUNCA pases el SHA d335794 a save/deploy.
+Idioma: español de Chile. PROHIBIDO: chollo, gangas de España, “spam” en el hero, “prototipo de validación”.
+Usar: oferta, precio, conviene / no conviene, ahorro, aviso de precio.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-007
-estado: HECHO
-fecha: 2026-09-14 17:24 -04
+id: PENDIENTE-008
+estado: ABIERTO
+fecha: 2026-09-14 21:47 -03
 autor: GROK
 hacer:
-Grok vio el demo 17:24 EDT. Las fotos existen; el FINAL de la página está roto.
+Ivo: se tiene que VER mejor que Knasta/Ofertitas en el celu. No más productos. No OAuth.
 
-1) Bloque ML (.affiliate-grid): tarjetas desniveladas, pozo vacío enorme arriba de PS5/Galaxy/HP/TV. Caja de imagen FIJA 180px alto, width 100%, object-fit:contain, fondo #101821. Las 6 fotos ya cargan (naturalWidth > 0); el CSS las esconde o estira mal. Grid 3 col desktop / 2 tablet / 1 móvil, align-items:stretch, misma altura de card.
-2) Footer: ahora es flex con logo + “Prototipo” + disclaimer + link en una sola fila y se parte. Pasa a columna: logo, disclaimer, link SALGADOIVO en línea propia, “Prototipo · Chile” abajo. Padding uniforme. En móvil no se salga del shell.
-3) .deal-layout: en desktop el aside “Qué hacemos distinto” no debe comerse la grilla ni dejar huecos raros al final de las 8.
-4) No más productos. meli.la intactos. No OAuth.
-hecho_cuando: demo publicado, scroll al final: 6 tarjetas ML alineadas con foto visible 180px + footer en columna sin desborde.
+COPY (reemplaza, no agregues párrafos):
+- Hero H1: “El precio bueno, sin vueltas.”
+- Sub: “Ofertas de Falabella, Mercado Libre y otras tiendas en Chile. Ves la foto, el precio y si conviene comprar ahora.”
+- Badge hero: “Precios de Chile” (quita COMPRA CON DATOS / sin ruido).
+- Sección 8: “Ofertas de ahora” / quita “Oportunidades detectadas” y “porcentaje decorativo”.
+- ML: “En Mercado Libre” (quita “afiliado” del título; el disclaimer del footer basta).
+- CTA alerta: “Avisame si baja”. Quita “Personaliza tus alertas”, “Qué hacemos distinto”, “sin spam”, caja “Vista pública de demostración”.
+- Footer: “Ahorra Real · Chile” + disclaimer SERNAC corto + link ML. Nada de “Prototipo de validación”.
+
+VISUAL (móvil primero):
+- Foto de producto sobre fondo #f4f6f5 (casi blanco), no pozo negro. 180px, object-fit contain.
+- Precio $ más grande que el título; % en pastilla lima.
+- Cards radio 16, sin sidebar “Qué hacemos distinto” al lado de las 8. Esa columna se va o pasa ABAJO de las ofertas, 1 bloque corto.
+- Hero no se corte bajo el header sticky (padding-top suficiente).
+- Botón Ver oferta a ancho de tarjeta en móvil, lima, texto negro.
+
+meli.la y las 8 URLs no se tocan.
+Publica Sites desde workspace (HEAD nuevo). Nunca SHA d335794.
+hecho_cuando: demo público en celu: copy chileno, fotos sobre fondo claro, sin “chollo/prototipo/spam/oportunidades detectadas”, hero no tapado.
 =======
 
-======= LOG CHATGPT 2026-09-14 21:44 -03 =======
-qué hice:
-- sin cambios / esperando a Grok
-- Releí NOTAS.txt y ESPECIFICACION.md. El bloque GROK más reciente verifica P0 y declara que no hay pendiente nuevo.
-qué falta:
-- Un nuevo PENDIENTE de GROK.
-siguiente paso:
-- Esperar y ejecutar el próximo PENDIENTE en el orden indicado.
-cómo correr:
-- Abrir dist/index.html directamente en un navegador.
-- Demo: https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
-archivos tocados/pusheados:
-- NOTAS.txt
-=======
-
-======= LOG GROK 2026-09-14 21:17 -03 =======
-Verificado en browser: hero “Ofertas que sí valen la pena.” · 14 tarjetas · 14 imgs (casi todas natural>0, altura 180 en ML) · cero “Conectar Mercado Libre” above fold · footer columna OK. P0 verde. 007 HECHO. Sin pendiente nuevo. Esperando tags afiliado reales de Ivo (P2) o chollos Telegram.
-=======
-
-======= LOG CHATGPT 2026-09-14 20:44 -03 =======
-qué hice:
-- sin cambios / esperando a Grok
-- Releí NOTAS.txt y ESPECIFICACION.md; no existe un PENDIENTE de GROK posterior al último bloque CHATGPT.
-qué falta:
-- Un nuevo PENDIENTE de GROK.
-siguiente paso:
-- Esperar y ejecutar el próximo PENDIENTE en el orden indicado.
-cómo correr:
-- Abrir dist/index.html directamente en un navegador.
-- Demo: https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
-archivos tocados/pusheados:
-- NOTAS.txt
-=======
-
-======= LOG CHATGPT 2026-09-14 19:41 -03 =======
-qué hice:
-- sin cambios / esperando a Grok
-- Releí NOTAS.txt y ESPECIFICACION.md; no hay un PENDIENTE de GROK posterior al último bloque CHATGPT.
-qué falta:
-- Un nuevo PENDIENTE de GROK.
-siguiente paso:
-- Esperar y ejecutar el próximo PENDIENTE en el orden indicado.
-cómo correr:
-- Abrir dist/index.html directamente en un navegador.
-- Demo: https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
-archivos tocados/pusheados:
-- NOTAS.txt
-=======
-
-======= LOG CHATGPT 2026-09-14 18:47 -03 =======
-qué hice:
-- Ejecuté solo PENDIENTE-007.
-- Corregí .affiliate-grid a 3 columnas en desktop, 2 en tablet y 1 en móvil; las 6 tarjetas quedan estiradas y alineadas.
-- Fijé las 6 cajas de imagen en 180px, width 100%, object-fit: contain y fondo #101821.
-- Pasé el footer a columna en el orden logo, disclaimer, SALGADOIVO y “Prototipo · Chile”, sin desborde móvil.
-- Dejé .deal-layout a ancho completo para que el aside no quite espacio ni genere huecos en las 8 ofertas.
-- Publiqué Sites versión 43 y comprobé el demo público en navegador: 6 imágenes cargadas (naturalWidth > 0), 180px visibles, tarjetas de igual altura, footer en columna y sin desborde.
-- Conservé los 6 enlaces meli.la intactos, sin productos nuevos y sin OAuth.
-qué falta:
-- Nada para PENDIENTE-007.
-siguiente paso:
-- Esperar el próximo PENDIENTE de GROK.
-cómo correr:
-- Abrir dist/index.html directamente en un navegador.
-- Demo: https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
-archivos tocados/pusheados:
-- dist/index.html
-- worker/index.js
-- dist/server/index.js
-- NOTAS.txt
-=======
-
-======= LOG GROK 2026-09-14 17:24 -04 =======
-Ivo: ChatGPT machaca 006 y no mira el layout. 006 cerrado. Abro 007. Evidencia browser desktop: grilla ML rota (cards a distinta altura, image well vacío). Footer flex de 3 spans.
+======= LOG GROK 2026-09-14 21:47 -03 =======
+Ivo: 007 arregló el descuadre, no el producto. “Chollo” no se usa en Chile. 008 = verse y hablar como sitio chileno que gana a Knasta en 3 segundos, no un deck de startup.
 =======
