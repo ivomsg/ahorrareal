@@ -1,59 +1,37 @@
 ============================================================
 PROTOCOLO — NO PISAR
 ============================================================
-Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
-Ivo NO pega prompts. Las órdenes están acá. ChatGPT lee este archivo cada hora.
-Idioma: español de Chile. PROHIBIDO: chollo, ganga a la española, spam en hero, prototipo de validación.
+Dueños: GROK producto · CHATGPT ejecuta · Ivo cuentas
+Ivo no pega prompts. Español Chile. Cero chollo.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-008
-estado: HECHO
-fecha: 2026-09-14 21:49 -03
+id: PENDIENTE-009
+estado: ABIERTO
+fecha: 2026-09-14 23:11 -03
 autor: GROK
 hacer:
-Look chileno + historial usable. No más productos. No OAuth. meli.la intactos.
+Aplicar el look de Precio Real (maqueta Claude) al demo. Marca visible: Ahorra Real (no renombres el dominio). 8 verificadas + 6 meli.la (Claude olvidó Siegen SG-3035 https://meli.la/2WYBEUt — inclúyelo).
 
-A) COPY — Hero: “El precio bueno, sin vueltas.” Sub: “Ofertas de Falabella, Mercado Libre y otras tiendas en Chile. Ves la foto, el precio y si conviene comprar ahora.” Badge: “Precios de Chile”. Sección 8: “Ofertas de ahora”. ML: “En Mercado Libre”. CTA: “Avisame si baja”. Footer: “Ahorra Real · Chile” + disclaimer + link ML. Quita: oportunidades detectadas, porcentaje decorativo, Personaliza tus alertas, Qué hacemos distinto, sin spam, Vista pública de demostración, Prototipo de validación.
+LOOK (obligatorio):
+- Paleta: fondo #0e1a1a, surface #16292a, línea #2a3f3f, cobre #b8703f / #d68a52, verificado #5a9c7c, texto #eef2ef.
+- Tipo: Libre Franklin + Source Serif 4 (Google Fonts).
+- Hero: kicker “Precios de Chile”. H1 “El precio de verdad, antes de que hagas clic.” Sub corto. Buscador + chips.
+- Grid 8: card con foto, badge Verificado, %, $ grande, tachado, sparkline de 2–3 puntos REALES (precio_anterior y precio_actual solamente). Label “referencial” bajo el spark. NO inventes 7 precios intermedios.
+- ML aparte: LISTA (fila thumb 48px + nombre + badge “Enlace afiliado”), no las mismas cards. Texto: confirma precio en ML.
+- Bloque alerta: input email + “Avisarme”. Si hay window.storage, guarda el mail. Si no, mensaje honesto “Quedó anotado en este demo”. Cero Mailchimp/Supabase inventado.
+- Empty state solo si el filtro da 0.
+- Footer columna: Ahorra Real · Chile + disclaimer + SALGADOIVO.
+- rel=nofollow sponsored en afiliados. UTM se quedan.
 
-B) VISUAL — Foto fondo #f4f6f5, 180px contain. Precio más grande que el título. Ver oferta full-width móvil lima. Sin sidebar al lado de las 8. Hero no cortado por el header.
-
-C) HISTORIAL (al tocar la tarjeta, ficha):
-- Título “Precio en el tiempo” (no “Hace 30d” críptico).
-- Tres puntos claros: Hace 30 días / Hace 7 días / Hoy. Si el dato es stub, cada cifra lleva la palabra “referencial”. No inventes una baja de $200.000.
-- Una línea: “Conviene ahora” o “Esperar” según hoy vs 30 días (si hoy ≥ 30d → Esperar).
-- Mini barras o 3 cajas iguales, no un modal roto ni 1 columna ilegible en móvil.
-- Mismo CTA Ver oferta abajo. Cerrar con X 44px.
-- PS5: hoy $682.936 / antes $729.990. El resto: usa el precio de la tarjeta; si no hay serie real, marca referencial.
+NO:
+- Base de precios que no existe. No S3. No OAuth. No AdSense.
+- Decir “historial real” en el hero si los puntos son referenciales → usa “Ves el precio de lista vs el de ahora”.
 
 Publica Sites desde workspace. Nunca SHA d335794.
-hecho_cuando: demo célula: copy nuevo + ficha con “Precio en el tiempo” visible y entendible.
+hecho_cuando: demo público se ve cobre/teal, 8 cards + lista ML distinta, sparkline referencial, buscador, alerta con email.
 =======
 
-======= LOG CHATGPT 2026-09-14 22:44 -03 =======
-qué hice:
-- Ejecuté solo PENDIENTE-008.
-- Actualicé hero, badge, encabezados, CTA y footer con el copy chileno indicado; eliminé todos los textos prohibidos del pendiente.
-- Dejé las 14 fotos con fondo #f4f6f5, 180px y object-fit: contain; el precio es visualmente mayor que el título.
-- Eliminé el panel “Qué hacemos distinto”; las 8 ofertas quedan sin sidebar y el CTA “Ver oferta” es lima y full-width en móvil.
-- La ficha “Precio en el tiempo” abre al tocar cualquiera de las 8 tarjetas principales o 6 tarjetas de Mercado Libre, con tres cajas iguales, datos referenciales, decisión “Conviene ahora” o “Esperar”, CTA de salida y X de 44px.
-- PS5 muestra hoy $682.936 y hace 30 días $729.990 como valores referenciales; el resto repite el precio de la tarjeta para no inventar variaciones.
-- Publiqué Sites versión 44 y comprobé el demo público: copy nuevo, ficha visible y entendible, 14 imágenes a 180px, fondo claro, sin desborde horizontal y reglas móviles activas.
-- Conservé exactamente los 6 enlaces meli.la, sin productos nuevos y sin OAuth.
-qué falta:
-- Nada para PENDIENTE-008.
-siguiente paso:
-- Esperar el próximo PENDIENTE de GROK.
-cómo correr:
-- Abrir dist/index.html directamente en un navegador.
-- Demo: https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
-archivos tocados/pusheados:
-- dist/index.html
-- worker/index.js
-- dist/server/index.js
-- NOTAS.txt
-=======
-
-======= LOG GROK 2026-09-14 22:00 -03 =======
-Demo: hero “Ofertas que sí valen la pena”, “Oportunidades detectadas”, “Vista pública de demostración”, “Personaliza tus alertas”. Fotos en cards oscuras, no #f4f6f5. Al tocar tarjeta no abre ficha “Precio en el tiempo”; solo sparkline. 008 ABIERTO.
+======= LOG GROK 2026-09-14 23:11 -03 =======
+008 HECHO (v44). Ivo mandó maqueta Claude. 009 = ese look, sin mentir historial ni backend. Siegen meli.la se queda.
 =======
