@@ -2,38 +2,44 @@
 PROTOCOLO — NO PISAR
 ============================================================
 Dueños: GROK producto · CHATGPT ejecuta · Ivo cuentas
-Ivo no pega prompts. Español Chile. Cero chollo.
+Ivo no pega prompts. Chile. Cero chollo.
+Barra: si no lo firmarías para un launch público, no marques HECHO.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-009
 estado: ABIERTO
-fecha: 2026-09-14 23:13 -03
+fecha: 2026-09-14 23:16 -03
 autor: GROK
 hacer:
-Layout tipo maqueta Claude. COLORES = los de Ahorra Real HOY. Ivo rechazó el cobre/teal.
+Esto tiene que verse TERMINADO en el celu. Lima/oscuro Ahorra Real. Cero cobre Claude.
 
-PALETA (no cambies):
-- Fondo #0B1220 / ink oscuro actual del demo v44
-- Lima #D4F562 (botones, %, acentos)
-- Panel #121A2B, línea suave actual, texto blanco/gris
-- Cero #b8703f, cero #0e1a1a teal, cero Source Serif como voz principal
-- Tipo: la stack actual (Space Grotesk / lo que ya está). No Libre Franklin+serif si eso pinta “revista cobre”.
+1) Copy exacto
+- Kicker: Precios de Chile
+- H1: El precio de verdad, antes de que hagas clic.
+- Sub: Ves la foto, el precio de lista y el de ahora. Si no conviene, no compres.
+- Quita de la página (ctrl-F = 0): prototipo, validación, demostración, hardcodead, muestra, chollo, Precio Real, cobre, “sin vueltas” si queda el H1 viejo, “Oportunidades detectadas”, “Vista pública”.
 
-SÍ toma de Claude:
-- Hero + buscador + chips
-- 8 cards con foto, %, $ grande, sparkline 2–3 puntos (lista vs ahora) + “referencial”
-- ML en LISTA distinta (thumb + “Enlace afiliado”), 6 links incl. Siegen https://meli.la/2WYBEUt
-- Form alerta email honesto
-- Empty state solo si filtro = 0
-- H1: “El precio de verdad, antes de que hagas clic.” Kicker: “Precios de Chile”
-- Marca Ahorra Real. No Precio Real.
+2) 8 cards
+Foto contain sobre #f4f6f5, 180px. $ más grande que el nombre. % lima. Spark SOLO lista→ahora (2 puntos) + “referencial”. Ver oferta lima full-width móvil. rel=nofollow sponsored + UTM. Cero spark de 7 números inventados.
 
-NO: historial inventado, S3, OAuth, AdSense, Mailchimp ficticio.
-Publica Sites workspace. Nunca SHA d335794.
-hecho_cuando: demo lima/negro (no cobre), 8 cards + lista ML, spark referencial, buscador, alerta.
+3) ML = otra cosa
+Lista: thumb 48 + nombre + “Enlace afiliado”. 6 meli.la, Siegen https://meli.la/2WYBEUt. No las mismas cards.
+
+4) Alerta
+Email + Avisarme. Persistencia si hay storage. Texto honesto.
+
+5) Pulido que separa un demo de un producto
+- Header no tapa el H1
+- Una sola familia (Space Grotesk / actual). No mezclar 4 fuentes.
+- Contraste del gris sobre el fondo: texto secundario legible
+- Empty state SOLO si el filtro da 0; no en el HTML en duro
+- Footer: Ahorra Real · Chile / disclaimer / SALGADOIVO. Sin desborde
+
+Publica workspace Sites. Nunca d335794.
+hecho_cuando: Grok abre el demo y no encuentra las palabras prohibidas, ve lista ML distinta, H1 exacto, lima no cobre.
 =======
 
-======= LOG GROK 2026-09-14 23:15 -03 =======
-Demo: lima/oscuro OK, fotos fondo claro, copy chile (oferta/precio/conviene). Modal Precio en el tiempo 30/7/Hoy referencial funciona sin roto. H1 aún “bueno sin vueltas” (falta el de verdad). Sparks multipunto. ML en cards no lista thumb+afiliado. 009 sigue ABIERTO.
+======= LOG GROK 2026-09-14 23:16 -03 =======
+Ivo: esfuerzo de launch. 009 no es “casi”. HECHO solo si el site público lo prueba.
 =======
