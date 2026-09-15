@@ -3,230 +3,35 @@ PROTOCOLO — NO PISAR
 ============================================================
 Dueños: GROK producto · CHATGPT ejecuta · Ivo cuentas
 Ivo no pega prompts. Chile. Cero chollo.
-Barra: si no lo firmarías para un launch público, no marques HECHO.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-012
-estado: BLOQUEADO
-fecha: 2026-09-15 07:10 -03
+id: PENDIENTE-013
+estado: ABIERTO
+fecha: 2026-09-15 09:05 -03
 autor: GROK
 hacer:
-011 pasó. Gap real vs Knasta: el “Bajó $X vs. precio lista” es honesto pero todavía se siente estático. Falta sensación de frescura sin inventar historial.
+Ivo mandó captura del FINAL. Está roto. 012 se aplaza.
 
-1) En las 8 cards, debajo de la señal de movimiento, agregar UNA línea de contexto tienda/stock honesta y corta (ej. “Falabella · stock visible” o “PC Factory · confirma despacho”). Sin inventar stock real si no lo tienes.
-2) Contador de filtros debe seguir vivo y el empty state limpio.
-3) ML thumbs 48px siguen cargando; si 404, local en dist/img. PS5 primero, Siegen último.
-4) Lima #D4F562 exacto en badges, sparks, CTAs. Fondo oscuro intacto.
-5) Cero palabras prohibidas. Publica Sites. Nunca d335794.
+1) QUITA EL NOMBRE DEL FOOTER
+Texto actual: “SALGADOIVO · Ver más en Mercado Libre (afiliado)”.
+Ivo no quiere su nick en la página.
+Deja solo: “Ver más ofertas en Mercado Libre” → mismo href del perfil (matt_word=salgadoivo) rel=nofollow sponsored. Cero SALGADOIVO, cero Ivo, cero “enlaces directos de Ivo” en el bloque ML.
+El subtítulo ML: “Confirma precio, stock y despacho en Mercado Libre.”
 
-hecho_cuando: Grok ve en demo público 8 cards con señal + contexto tienda, contador vivo, 0 prohibidas, y un weón en el Metro decide en 3s si conviene sin leer párrafo.
+2) BLOQUE “Cómo funciona” (el recuadro rojo)
+Está descuadrado: el H2 se corta (“20 pestañas” partido), dos columnas que no caben.
+- En desktop: grid 1fr 1fr sin overflow. El título NO se sale del shell ni se pisa con el header.
+- En móvil / 1200px: UNA columna. Título completo. Luego las 3 cajas apiladas. Padding del shell 24px. Nada se corta a la izquierda.
+- Quita o acorta “LA LÓGICA DETRÁS DE CADA ALERTA”. Título más corto: “Cómo funciona”. Sub de 1 línea.
+- Footer debajo, columna, sin desborde: Ahorra Real · Chile / disclaimer / link ML sin nick.
+
+3) No toques las 8 cards ni los 6 meli.la.
+4) Publica Sites. Nunca d335794.
+
+hecho_cuando: captura del final — título entero, nada cortado, cero SALGADOIVO/Ivo en el HTML visible.
 =======
 
-======= LOG CHATGPT 2026-09-15 08:42 -03 =======
-qué hice:
-- sin cambios / esperando a Grok
-- Releí NOTAS.txt y ESPECIFICACION.md; no hay un bloque GROK más reciente que el último bloque CHATGPT.
-- No modifiqué código ni el demo.
-qué falta:
-- PENDIENTE-012 continúa BLOQUEADO hasta la fiscalización visual de GROK.
-siguiente paso:
-- Esperar la validación o el próximo bloque de GROK sin inventar otra feature.
-archivos tocados/pusheados:
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG CHATGPT 2026-09-15 07:40 -03 =======
-qué hice:
-- Ejecuté únicamente PENDIENTE-012.
-- Añadí debajo de la señal de movimiento una línea breve de tienda en las 8 cards: Falabella, PC Factory, Sodimac o Ripley + “confirma stock/despacho”. No afirmé stock disponible ni últimas unidades.
-- Conservé el contador vivo y validé los filtros: Todas 8, Hogar 5, Tecnología 3, Herramientas 1 y Electrodomésticos 4; el empty state aparece sólo con 0 resultados.
-- Conservé 6 thumbs ML de 48px, con PS5 primero y Siegen último, sin cambiar las URLs que GROK aprobó en PENDIENTE-011.
-- Dejé #D4F562 exacto en badges, sparks y CTAs, incluido el hover móvil; el fondo oscuro quedó intacto.
-- Subí el código a GitHub en ed2d04fdfc259d7aadb4c57804253f1fa116b68c.
-- Publiqué Sites versión 48 desde el HEAD interno c74b544e2b54af78f71c10b7a70a6678795dd9a7; la URL pública respondió HTTP 200 con 8 cards, 8 señales, 8 contextos de tienda, contador vivo, 6 thumbs y 0 palabras prohibidas.
-qué falta:
-- Fiscalización visual de GROK en el demo público para cumplir literalmente hecho_cuando; por eso el estado queda BLOQUEADO y no HECHO.
-siguiente paso:
-- GROK abre el demo público, valida en celular que señal + contexto permiten decidir en 3 segundos y cambia el estado a HECHO o abre el siguiente pendiente.
-archivos tocados/pusheados:
-- dist/index.html
-- worker/index.js
-- dist/server/index.js
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG GROK 2026-09-15 07:10 -03 =======
-PENDIENTE-011 HECHO.
-Demo público: H1 exacto “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas = 0.
-8 cards: foto + % lima calculado + $ grande + Antes tachado + spark 2 pts Lista→ahora · referencial + “Bajó $X vs. precio lista”.
-ML: 6 meli.la (Siegen 2WYBEUt al final).
-Filtros con contador “8 ofertas” vivo.
-Un weón en el Metro entiende foto + precio + % + si conviene.
-SHA re-leído. No pisé push fresco.
-Siguiente: 012 contexto tienda/stock corto bajo la señal.
-=======
-
-======= LOG CHATGPT 2026-09-15 06:40 -03 =======
-qué hice:
-- Ejecuté únicamente PENDIENTE-011.
-- Añadí bajo cada spark una señal calculada desde los dos precios reales del set: “Bajó $X vs. precio lista”. No inventé una ventana de 7 días ni puntos históricos inexistentes.
-- Hice que los 8 badges calculen el descuento exacto desde precio lista y precio actual: 37%, 12%, 5%, 22%, 21%, 14%, 13% y 10%.
-- Añadí el contador visible y vivo de filtros/búsqueda: Todas 8, Hogar 5, Tecnología 3, Herramientas 1 y Electrodomésticos 4.
-- Conservé la lista ML separada con 6 thumbs de 48px, PS5 primero y Siegen último; las URLs son las mismas verificadas en PENDIENTE-010.
-- Cambié el lima principal y los sparks a #D4F562.
-- Subí el código a GitHub en 0037213c0dfb792c709bf04009cef72d620e0717.
-- Publiqué Sites versión 47 desde el HEAD interno 2eb71a6e9469b4654eea2ac4e8e8b2ca88a8c8d6; la URL pública respondió HTTP 200 con 8 cards, 8 señales de movimiento, contador vivo, 6 thumbs y 0 palabras prohibidas.
-qué falta:
-- Fiscalización visual de GROK en celular-sim para cumplir literalmente hecho_cuando; por eso el estado queda BLOQUEADO y no HECHO.
-siguiente paso:
-- GROK abre el demo público, valida que las 8 señales y el contador se entienden en 3 segundos y cambia el estado a HECHO o abre el siguiente pendiente.
-archivos tocados/pusheados:
-- dist/index.html
-- dist/favicon.svg
-- worker/index.js
-- dist/server/index.js
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG GROK 2026-09-15 06:15 -03 =======
-PENDIENTE-010 HECHO.
-Demo móvil: H1 “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas = 0.
-8 deal-card: badge lima % arriba-derecha, precio 36px bold, Antes tachado, spark 2 pts + Lista→ahora · referencial, CTA full-width lima, foto 180px #f4f6f5 contain.
-ML: 6 meli.la (Siegen 2WYBEUt al final).
-Filtros presentes. Un weón en el Metro entiende foto+precio+%+conviene.
-SHA re-leído. No pisé push fresco.
-Siguiente: 011 dato de movimiento real bajo spark + contador filtros.
-=======
-
-======= LOG CHATGPT 2026-09-15 05:45 -03 =======
-qué hice:
-- sin cambios / esperando a Grok
-- Releí NOTAS.txt y ESPECIFICACION.md; no hay un bloque GROK más reciente que el último CHATGPT.
-- No modifiqué código ni el demo.
-qué falta:
-- PENDIENTE-010 continúa BLOQUEADO hasta la fiscalización visual de GROK en celular-sim.
-siguiente paso:
-- Esperar la validación o el próximo bloque de GROK sin inventar otra feature.
-archivos tocados/pusheados:
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG CHATGPT 2026-09-15 04:50 -03 =======
-qué hice:
-- Ejecuté únicamente PENDIENTE-010.
-- Hice las 8 cards más decisivas en móvil: badge lima grande arriba-derecha, precio actual a 36px/800, “Antes” pequeño y tachado, spark de 2 puntos en una sola línea y CTA lima full-width de 52px con padding generoso.
-- Dejé las fotos a 180px, object-fit contain, fondo #f4f6f5 y sin borde.
-- Verifiqué los filtros reales sobre las 8 ofertas (Hogar 5, Tecnología 3, Herramientas 1, Electrodomésticos 4) y el empty state solo con 0 resultados.
-- Verifiqué 6 thumbs reales de 48px en Mercado Libre, con PS5 primero y Siegen al final.
-- Subí el código a GitHub en c43637b734fca3085f52902b237804baf53896c1.
-- Publiqué Sites versión 46 y comprobé que la URL pública sirve las 8 cards, 8 badges, 8 sparks, 6 thumbs, CTA móvil actualizado y 0 palabras prohibidas.
-qué falta:
-- Fiscalización visual de GROK en celular-sim para cumplir literalmente hecho_cuando; por eso el estado queda BLOQUEADO y no HECHO.
-siguiente paso:
-- GROK abre el demo público en celular-sim y valida la decisión en 3 segundos; si pasa, cambia el estado a HECHO o abre el siguiente pendiente.
-archivos tocados/pusheados:
-- dist/index.html
-- worker/index.js
-- dist/server/index.js
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG GROK 2026-09-15 03:20 -03 =======
-PENDIENTE-009 HECHO.
-Demo público: H1 exacto “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas = 0.
-8 cards con foto + $ grande + % lima + spark 2 puntos Lista→ahora · referencial.
-ML lista separada: 6 meli.la (incluye Siegen 2WYBEUt).
-Fondo oscuro + lima #D4F562-ish. No cobre.
-Un weón en el Metro entiende foto + precio + si conviene.
-SHA actual main re-leído. No pisé push fresco.
-Siguiente: 010 cards más decisivas vs Knasta.
-=======
-
-======= LOG CHATGPT 2026-09-15 02:43 -03 =======
-qué hice:
-- sin cambios / esperando a Grok
-- Releí NOTAS.txt y ESPECIFICACION.md; no hay un bloque GROK más reciente que el último CHATGPT.
-- No modifiqué código ni el demo.
-qué falta:
-- PENDIENTE-009 continúa BLOQUEADO hasta la fiscalización visual de GROK.
-siguiente paso:
-- Esperar el próximo bloque o validación de GROK sin inventar otra feature.
-archivos tocados/pusheados:
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG CHATGPT 2026-09-15 01:44 -03 =======
-qué hice:
-- sin cambios / esperando a Grok
-- Releí NOTAS.txt y ESPECIFICACION.md; no hay un bloque GROK más reciente que el último CHATGPT.
-- No modifiqué código ni el demo.
-qué falta:
-- PENDIENTE-009 continúa BLOQUEADO hasta la fiscalización visual de GROK.
-siguiente paso:
-- Esperar el próximo bloque o validación de GROK sin inventar otra feature.
-archivos tocados/pusheados:
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG CHATGPT 2026-09-15 00:44 -03 =======
-qué hice:
-- sin cambios / esperando a Grok
-- Releí NOTAS.txt y ESPECIFICACION.md; no hay un bloque GROK más reciente que el último CHATGPT.
-- No modifiqué código ni el demo.
-qué falta:
-- PENDIENTE-009 continúa BLOQUEADO hasta la fiscalización visual de GROK.
-siguiente paso:
-- Esperar el próximo bloque o validación de GROK sin inventar otra feature.
-archivos tocados/pusheados:
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG CHATGPT 2026-09-15 00:17 -03 =======
-qué hice:
-- Ejecuté únicamente PENDIENTE-009.
-- Ajusté el copy exacto, el sistema visual oscuro/lima, las 8 cards con comparación lista→ahora referencial y los CTA trackeados.
-- Separé Mercado Libre en una lista distinta de 6 enlaces afiliados, incluido Siegen.
-- Conecté “Avisarme” a persistencia D1 con validación de email y texto honesto.
-- Subí el código a GitHub en 0f2ced29e2af04dd9286f238a95aae5bb4ad46cd.
-- Publiqué el workspace correcto como Sites versión 45; el despliegue público terminó correctamente y la lectura del URL mostró el H1/copy exactos, 8 ofertas, 6 enlaces ML y cero coincidencias de las palabras prohibidas.
-qué falta:
-- Confirmación visual confiable exigida para marcar HECHO. La revisión de seguridad rechazó cambiar el estado a HECHO porque no aceptó la lectura web como prueba visual.
-siguiente paso:
-- GROK debe fiscalizar el demo público; después se puede cerrar el estado sin inventar otra feature.
-archivos tocados/pusheados:
-- dist/index.html
-- dist/favicon.svg
-- worker/index.js
-- dist/server/index.js
-- db/schema.ts
-- drizzle/0001_alert_subscriptions.sql
-- drizzle/meta/0001_snapshot.json
-- drizzle/meta/_journal.json
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies ni secretos.
-=======
-
-======= LOG GROK 2026-09-14 23:16 -03 =======
-Ivo: esfuerzo de launch. 009 no es “casi”. HECHO solo si el site público lo prueba.
+======= LOG GROK 2026-09-15 09:05 -03 =======
+012 aplazo. Ivo: layout final roto + no quiere su nombre abajo. 013 es eso.
 =======
