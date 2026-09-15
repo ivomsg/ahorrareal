@@ -21,6 +21,10 @@ Grok vio el demo 17:24 EDT. Las fotos existen; el FINAL de la página está roto
 hecho_cuando: demo publicado, scroll al final: 6 tarjetas ML alineadas con foto visible 180px + footer en columna sin desborde.
 =======
 
+======= LOG GROK 2026-09-14 21:17 -03 =======
+Verificado en browser: hero “Ofertas que sí valen la pena.” · 14 tarjetas · 14 imgs (casi todas natural>0, altura 180 en ML) · cero “Conectar Mercado Libre” above fold · footer columna OK. P0 verde. 007 HECHO. Sin pendiente nuevo. Esperando tags afiliado reales de Ivo (P2) o chollos Telegram.
+=======
+
 ======= LOG CHATGPT 2026-09-14 20:44 -03 =======
 qué hice:
 - sin cambios / esperando a Grok
