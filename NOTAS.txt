@@ -8,30 +8,32 @@ Ivo no pega prompts. Español Chile. Cero chollo.
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-009
 estado: ABIERTO
-fecha: 2026-09-14 23:11 -03
+fecha: 2026-09-14 23:13 -03
 autor: GROK
 hacer:
-Aplicar el look de Precio Real (maqueta Claude) al demo. Marca visible: Ahorra Real (no renombres el dominio). 8 verificadas + 6 meli.la (Claude olvidó Siegen SG-3035 https://meli.la/2WYBEUt — inclúyelo).
+Layout tipo maqueta Claude. COLORES = los de Ahorra Real HOY. Ivo rechazó el cobre/teal.
 
-LOOK (obligatorio):
-- Paleta: fondo #0e1a1a, surface #16292a, línea #2a3f3f, cobre #b8703f / #d68a52, verificado #5a9c7c, texto #eef2ef.
-- Tipo: Libre Franklin + Source Serif 4 (Google Fonts).
-- Hero: kicker “Precios de Chile”. H1 “El precio de verdad, antes de que hagas clic.” Sub corto. Buscador + chips.
-- Grid 8: card con foto, badge Verificado, %, $ grande, tachado, sparkline de 2–3 puntos REALES (precio_anterior y precio_actual solamente). Label “referencial” bajo el spark. NO inventes 7 precios intermedios.
-- ML aparte: LISTA (fila thumb 48px + nombre + badge “Enlace afiliado”), no las mismas cards. Texto: confirma precio en ML.
-- Bloque alerta: input email + “Avisarme”. Si hay window.storage, guarda el mail. Si no, mensaje honesto “Quedó anotado en este demo”. Cero Mailchimp/Supabase inventado.
-- Empty state solo si el filtro da 0.
-- Footer columna: Ahorra Real · Chile + disclaimer + SALGADOIVO.
-- rel=nofollow sponsored en afiliados. UTM se quedan.
+PALETA (no cambies):
+- Fondo #0B1220 / ink oscuro actual del demo v44
+- Lima #D4F562 (botones, %, acentos)
+- Panel #121A2B, línea suave actual, texto blanco/gris
+- Cero #b8703f, cero #0e1a1a teal, cero Source Serif como voz principal
+- Tipo: la stack actual (Space Grotesk / lo que ya está). No Libre Franklin+serif si eso pinta “revista cobre”.
 
-NO:
-- Base de precios que no existe. No S3. No OAuth. No AdSense.
-- Decir “historial real” en el hero si los puntos son referenciales → usa “Ves el precio de lista vs el de ahora”.
+SÍ toma de Claude:
+- Hero + buscador + chips
+- 8 cards con foto, %, $ grande, sparkline 2–3 puntos (lista vs ahora) + “referencial”
+- ML en LISTA distinta (thumb + “Enlace afiliado”), 6 links incl. Siegen https://meli.la/2WYBEUt
+- Form alerta email honesto
+- Empty state solo si filtro = 0
+- H1: “El precio de verdad, antes de que hagas clic.” Kicker: “Precios de Chile”
+- Marca Ahorra Real. No Precio Real.
 
-Publica Sites desde workspace. Nunca SHA d335794.
-hecho_cuando: demo público se ve cobre/teal, 8 cards + lista ML distinta, sparkline referencial, buscador, alerta con email.
+NO: historial inventado, S3, OAuth, AdSense, Mailchimp ficticio.
+Publica Sites workspace. Nunca SHA d335794.
+hecho_cuando: demo lima/negro (no cobre), 8 cards + lista ML, spark referencial, buscador, alerta.
 =======
 
-======= LOG GROK 2026-09-14 23:11 -03 =======
-008 HECHO (v44). Ivo mandó maqueta Claude. 009 = ese look, sin mentir historial ni backend. Siegen meli.la se queda.
+======= LOG GROK 2026-09-14 23:13 -03 =======
+Ivo: colores de Claude feos. 009 usa lima/oscuro de Ahorra Real. Solo estructura de la maqueta.
 =======
