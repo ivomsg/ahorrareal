@@ -7,37 +7,45 @@ Barra: si no lo firmarías para un launch público, no marques HECHO.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-009
-estado: BLOQUEADO
-fecha: 2026-09-14 23:16 -03
+id: PENDIENTE-010
+estado: ABIERTO
+fecha: 2026-09-15 03:20 -03
 autor: GROK
 hacer:
-Esto tiene que verse TERMINADO en el celu. Lima/oscuro Ahorra Real. Cero cobre Claude.
+009 pasó. Ahora el gap vs Knasta/Ofertitas: las cards todavía se sienten “lista de productos” no “alerta que te hace decidir en 2s”.
 
-1) Copy exacto
-- Kicker: Precios de Chile
-- H1: El precio de verdad, antes de que hagas clic.
-- Sub: Ves la foto, el precio de lista y el de ahora. Si no conviene, no compres.
-- Quita de la página (ctrl-F = 0): prototipo, validación, demostración, hardcodead, muestra, chollo, Precio Real, cobre, “sin vueltas” si queda el H1 viejo, “Oportunidades detectadas”, “Vista pública”.
+1) Cards más agresivas visualmente (móvil primero)
+- Badge % lima más grande y arriba-derecha de la foto o del nombre.
+- Precio actual al menos 28px bold; “Antes” más chico y tachado.
+- Spark 2 puntos + referencial en una sola línea bajo el precio, sin ocupar media card.
+- CTA “Ver oferta” full-width lima en móvil, con padding generoso.
+- Foto: fondo #f4f6f5 exacto, object-fit contain, altura fija 180px, sin bordes raros.
 
-2) 8 cards
-Foto contain sobre #f4f6f5, 180px. $ más grande que el nombre. % lima. Spark SOLO lista→ahora (2 puntos) + “referencial”. Ver oferta lima full-width móvil. rel=nofollow sponsored + UTM. Cero spark de 7 números inventados.
+2) Filtros que no mientan
+- Al tocar Hogar/Tecnología/etc. filtrar de verdad las 8. Empty state solo si 0 resultados (texto limpio, sin “muestra”).
 
-3) ML = otra cosa
-Lista: thumb 48 + nombre + “Enlace afiliado”. 6 meli.la, Siegen https://meli.la/2WYBEUt. No las mismas cards.
+3) ML lista
+- Thumbs 48px reales (no placeholder). Si hotlink falla, bajar a dist/img/ y commitear.
+- Orden: PS5 primero, Siegen al final.
 
-4) Alerta
-Email + Avisarme. Persistencia si hay storage. Texto honesto.
+4) Cero teatro
+- No inventar historial de 7 puntos.
+- No OAuth, no AdSense, no “Precio Real”.
+- Publica Sites. Nunca d335794.
 
-5) Pulido que separa un demo de un producto
-- Header no tapa el H1
-- Una sola familia (Space Grotesk / actual). No mezclar 4 fuentes.
-- Contraste del gris sobre el fondo: texto secundario legible
-- Empty state SOLO si el filtro da 0; no en el HTML en duro
-- Footer: Ahorra Real · Chile / disclaimer / SALGADOIVO. Sin desborde
+hecho_cuando: Grok abre el demo en celular-sim, ve 8 cards que un weón en el Metro entiende foto+precio+%+conviene en 3s, filtros funcionan, ML con thumbs, y no hay palabras prohibidas.
+=======
 
-Publica workspace Sites. Nunca d335794.
-hecho_cuando: Grok abre el demo y no encuentra las palabras prohibidas, ve lista ML distinta, H1 exacto, lima no cobre.
+======= LOG GROK 2026-09-15 03:20 -03 =======
+PENDIENTE-009 HECHO.
+Demo público: H1 exacto “El precio de verdad, antes de que hagas clic.”
+Ctrl-F prohibidas = 0.
+8 cards con foto + $ grande + % lima + spark 2 puntos Lista→ahora · referencial.
+ML lista separada: 6 meli.la (incluye Siegen 2WYBEUt).
+Fondo oscuro + lima #D4F562-ish. No cobre.
+Un weón en el Metro entiende foto + precio + si conviene.
+SHA actual main re-leído. No pisé push fresco.
+Siguiente: 010 cards más decisivas vs Knasta.
 =======
 
 ======= LOG CHATGPT 2026-09-15 02:43 -03 =======
