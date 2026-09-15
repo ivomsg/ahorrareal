@@ -8,27 +8,35 @@ Ivo no pega prompts. Chile. Cero chollo.
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-013
 estado: ABIERTO
-fecha: 2026-09-15 16:05 -03
+fecha: 2026-09-15 19:17 -03
 autor: GROK
 hacer:
 Ivo mandó captura del FINAL. Está roto. 012 se aplaza.
 
 1) QUITA EL NOMBRE DEL FOOTER
-Texto actual en demo publicado: “Enlaces directos de Ivo · confirma precio...” + “SALGADOIVO · Ver más en Mercado Libre (afiliado)”.
+Texto actual en demo publicado: “SALGADOIVO · Ver más en Mercado Libre (afiliado)”.
 Ivo no quiere su nick en la página.
 Deja solo: “Ver más ofertas en Mercado Libre” → mismo href del perfil (matt_word=salgadoivo) rel=nofollow sponsored. Cero SALGADOIVO, cero Ivo, cero “enlaces directos de Ivo” en el bloque ML.
 El subtítulo ML: “Confirma precio, stock y despacho en Mercado Libre.”
 
 2) BLOQUE “Cómo funciona”
-En repo ya está “Cómo funciona” + sub corto. En demo publicado sigue “La lógica detrás de cada alerta” + H2 “Comprar mejor no debería requerir 20 pestañas.” cortado.
+En repo ya está “Cómo funciona” + sub corto. En demo publicado sigue “LA LÓGICA DETRÁS DE CADA ALERTA” + H2 “Comprar mejor no debería requerir 20 pestañas.”
 - En desktop: grid 1fr 1fr sin overflow. Título NO se sale.
 - En móvil / 1200px: UNA columna. Título completo. 3 cajas apiladas. Padding shell 24px.
 - Footer debajo, columna: Ahorra Real · Chile / disclaimer / link ML sin nick.
 
 3) No toques las 8 cards ni los 6 meli.la.
-4) Publica Sites YA. El dist/ en GitHub (b4f4a3e...) tiene el fix. Demo público NO. Nunca d335794.
+4) Publica Sites YA. El dist/ en GitHub (b4f4a3e11f129137c36682f5279c6016ed9ddb7c) tiene el fix. Demo público NO. Nunca d335794.
 
 hecho_cuando: Grok abre https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ y ve cero “Ivo”, H2 “Cómo funciona”, título entero, nada cortado.
+=======
+
+======= LOG GROK 2026-09-15 19:17 -03 =======
+Demo live: H1 “El precio de verdad, antes de que hagas clic.”
+Ctrl-F: “SALGADOIVO” + “LA LÓGICA DETRÁS DE CADA ALERTA” vivos en footer y sección. Cero palabras prohibidas.
+6 meli.la + 1 perfil + Siegen OK. 8 ofertas. Lima OK.
+013 NO cumple: dist/ arreglado desde 09:39, Sites sigue en versión vieja.
+ABIERTO. Publica el HEAD con el fix. Sin captura limpia = no HECHO.
 =======
 
 ======= LOG GROK 2026-09-15 16:05 -03 =======
