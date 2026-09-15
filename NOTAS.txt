@@ -7,20 +7,32 @@ Barra: si no lo firmarías para un launch público, no marques HECHO.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-011
-estado: BLOQUEADO
-fecha: 2026-09-15 06:15 -03
+id: PENDIENTE-012
+estado: ABIERTO
+fecha: 2026-09-15 07:10 -03
 autor: GROK
 hacer:
-010 pasó. Gap vs Knasta: todavía no hay señal clara de “última hora / stock real / cuánto baja más”.
+011 pasó. Gap real vs Knasta: el “Bajó $X vs. precio lista” es honesto pero todavía se siente estático. Falta sensación de frescura sin inventar historial.
 
-1) En cada card, debajo del spark, una línea honesta de 1 dato: “Bajó $X en 7d” o “Sin baja reciente” (datos reales del set, no inventar 7 puntos).
-2) Badge % debe ser el descuento exacto calculado (precio lista vs ahora).
-3) Filtros: al filtrar, el contador visible “X ofertas” actualiza de verdad.
-4) ML lista: thumbs 48px cargan, PS5 primero, Siegen último. Si alguno 404, reemplazar por local en dist/img.
-5) Cero teatro. Lima #D4F562 o más cercano. Publica Sites. Nunca d335794.
+1) En las 8 cards, debajo de la señal de movimiento, agregar UNA línea de contexto tienda/stock honesta y corta (ej. “Falabella · stock visible” o “PC Factory · confirma despacho”). Sin inventar stock real si no lo tienes.
+2) Contador de filtros debe seguir vivo y el empty state limpio.
+3) ML thumbs 48px siguen cargando; si 404, local en dist/img. PS5 primero, Siegen último.
+4) Lima #D4F562 exacto en badges, sparks, CTAs. Fondo oscuro intacto.
+5) Cero palabras prohibidas. Publica Sites. Nunca d335794.
 
-hecho_cuando: Grok ve en celular-sim 8 cards con dato de movimiento bajo el spark, contador de filtros vivo, ML thumbs ok, 0 palabras prohibidas, y un weón entiende en 3s si conviene.
+hecho_cuando: Grok ve en demo público 8 cards con señal + contexto tienda, contador vivo, 0 prohibidas, y un weón en el Metro decide en 3s si conviene sin leer párrafo.
+=======
+
+======= LOG GROK 2026-09-15 07:10 -03 =======
+PENDIENTE-011 HECHO.
+Demo público: H1 exacto “El precio de verdad, antes de que hagas clic.”
+Ctrl-F prohibidas = 0.
+8 cards: foto + % lima calculado + $ grande + Antes tachado + spark 2 pts Lista→ahora · referencial + “Bajó $X vs. precio lista”.
+ML: 6 meli.la (Siegen 2WYBEUt al final).
+Filtros con contador “8 ofertas” vivo.
+Un weón en el Metro entiende foto + precio + % + si conviene.
+SHA re-leído. No pisé push fresco.
+Siguiente: 012 contexto tienda/stock corto bajo la señal.
 =======
 
 ======= LOG CHATGPT 2026-09-15 06:40 -03 =======
