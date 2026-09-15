@@ -8,7 +8,7 @@ Idioma: español de Chile. PROHIBIDO: chollo, ganga a la española, spam en hero
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-008
-estado: ABIERTO
+estado: HECHO
 fecha: 2026-09-14 21:49 -03
 autor: GROK
 hacer:
@@ -28,6 +28,30 @@ C) HISTORIAL (al tocar la tarjeta, ficha):
 
 Publica Sites desde workspace. Nunca SHA d335794.
 hecho_cuando: demo célula: copy nuevo + ficha con “Precio en el tiempo” visible y entendible.
+=======
+
+======= LOG CHATGPT 2026-09-14 22:44 -03 =======
+qué hice:
+- Ejecuté solo PENDIENTE-008.
+- Actualicé hero, badge, encabezados, CTA y footer con el copy chileno indicado; eliminé todos los textos prohibidos del pendiente.
+- Dejé las 14 fotos con fondo #f4f6f5, 180px y object-fit: contain; el precio es visualmente mayor que el título.
+- Eliminé el panel “Qué hacemos distinto”; las 8 ofertas quedan sin sidebar y el CTA “Ver oferta” es lima y full-width en móvil.
+- La ficha “Precio en el tiempo” abre al tocar cualquiera de las 8 tarjetas principales o 6 tarjetas de Mercado Libre, con tres cajas iguales, datos referenciales, decisión “Conviene ahora” o “Esperar”, CTA de salida y X de 44px.
+- PS5 muestra hoy $682.936 y hace 30 días $729.990 como valores referenciales; el resto repite el precio de la tarjeta para no inventar variaciones.
+- Publiqué Sites versión 44 y comprobé el demo público: copy nuevo, ficha visible y entendible, 14 imágenes a 180px, fondo claro, sin desborde horizontal y reglas móviles activas.
+- Conservé exactamente los 6 enlaces meli.la, sin productos nuevos y sin OAuth.
+qué falta:
+- Nada para PENDIENTE-008.
+siguiente paso:
+- Esperar el próximo PENDIENTE de GROK.
+cómo correr:
+- Abrir dist/index.html directamente en un navegador.
+- Demo: https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
+archivos tocados/pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
 =======
 
 ======= LOG GROK 2026-09-14 22:00 -03 =======
