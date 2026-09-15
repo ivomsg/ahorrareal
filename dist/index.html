@@ -19,7 +19,7 @@
         --line: rgba(226, 239, 244, .1);
         --muted: #a9b7c1;
         --paper: #f1f6f5;
-        --lime: #d9ff55;
+        --lime: #d4f562;
         --lime-2: #b9e633;
         --shadow: 0 24px 80px rgba(0, 0, 0, .28);
       }
@@ -52,9 +52,9 @@
       .nav .nav-cta { color: var(--ink); background: var(--lime); padding: 10px 15px; border-radius: 10px; font-weight: 700; }
       .hero { padding: 54px 0 34px; position: relative; overflow: hidden; scroll-margin-top: 86px; }
       #ofertas, #alertas { scroll-margin-top: 86px; }
-      .hero::before { content: ""; position: absolute; width: 560px; height: 560px; right: -250px; top: -240px; background: radial-gradient(circle, rgba(217,255,85,.15), transparent 65%); pointer-events: none; }
+      .hero::before { content: ""; position: absolute; width: 560px; height: 560px; right: -250px; top: -240px; background: radial-gradient(circle, rgba(212,245,98,.15), transparent 65%); pointer-events: none; }
       .eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--lime); font-size: 12px; letter-spacing: .13em; text-transform: uppercase; font-weight: 700; }
-      .eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 5px rgba(217,255,85,.1); }
+      .eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 5px rgba(212,245,98,.1); }
       h1, h2, h3, p { margin-top: 0; }
       h1, h2, h3 { letter-spacing: -.045em; }
       h1 { max-width: 760px; margin: 19px 0 16px; font-size: clamp(42px, 7vw, 78px); line-height: .98; font-weight: 600; }
@@ -63,13 +63,13 @@
       .hero-tools { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
       .search { flex: 1 1 390px; min-width: 260px; position: relative; }
       .search input { width: 100%; height: 54px; border: 1px solid var(--line); border-radius: 14px; color: var(--paper); background: var(--panel); outline: none; padding: 0 18px 0 48px; }
-      .search input:focus { border-color: rgba(217,255,85,.65); box-shadow: 0 0 0 4px rgba(217,255,85,.08); }
+      .search input:focus { border-color: rgba(212,245,98,.65); box-shadow: 0 0 0 4px rgba(212,245,98,.08); }
       .search svg { position: absolute; left: 17px; top: 17px; color: var(--muted); }
       .primary, .secondary { height: 54px; border-radius: 14px; padding: 0 20px; border: 1px solid transparent; font-weight: 700; transition: transform .2s, background .2s; }
       .primary { color: var(--ink); background: var(--lime); }
       .secondary { color: var(--paper); background: transparent; border-color: var(--line); }
       .primary:hover, .secondary:hover { transform: translateY(-2px); }
-      .secondary:hover { border-color: rgba(217,255,85,.4); }
+      .secondary:hover { border-color: rgba(212,245,98,.4); }
       .trust-row { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 20px; color: var(--muted); font-size: 13px; }
       .trust-row strong { color: var(--paper); font-weight: 600; }
       .trust-row span { display: inline-flex; align-items: center; gap: 7px; }
@@ -78,6 +78,7 @@
       .section-head h2 { margin: 0; font-size: 28px; font-weight: 600; }
       .section-head p { color: var(--muted); margin: 0; font-size: 14px; }
       .section-head a { color: var(--lime); font-size: 13px; font-weight: 700; white-space: nowrap; }
+      .offer-count { flex: 0 0 auto; color: var(--lime); font-size: 14px; font-weight: 800; white-space: nowrap; }
       .market-bar { display: flex; gap: 9px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
       .chip { border: 1px solid var(--line); color: var(--muted); background: transparent; border-radius: 100px; padding: 9px 14px; font-size: 13px; white-space: nowrap; }
       .chip:hover, .chip.active { color: var(--ink); border-color: var(--lime); background: var(--lime); }
@@ -85,7 +86,7 @@
       .deal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
       .card-image { display: block; width: calc(100% + 36px); height: 180px; margin: -18px -18px 16px; object-fit: contain; background: #f4f6f5; border: 0; }
       .deal-card { position: relative; overflow: hidden; min-height: 275px; background: linear-gradient(145deg, rgba(27,39,50,.92), rgba(17,25,33,.98)); border: 1px solid var(--line); border-radius: 18px; padding: 18px; transition: transform .22s, border-color .22s; }
-      .deal-card:hover { transform: translateY(-3px); border-color: rgba(217,255,85,.42); }
+      .deal-card:hover { transform: translateY(-3px); border-color: rgba(212,245,98,.42); }
       .deal-card:not(.live-card) { cursor: pointer; }
       .deal-card:not(.live-card):focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
       .deal-card.hidden { display: none; }
@@ -99,8 +100,8 @@
       .price { font-size: 36px; line-height: 1; font-weight: 800; letter-spacing: -.05em; }
       .old-price { color: var(--muted); text-decoration: line-through; font-size: 12px; }
       .card-bottom { display: flex; justify-content: space-between; align-items: end; gap: 10px; margin-top: 15px; }
-      .score { display: flex; width: fit-content; align-items: center; gap: 7px; border: 1px solid rgba(217,255,85,.22); border-radius: 999px; padding: 6px 9px; color: var(--lime); background: rgba(217,255,85,.07); font-size: 12px; font-weight: 750; }
-      .score-bar { width: 72px; height: 5px; border-radius: 4px; background: rgba(217,255,85,.16); overflow: hidden; }
+      .score { display: flex; width: fit-content; align-items: center; gap: 7px; border: 1px solid rgba(212,245,98,.22); border-radius: 999px; padding: 6px 9px; color: var(--lime); background: rgba(212,245,98,.07); font-size: 12px; font-weight: 750; }
+      .score-bar { width: 72px; height: 5px; border-radius: 4px; background: rgba(212,245,98,.16); overflow: hidden; }
       .score-bar i { display: block; height: 100%; width: 91%; background: var(--lime); border-radius: inherit; }
       .score-bar i.mid { width: 76%; }
       .card-action { border: 0; background: transparent; color: var(--paper); font-size: 12px; font-weight: 700; padding: 4px 0; }
@@ -108,6 +109,7 @@
       .live-link { color: var(--lime); text-decoration: none; }
       .price-trend { display: flex; min-height: 20px; align-items: center; gap: 8px; margin-top: 8px; color: var(--muted); font-size: 11px; white-space: nowrap; }
       .spark { display: block; width: 58px; height: 20px; flex: 0 0 58px; }
+      .movement { margin: 4px 0 0; color: var(--paper); font-size: 12px; font-weight: 750; line-height: 1.35; }
       .aside { display: block; }
       .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
       .panel h3 { margin-bottom: 7px; font-size: 20px; font-weight: 600; }
@@ -117,11 +119,11 @@
       .icon-box { flex: 0 0 32px; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 10px; color: var(--ink); background: var(--lime); font-weight: 800; font-size: 13px; }
       .insight strong { display: block; font-size: 13px; margin-bottom: 2px; }
       .insight span { display: block; color: var(--muted); font-size: 12px; }
-      .alert-panel { background: var(--panel); border-color: rgba(217,255,85,.34); }
+      .alert-panel { background: var(--panel); border-color: rgba(212,245,98,.34); }
       .alert-panel p { color: var(--muted); }
       .alert-form { display: flex; gap: 9px; }
       .alert-form input { height: 46px; width: 100%; min-width: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--ink); color: var(--paper); padding: 0 12px; outline: none; }
-      .alert-form input:focus { border-color: var(--lime); box-shadow: 0 0 0 3px rgba(217,255,85,.1); }
+      .alert-form input:focus { border-color: var(--lime); box-shadow: 0 0 0 3px rgba(212,245,98,.1); }
       .alert-form button { height: 46px; padding: 0 18px; border-radius: 10px; border: 0; background: var(--lime); color: var(--ink); font-weight: 700; }
       .alert-form button:disabled { opacity: .65; cursor: wait; }
       .alert-status { min-height: 1.4em; margin: 11px 0 0 !important; color: var(--paper) !important; }
@@ -143,7 +145,7 @@
       .affiliate-section .section-head { margin-top: 0; }
       .affiliate-list { border-top: 1px solid var(--line); }
       .affiliate-row { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto 18px; align-items: center; gap: 14px; min-height: 76px; padding: 13px 4px; border-bottom: 1px solid var(--line); transition: color .18s, background .18s; }
-      .affiliate-row:hover { color: var(--lime); background: rgba(217,255,85,.035); }
+      .affiliate-row:hover { color: var(--lime); background: rgba(212,245,98,.035); }
       .affiliate-row:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
       .affiliate-thumb { width: 48px; height: 48px; border-radius: 9px; object-fit: contain; background: #f4f6f5; }
       .affiliate-copy { min-width: 0; }
@@ -244,6 +246,7 @@
       <section class="shell" id="ofertas">
         <div class="section-head">
           <div><h2>Ofertas de ahora</h2><p>Compara el precio y revisa la tienda antes de comprar.</p></div>
+          <strong class="offer-count" id="offerCount" aria-live="polite">8 ofertas</strong>
         </div>
         <div class="market-bar" role="tablist" aria-label="Filtrar por categoría">
           <button class="chip active" data-category="all" aria-selected="true">Todas</button>
@@ -255,83 +258,91 @@
 
         <div class="deal-layout">
           <div class="deal-grid" id="dealGrid">
-            <article class="deal-card" data-category="hogar electro" data-search="lavadora secadora carga frontal 12 kg lg">
+            <article class="deal-card" data-category="hogar electro" data-search="lavadora secadora carga frontal 12 kg lg" data-price-current="439990" data-price-list="699990">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/16731299_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Lavadora-secadora carga frontal 12/7 kg" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">LG · Falabella</span><span class="badge">−37%</span></div>
               <h3 class="product">Lavadora-secadora carga frontal 12/7 kg</h3>
               <span class="meta">Hogar · Inverter · despacho sujeto a comuna</span>
               <div class="price-row"><strong class="price">$439.990</strong><span class="old-price">Antes $699.990</span></div>
-              <div class="price-trend" aria-label="Precio de lista 699.990 pesos; ahora 439.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d9ff55" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d9ff55"/><circle cx="84" cy="25" r="3" fill="#d9ff55"/></svg><span>Lista → ahora · referencial</span></div>
+              <div class="price-trend" aria-label="Precio de lista 699.990 pesos; ahora 439.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
+              <p class="movement">Bajó $260.000 vs. precio lista</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="tecnologia" data-search="iphone 16 128 gb">
+            <article class="deal-card" data-category="tecnologia" data-search="iphone 16 128 gb" data-price-current="839990" data-price-list="949990">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/17273278_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="iPhone 16 128 GB" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Apple · Falabella</span><span class="badge hot">−12%</span></div>
               <h3 class="product">iPhone 16 128 GB</h3>
               <span class="meta">Tecnología · desbloqueado · 128 GB</span>
               <div class="price-row"><strong class="price">$839.990</strong><span class="old-price">Antes $949.990</span></div>
-              <div class="price-trend" aria-label="Precio de lista 949.990 pesos; ahora 839.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d9ff55" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d9ff55"/><circle cx="84" cy="25" r="3" fill="#d9ff55"/></svg><span>Lista → ahora · referencial</span></div>
+              <div class="price-trend" aria-label="Precio de lista 949.990 pesos; ahora 839.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
+              <p class="movement">Bajó $110.000 vs. precio lista</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="tecnologia" data-search="notebook lenovo ideapad slim 3 i5 8gb 512gb 14">
+            <article class="deal-card" data-category="tecnologia" data-search="notebook lenovo ideapad slim 3 i5 8gb 512gb 14" data-price-current="529990" data-price-list="559990">
               <img class="card-image" src="https://p3-ofp.static.pub//fes/cms/2025/02/06/zuuuahb3p1wn1dwbt4luewmt77unqy546098.png" alt="Notebook IdeaPad Slim 3 i5 8GB / 512GB" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Lenovo · PC Factory</span><span class="badge">−5%</span></div>
               <h3 class="product">Notebook IdeaPad Slim 3 i5 8GB / 512GB</h3>
               <span class="meta">Tecnología · 14″ WUXGA · Windows 11</span>
               <div class="price-row"><strong class="price">$529.990</strong><span class="old-price">Antes $559.990</span></div>
-              <div class="price-trend" aria-label="Precio de lista 559.990 pesos; ahora 529.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d9ff55" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d9ff55"/><circle cx="84" cy="25" r="3" fill="#d9ff55"/></svg><span>Lista → ahora · referencial</span></div>
+              <div class="price-trend" aria-label="Precio de lista 559.990 pesos; ahora 529.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
+              <p class="movement">Bajó $30.000 vs. precio lista</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="hogar electro" data-search="smart tv 55 led 4k tcl google tv">
+            <article class="deal-card" data-category="hogar electro" data-search="smart tv 55 led 4k tcl google tv" data-price-current="289990" data-price-list="369990">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/80527209_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Smart TV TCL 55″ LED 4K Google TV" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">TCL · Falabella</span><span class="badge hot">−22%</span></div>
               <h3 class="product">Smart TV TCL 55″ LED 4K Google TV</h3>
               <span class="meta">Hogar · V6C · precio final referencial</span>
               <div class="price-row"><strong class="price">$289.990</strong><span class="old-price">Antes $369.990</span></div>
-              <div class="price-trend" aria-label="Precio de lista 369.990 pesos; ahora 289.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d9ff55" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d9ff55"/><circle cx="84" cy="25" r="3" fill="#d9ff55"/></svg><span>Lista → ahora · referencial</span></div>
+              <div class="price-trend" aria-label="Precio de lista 369.990 pesos; ahora 289.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
+              <p class="movement">Bajó $80.000 vs. precio lista</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador inalambrico 18v 2 baterias">
+            <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador inalambrico 18v 2 baterias" data-price-current="629990" data-price-list="799990">
               <img class="card-image" src="https://cdnx.jumpseller.com/toolcenter/image/61550316/thumb/306/306?1742414401=" alt="Taladro atornillador inalámbrico 18V" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Sodimac · Herramientas</span><span class="badge">−21%</span></div>
               <h3 class="product">Taladro atornillador inalámbrico 18V</h3>
               <span class="meta">Herramientas · kit con 2 baterías</span>
               <div class="price-row"><strong class="price">$629.990</strong><span class="old-price">Antes $799.990</span></div>
-              <div class="price-trend" aria-label="Precio de lista 799.990 pesos; ahora 629.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d9ff55" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d9ff55"/><circle cx="84" cy="25" r="3" fill="#d9ff55"/></svg><span>Lista → ahora · referencial</span></div>
+              <div class="price-trend" aria-label="Precio de lista 799.990 pesos; ahora 629.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
+              <p class="movement">Bajó $170.000 vs. precio lista</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Buen momento</div><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="hogar electro" data-search="freidora de aire 5 litros 1350w">
+            <article class="deal-card" data-category="hogar electro" data-search="freidora de aire 5 litros 1350w" data-price-current="43990" data-price-list="50990">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/146689231_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Freidora de aire 5 L · 1350W" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">New Line · Ripley</span><span class="badge">−14%</span></div>
               <h3 class="product">Freidora de aire 5 L · 1350W</h3>
               <span class="meta">Electrodomésticos · control 80–200 °C</span>
               <div class="price-row"><strong class="price">$43.990</strong><span class="old-price">Antes $50.990</span></div>
-              <div class="price-trend" aria-label="Precio de lista 50.990 pesos; ahora 43.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d9ff55" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d9ff55"/><circle cx="84" cy="25" r="3" fill="#d9ff55"/></svg><span>Lista → ahora · referencial</span></div>
+              <div class="price-trend" aria-label="Precio de lista 50.990 pesos; ahora 43.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
+              <p class="movement">Bajó $7.000 vs. precio lista</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Buen precio</div><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="tecnologia" data-search="monitor samsung 24 fhd 75hz ips">
+            <article class="deal-card" data-category="tecnologia" data-search="monitor samsung 24 fhd 75hz ips" data-price-current="139990" data-price-list="159990">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/144574206_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Monitor Samsung 24″ FHD 75Hz IPS" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Samsung · PC Factory</span><span class="badge">−13%</span></div>
               <h3 class="product">Monitor Samsung 24″ FHD 75Hz IPS</h3>
               <span class="meta">Tecnología · FreeSync · 5 ms</span>
               <div class="price-row"><strong class="price">$139.990</strong><span class="old-price">Antes $159.990</span></div>
-              <div class="price-trend" aria-label="Precio de lista 159.990 pesos; ahora 139.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d9ff55" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d9ff55"/><circle cx="84" cy="25" r="3" fill="#d9ff55"/></svg><span>Lista → ahora · referencial</span></div>
+              <div class="price-trend" aria-label="Precio de lista 159.990 pesos; ahora 139.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
+              <p class="movement">Bajó $20.000 vs. precio lista</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="hogar electro" data-search="aspiradora robot xiaomi s40 pro">
+            <article class="deal-card" data-category="hogar electro" data-search="aspiradora robot xiaomi s40 pro" data-price-current="259990" data-price-list="289990">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/80758823_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Aspiradora robot Xiaomi S40 Pro" loading="lazy" decoding="async" />
               <div class="card-top"><span class="store">Xiaomi · Falabella</span><span class="badge hot">−10%</span></div>
               <h3 class="product">Aspiradora robot Xiaomi S40 Pro</h3>
               <span class="meta">Hogar · aspira y trapea · 15.000 Pa</span>
               <div class="price-row"><strong class="price">$259.990</strong><span class="old-price">Antes $289.990</span></div>
-              <div class="price-trend" aria-label="Precio de lista 289.990 pesos; ahora 259.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d9ff55" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d9ff55"/><circle cx="84" cy="25" r="3" fill="#d9ff55"/></svg><span>Lista → ahora · referencial</span></div>
+              <div class="price-trend" aria-label="Precio de lista 289.990 pesos; ahora 259.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
+              <p class="movement">Bajó $30.000 vs. precio lista</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
           </div>
@@ -435,7 +446,25 @@
       const cards = [...document.querySelectorAll('.deal-card')];
       const chips = [...document.querySelectorAll('.chip')];
       const search = document.getElementById('search');
+      const offerCount = document.getElementById('offerCount');
       let category = 'all';
+
+      const formatClp = value => '$' + Math.round(value).toLocaleString('es-CL');
+
+      function updateDealSignals() {
+        cards.forEach(card => {
+          const current = Number(card.dataset.priceCurrent);
+          const list = Number(card.dataset.priceList);
+          if (!Number.isFinite(current) || !Number.isFinite(list) || list <= 0) return;
+          const discount = Math.max(0, Math.round(((list - current) / list) * 100));
+          const badge = card.querySelector('.badge');
+          const movement = card.querySelector('.movement');
+          if (badge) badge.textContent = `−${discount}%`;
+          if (movement) movement.textContent = list > current
+            ? `Bajó ${formatClp(list - current)} vs. precio lista`
+            : 'Sin baja reciente';
+        });
+      }
 
       function applyFilters() {
         const term = search.value.trim().toLowerCase();
@@ -459,6 +488,7 @@
         if (empty) {
           empty.style.display = visible ? 'none' : 'block';
         }
+        offerCount.textContent = `${visible} ${visible === 1 ? 'oferta' : 'ofertas'}`;
       }
       chips.forEach(chip => chip.addEventListener('click', () => {
         chips.forEach(item => {
@@ -475,6 +505,9 @@
         document.getElementById('ofertas').scrollIntoView({ behavior: 'smooth', block: 'start' });
         applyFilters();
       });
+
+      updateDealSignals();
+      applyFilters();
 
       document.getElementById('alertForm').addEventListener('submit', async event => {
         event.preventDefault();
