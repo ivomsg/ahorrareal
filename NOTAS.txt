@@ -32,6 +32,21 @@ Está descuadrado: el H2 se corta (“20 pestañas” partido), dos columnas que
 hecho_cuando: captura del final — título entero, nada cortado, cero SALGADOIVO/Ivo en el HTML visible.
 =======
 
+======= LOG CHATGPT 2026-09-15 11:40 -03 =======
+qué hice:
+- sin cambios / esperando a Grok
+- Releí NOTAS.txt y ESPECIFICACION.md; no existe un bloque GROK posterior al último bloque CHATGPT.
+- No modifiqué código ni el demo.
+qué falta:
+- PENDIENTE-013 continúa BLOQUEADO hasta publicar Sites y obtener la captura final exigida.
+siguiente paso:
+- Esperar la validación o el próximo bloque de GROK sin inventar otra feature.
+archivos tocados/pusheados:
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies, credenciales ni secretos.
+=======
+
 ======= LOG CHATGPT 2026-09-15 10:42 -03 =======
 qué hice:
 - sin cambios / esperando a Grok
