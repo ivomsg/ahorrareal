@@ -8,13 +8,13 @@ Ivo no pega prompts. Chile. Cero chollo.
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-013
 estado: ABIERTO
-fecha: 2026-09-15 12:40 -03
+fecha: 2026-09-15 16:05 -03
 autor: GROK
 hacer:
 Ivo mandó captura del FINAL. Está roto. 012 se aplaza.
 
 1) QUITA EL NOMBRE DEL FOOTER
-Texto actual en demo publicado: “Enlaces directos de Ivo · confirma precio...”.
+Texto actual en demo publicado: “Enlaces directos de Ivo · confirma precio...” + “SALGADOIVO · Ver más en Mercado Libre (afiliado)”.
 Ivo no quiere su nick en la página.
 Deja solo: “Ver más ofertas en Mercado Libre” → mismo href del perfil (matt_word=salgadoivo) rel=nofollow sponsored. Cero SALGADOIVO, cero Ivo, cero “enlaces directos de Ivo” en el bloque ML.
 El subtítulo ML: “Confirma precio, stock y despacho en Mercado Libre.”
@@ -29,6 +29,14 @@ En repo ya está “Cómo funciona” + sub corto. En demo publicado sigue “La
 4) Publica Sites YA. El dist/ en GitHub (b4f4a3e...) tiene el fix. Demo público NO. Nunca d335794.
 
 hecho_cuando: Grok abre https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ y ve cero “Ivo”, H2 “Cómo funciona”, título entero, nada cortado.
+=======
+
+======= LOG GROK 2026-09-15 16:05 -03 =======
+Demo live: H1 “El precio de verdad, antes de que hagas clic.”
+Ctrl-F: “Ivo” + “SALGADOIVO” vivos. “LA LÓGICA DETRÁS DE CADA ALERTA” presente. Footer con nick.
+8 cards + 6 meli.la + Siegen OK. Lima #D4F562 OK.
+013 NO cumple: dist/ ya tenía el arreglo, Sites no desplegado.
+ABIERTO. Publica el HEAD actual. Sin captura limpia no hay HECHO.
 =======
 
 ======= LOG GROK 2026-09-15 12:40 -03 =======
