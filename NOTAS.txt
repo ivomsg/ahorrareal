@@ -7,29 +7,36 @@ Ivo no pega prompts. Chile. Cero chollo.
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-013
-estado: BLOQUEADO
-fecha: 2026-09-15 09:05 -03
+estado: ABIERTO
+fecha: 2026-09-15 12:40 -03
 autor: GROK
 hacer:
 Ivo mandó captura del FINAL. Está roto. 012 se aplaza.
 
 1) QUITA EL NOMBRE DEL FOOTER
-Texto actual: “SALGADOIVO · Ver más en Mercado Libre (afiliado)”.
+Texto actual en demo publicado: “Enlaces directos de Ivo · confirma precio...”.
 Ivo no quiere su nick en la página.
 Deja solo: “Ver más ofertas en Mercado Libre” → mismo href del perfil (matt_word=salgadoivo) rel=nofollow sponsored. Cero SALGADOIVO, cero Ivo, cero “enlaces directos de Ivo” en el bloque ML.
 El subtítulo ML: “Confirma precio, stock y despacho en Mercado Libre.”
 
-2) BLOQUE “Cómo funciona” (el recuadro rojo)
-Está descuadrado: el H2 se corta (“20 pestañas” partido), dos columnas que no caben.
-- En desktop: grid 1fr 1fr sin overflow. El título NO se sale del shell ni se pisa con el header.
-- En móvil / 1200px: UNA columna. Título completo. Luego las 3 cajas apiladas. Padding del shell 24px. Nada se corta a la izquierda.
-- Quita o acorta “LA LÓGICA DETRÁS DE CADA ALERTA”. Título más corto: “Cómo funciona”. Sub de 1 línea.
-- Footer debajo, columna, sin desborde: Ahorra Real · Chile / disclaimer / link ML sin nick.
+2) BLOQUE “Cómo funciona”
+En repo ya está “Cómo funciona” + sub corto. En demo publicado sigue “La lógica detrás de cada alerta” + H2 “Comprar mejor no debería requerir 20 pestañas.” cortado.
+- En desktop: grid 1fr 1fr sin overflow. Título NO se sale.
+- En móvil / 1200px: UNA columna. Título completo. 3 cajas apiladas. Padding shell 24px.
+- Footer debajo, columna: Ahorra Real · Chile / disclaimer / link ML sin nick.
 
 3) No toques las 8 cards ni los 6 meli.la.
-4) Publica Sites. Nunca d335794.
+4) Publica Sites YA. El dist/ en GitHub (b4f4a3e...) tiene el fix. Demo público NO. Nunca d335794.
 
-hecho_cuando: captura del final — título entero, nada cortado, cero SALGADOIVO/Ivo en el HTML visible.
+hecho_cuando: Grok abre https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ y ve cero “Ivo”, H2 “Cómo funciona”, título entero, nada cortado.
+=======
+
+======= LOG GROK 2026-09-15 12:40 -03 =======
+Demo: H1 “El precio de verdad , antes de que hagas clic.”
+Ctrl-F: “Ivo” sigue vivo en “Enlaces directos de Ivo”. “La lógica detrás de cada alerta” presente.
+6 meli.la + Siegen OK. Lima #D4F562 en CSS repo.
+013 NO cumple: código en dist/ arreglado, Sites no desplegado.
+ABIERTO. Publica el HEAD actual o el b4f4a3e. Sin captura limpia no hay HECHO.
 =======
 
 ======= LOG CHATGPT 2026-09-15 11:40 -03 =======
