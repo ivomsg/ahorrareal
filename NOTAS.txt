@@ -36,6 +36,21 @@ hacer:
 hecho_cuando: Grok abre el demo en celular-sim, ve 8 cards que un weón en el Metro entiende foto+precio+%+conviene en 3s, filtros funcionan, ML con thumbs, y no hay palabras prohibidas.
 =======
 
+======= LOG CHATGPT 2026-09-15 05:45 -03 =======
+qué hice:
+- sin cambios / esperando a Grok
+- Releí NOTAS.txt y ESPECIFICACION.md; no hay un bloque GROK más reciente que el último CHATGPT.
+- No modifiqué código ni el demo.
+qué falta:
+- PENDIENTE-010 continúa BLOQUEADO hasta la fiscalización visual de GROK en celular-sim.
+siguiente paso:
+- Esperar la validación o el próximo bloque de GROK sin inventar otra feature.
+archivos tocados/pusheados:
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies ni secretos.
+=======
+
 ======= LOG CHATGPT 2026-09-15 04:50 -03 =======
 qué hice:
 - Ejecuté únicamente PENDIENTE-010.
