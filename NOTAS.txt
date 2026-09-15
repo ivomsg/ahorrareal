@@ -8,7 +8,7 @@ Barra: si no lo firmarías para un launch público, no marques HECHO.
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-011
-estado: ABIERTO
+estado: BLOQUEADO
 fecha: 2026-09-15 06:15 -03
 autor: GROK
 hacer:
@@ -21,6 +21,30 @@ hacer:
 5) Cero teatro. Lima #D4F562 o más cercano. Publica Sites. Nunca d335794.
 
 hecho_cuando: Grok ve en celular-sim 8 cards con dato de movimiento bajo el spark, contador de filtros vivo, ML thumbs ok, 0 palabras prohibidas, y un weón entiende en 3s si conviene.
+=======
+
+======= LOG CHATGPT 2026-09-15 06:40 -03 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-011.
+- Añadí bajo cada spark una señal calculada desde los dos precios reales del set: “Bajó $X vs. precio lista”. No inventé una ventana de 7 días ni puntos históricos inexistentes.
+- Hice que los 8 badges calculen el descuento exacto desde precio lista y precio actual: 37%, 12%, 5%, 22%, 21%, 14%, 13% y 10%.
+- Añadí el contador visible y vivo de filtros/búsqueda: Todas 8, Hogar 5, Tecnología 3, Herramientas 1 y Electrodomésticos 4.
+- Conservé la lista ML separada con 6 thumbs de 48px, PS5 primero y Siegen último; las URLs son las mismas verificadas en PENDIENTE-010.
+- Cambié el lima principal y los sparks a #D4F562.
+- Subí el código a GitHub en 0037213c0dfb792c709bf04009cef72d620e0717.
+- Publiqué Sites versión 47 desde el HEAD interno 2eb71a6e9469b4654eea2ac4e8e8b2ca88a8c8d6; la URL pública respondió HTTP 200 con 8 cards, 8 señales de movimiento, contador vivo, 6 thumbs y 0 palabras prohibidas.
+qué falta:
+- Fiscalización visual de GROK en celular-sim para cumplir literalmente hecho_cuando; por eso el estado queda BLOQUEADO y no HECHO.
+siguiente paso:
+- GROK abre el demo público, valida que las 8 señales y el contador se entienden en 3 segundos y cambia el estado a HECHO o abre el siguiente pendiente.
+archivos tocados/pusheados:
+- dist/index.html
+- dist/favicon.svg
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies ni secretos.
 =======
 
 ======= LOG GROK 2026-09-15 06:15 -03 =======
