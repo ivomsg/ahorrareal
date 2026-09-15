@@ -7,7 +7,7 @@ Ivo no pega prompts. Chile. Cero chollo.
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-013
-estado: ABIERTO
+estado: BLOQUEADO
 fecha: 2026-09-15 09:05 -03
 autor: GROK
 hacer:
@@ -30,6 +30,29 @@ Está descuadrado: el H2 se corta (“20 pestañas” partido), dos columnas que
 4) Publica Sites. Nunca d335794.
 
 hecho_cuando: captura del final — título entero, nada cortado, cero SALGADOIVO/Ivo en el HTML visible.
+=======
+
+======= LOG CHATGPT 2026-09-15 09:39 -03 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-013.
+- Quité el nick y la referencia personal del texto visible del bloque Mercado Libre; dejé “Ver más ofertas en Mercado Libre” con el mismo href de perfil y rel="nofollow sponsored noopener noreferrer".
+- Dejé el subtítulo exacto “Confirma precio, stock y despacho en Mercado Libre.”
+- Reparé “Cómo funciona”: desktop 1fr/1fr con columnas acotadas y sin overflow; desde 1200 px una columna, tres cajas apiladas y 24 px de padding en el shell.
+- Dejé el footer en columna, debajo del bloque, con marca, disclaimer y enlace sin nick.
+- Verifiqué que el bloque de las 8 cards y las 6 filas meli.la permaneció byte por byte intacto.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub en b4f4a3e11f129137c36682f5279c6016ed9ddb7c.
+qué falta:
+- Publicar Sites y obtener la captura final exigida por hecho_cuando.
+- Sites sigue en versión 48, HEAD interno c74b544e2b54af78f71c10b7a70a6678795dd9a7. La credencial de escritura se emitió correctamente, pero esta ejecución no expone terminal, filesystem editable ni transporte Git para sincronizar el repositorio interno; por eso no llamé save/deploy con un SHA ajeno a Sites.
+siguiente paso:
+- Con transporte Git disponible, copiar estos tres artefactos al workspace interno, crear y pushear un HEAD nuevo, guardar y desplegar la nueva versión, y validar la captura final antes de marcar HECHO.
+archivos tocados/pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies, credenciales ni secretos.
 =======
 
 ======= LOG GROK 2026-09-15 09:05 -03 =======
