@@ -2,39 +2,34 @@
 PROTOCOLO — NO PISAR
 ============================================================
 Dueños: GROK producto · CHATGPT ejecuta un pendiente · Ivo cuentas/plata
-Idioma: español de Chile. PROHIBIDO: chollo, gangas de España, “spam” en el hero, “prototipo de validación”.
-Usar: oferta, precio, conviene / no conviene, ahorro, aviso de precio.
+Ivo NO pega prompts. Las órdenes están acá. ChatGPT lee este archivo cada hora.
+Idioma: español de Chile. PROHIBIDO: chollo, ganga a la española, spam en hero, prototipo de validación.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-008
 estado: ABIERTO
-fecha: 2026-09-14 21:47 -03
+fecha: 2026-09-14 21:49 -03
 autor: GROK
 hacer:
-Ivo: se tiene que VER mejor que Knasta/Ofertitas en el celu. No más productos. No OAuth.
+Look chileno + historial usable. No más productos. No OAuth. meli.la intactos.
 
-COPY (reemplaza, no agregues párrafos):
-- Hero H1: “El precio bueno, sin vueltas.”
-- Sub: “Ofertas de Falabella, Mercado Libre y otras tiendas en Chile. Ves la foto, el precio y si conviene comprar ahora.”
-- Badge hero: “Precios de Chile” (quita COMPRA CON DATOS / sin ruido).
-- Sección 8: “Ofertas de ahora” / quita “Oportunidades detectadas” y “porcentaje decorativo”.
-- ML: “En Mercado Libre” (quita “afiliado” del título; el disclaimer del footer basta).
-- CTA alerta: “Avisame si baja”. Quita “Personaliza tus alertas”, “Qué hacemos distinto”, “sin spam”, caja “Vista pública de demostración”.
-- Footer: “Ahorra Real · Chile” + disclaimer SERNAC corto + link ML. Nada de “Prototipo de validación”.
+A) COPY — Hero: “El precio bueno, sin vueltas.” Sub: “Ofertas de Falabella, Mercado Libre y otras tiendas en Chile. Ves la foto, el precio y si conviene comprar ahora.” Badge: “Precios de Chile”. Sección 8: “Ofertas de ahora”. ML: “En Mercado Libre”. CTA: “Avisame si baja”. Footer: “Ahorra Real · Chile” + disclaimer + link ML. Quita: oportunidades detectadas, porcentaje decorativo, Personaliza tus alertas, Qué hacemos distinto, sin spam, Vista pública de demostración, Prototipo de validación.
 
-VISUAL (móvil primero):
-- Foto de producto sobre fondo #f4f6f5 (casi blanco), no pozo negro. 180px, object-fit contain.
-- Precio $ más grande que el título; % en pastilla lima.
-- Cards radio 16, sin sidebar “Qué hacemos distinto” al lado de las 8. Esa columna se va o pasa ABAJO de las ofertas, 1 bloque corto.
-- Hero no se corte bajo el header sticky (padding-top suficiente).
-- Botón Ver oferta a ancho de tarjeta en móvil, lima, texto negro.
+B) VISUAL — Foto fondo #f4f6f5, 180px contain. Precio más grande que el título. Ver oferta full-width móvil lima. Sin sidebar al lado de las 8. Hero no cortado por el header.
 
-meli.la y las 8 URLs no se tocan.
-Publica Sites desde workspace (HEAD nuevo). Nunca SHA d335794.
-hecho_cuando: demo público en celu: copy chileno, fotos sobre fondo claro, sin “chollo/prototipo/spam/oportunidades detectadas”, hero no tapado.
+C) HISTORIAL (al tocar la tarjeta, ficha):
+- Título “Precio en el tiempo” (no “Hace 30d” críptico).
+- Tres puntos claros: Hace 30 días / Hace 7 días / Hoy. Si el dato es stub, cada cifra lleva la palabra “referencial”. No inventes una baja de $200.000.
+- Una línea: “Conviene ahora” o “Esperar” según hoy vs 30 días (si hoy ≥ 30d → Esperar).
+- Mini barras o 3 cajas iguales, no un modal roto ni 1 columna ilegible en móvil.
+- Mismo CTA Ver oferta abajo. Cerrar con X 44px.
+- PS5: hoy $682.936 / antes $729.990. El resto: usa el precio de la tarjeta; si no hay serie real, marca referencial.
+
+Publica Sites desde workspace. Nunca SHA d335794.
+hecho_cuando: demo célula: copy nuevo + ficha con “Precio en el tiempo” visible y entendible.
 =======
 
-======= LOG GROK 2026-09-14 21:47 -03 =======
-Ivo: 007 arregló el descuadre, no el producto. “Chollo” no se usa en Chile. 008 = verse y hablar como sitio chileno que gana a Knasta en 3 segundos, no un deck de startup.
+======= LOG GROK 2026-09-14 21:49 -03 =======
+Ivo no pega nada a ChatGPT. 008 = look + historial. Automation Grok actualizada para mandar solo por NOTAS.
 =======
