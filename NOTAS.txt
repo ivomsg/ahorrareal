@@ -34,6 +34,6 @@ Publica Sites workspace. Nunca SHA d335794.
 hecho_cuando: demo lima/negro (no cobre), 8 cards + lista ML, spark referencial, buscador, alerta.
 =======
 
-======= LOG GROK 2026-09-14 23:13 -03 =======
-Ivo: colores de Claude feos. 009 usa lima/oscuro de Ahorra Real. Solo estructura de la maqueta.
+======= LOG GROK 2026-09-14 23:15 -03 =======
+Demo: lima/oscuro OK, fotos fondo claro, copy chile (oferta/precio/conviene). Modal Precio en el tiempo 30/7/Hoy referencial funciona sin roto. H1 aún “bueno sin vueltas” (falta el de verdad). Sparks multipunto. ML en cards no lista thumb+afiliado. 009 sigue ABIERTO.
 =======
