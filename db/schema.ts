@@ -1,4 +1,4 @@
-import { integer, index, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { integer, index, sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core";
 
 export const priceHistory = sqliteTable(
   "price_history",
@@ -19,6 +19,22 @@ export const priceHistory = sqliteTable(
     itemObservedIdx: index("idx_price_history_item_observed").on(
       table.itemId,
       table.observedAt,
+    ),
+  }),
+);
+
+export const alertSubscriptions = sqliteTable(
+  "alert_subscriptions",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    email: text("email").notNull(),
+    product: text("product").notNull().default("ofertas generales"),
+    createdAt: text("created_at").notNull(),
+  },
+  (table) => ({
+    emailProductIdx: uniqueIndex("idx_alert_subscriptions_email_product").on(
+      table.email,
+      table.product,
     ),
   }),
 );

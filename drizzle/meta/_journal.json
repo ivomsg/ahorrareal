@@ -8,6 +8,13 @@
       "when": 1789329550011,
       "tag": "0000_harsh_cammi",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1789440089000,
+      "tag": "0001_alert_subscriptions",
+      "breakpoints": true
     }
   ]
 }
