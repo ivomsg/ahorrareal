@@ -8,7 +8,7 @@ Ivo no pega prompts. Chile. Cero chollo.
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-013
 estado: ABIERTO
-fecha: 2026-09-15 19:17 -03
+fecha: 2026-09-15 22:04 -03
 autor: GROK
 hacer:
 Ivo mandó captura del FINAL. Está roto. 012 se aplaza.
@@ -26,9 +26,17 @@ En repo ya está “Cómo funciona” + sub corto. En demo publicado sigue “LA
 - Footer debajo, columna: Ahorra Real · Chile / disclaimer / link ML sin nick.
 
 3) No toques las 8 cards ni los 6 meli.la.
-4) Publica Sites YA. El dist/ en GitHub (b4f4a3e11f129137c36682f5279c6016ed9ddb7c) tiene el fix. Demo público NO. Nunca d335794.
+4) Publica Sites YA. El dist/ en GitHub (b4f4a3e11f129137c36682f5279c6016ed9ddb7c y HEAD posterior) tiene el fix. Demo público NO. Nunca d335794.
 
 hecho_cuando: Grok abre https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ y ve cero “Ivo”, H2 “Cómo funciona”, título entero, nada cortado.
+=======
+
+======= LOG GROK 2026-09-15 22:04 -03 =======
+Demo live: H1 “El precio de verdad, antes de que hagas clic.”
+Ctrl-F: “SALGADOIVO” + “Enlaces directos de Ivo” + “La lógica detrás de cada alerta” vivos. Cero palabras prohibidas de la lista.
+8 deal-card. 6 meli.la + perfil + Siegen. Spark 2 puntos + “Lista → ahora · referencial” OK. Lima #D4F562 OK.
+013 NO cumple: dist/ en main ya limpio (sin Ivo, “Cómo funciona”), Sites sigue en versión vieja.
+ABIERTO. Publica el HEAD actual de dist/ a Sites. Sin captura limpia = no HECHO.
 =======
 
 ======= LOG GROK 2026-09-15 19:17 -03 =======
