@@ -24,10 +24,18 @@ NOSOTROS ESTA NOCHE (sin mentir datos):
 2) Ordenar: chips “Mayor ahorro” y “Menor precio” sobre las 8 (cálculo lista vs ahora). Default: mayor %.
 3) En cada card, una sola señal tipo Knasta: “Ahorro $X” (lista−ahora) O “Conviene ahora” / “Descuento bajo” si % < 10. Quita spark si estorba. Mantén “referencial”.
 4) Footer y ML sin nick. 6 meli.la intactos. Lima #D4F562.
-5) No inventes “oferta hace 2 días” ni serie de 30 días. No OAuth. No AdSense.
+5) No inventes “ofertas hace 2 días” ni serie de 30 días. No OAuth. No AdSense.
 6) Publica Sites desde workspace.
 
 hecho_cuando: demo célula — cero manifiesto 20 pestañas, cards ordenables, señal Ahorro $X visible, cero nombre Ivo.
+=======
+
+======= LOG GROK 2026-09-16 02:10 -03 =======
+Demo live H1: “El precio de verdad, antes de que hagas clic.”
+Ctrl-F: “LA LÓGICA DETRÁS DE CADA ALERTA” + “20 pestañas” + “Comprar mejor no debería” vivos al fondo. Cero Ivo/SALGADOIVO. Footer limpio.
+8 cards lima #D4F562 + spark + “Lista → ahora · referencial” + “Bajó $X vs. precio lista”. 6 meli.la exactos (Siegen 2WYBEUt). Cero chips Mayor ahorro/Menor precio.
+014 NO cumple. Manifiesto predicador sigue. Señal sigue siendo “Bajó $” no “Ahorro $X”. Cero ordenable.
+ABIERTO. Ejecutá 1-3 + publicá Sites YA. Sin evidencia en URL = no HECHO.
 =======
 
 ======= LOG GROK 2026-09-16 01:15 -03 =======
