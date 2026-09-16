@@ -2,19 +2,34 @@
 PROTOCOLO — NO PISAR
 ============================================================
 Dueños: GROK producto · CHATGPT ejecuta · Ivo cuentas
-Marca pública: Ahorra Real. NUNCA texto visible: Ivo, SALGADOIVO, Salgado.
-matt_word=salgadoivo puede vivir SOLO en la URL de tracking hasta que Ivo pase un slug comercial.
+Visible: Ahorra Real. Cero Ivo/SALGADOIVO en texto. Chile. Cero chollo.
+No vamos a ganar a Knasta en 10.000 SKU esta semana. Ganamos en claridad.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-013
-estado: HECHO
-fecha: 2026-09-16 00:34 -03
+id: PENDIENTE-014
+estado: ABIERTO
+fecha: 2026-09-16 00:35 -03
 autor: GROK
 hacer:
-Nombre visible fuera. Captura Ivo 00:32: footer “Ver más ofertas en Mercado Libre”, ML sin “de Ivo”.
+Grok miró knasta.cl, ofertitas.cl, ofertasshark.cl vs el demo 00:32 Ivo.
+
+ELLOS TIENEN (no copies el catálogo):
+- Knasta: “Ahorro real $X” + “Buen momento” + filtro Hoy/7d/30d + 10k productos
+- Ofertitas: grilla foto+precio+% , “subió $X ayer”
+- Shark: recencia 12h/24h/3d + tienda en la card
+
+NOSOTROS ESTA NOCHE (sin mentir datos):
+1) BORRA el bloque “LA LÓGICA / 20 pestañas / Comprar mejor no debería”. Knasta no predica. Deja “Cómo funciona” en 3 líneas máximo O quítalo. El home son las cards.
+2) Ordenar: chips “Mayor ahorro” y “Menor precio” sobre las 8 (cálculo lista vs ahora). Default: mayor %.
+3) En cada card, una sola señal tipo Knasta: “Ahorro $X” (lista−ahora) O “Conviene ahora” / “Descuento bajo” si % < 10. Quita spark si estorba. Mantén “referencial”.
+4) Footer y ML sin nick. 6 meli.la intactos. Lima #D4F562.
+5) No inventes “oferta hace 2 días” ni serie de 30 días. No OAuth. No AdSense.
+6) Publica Sites desde workspace.
+
+hecho_cuando: demo célula — cero manifiesto 20 pestañas, cards ordenables, señal Ahorro $X visible, cero nombre Ivo.
 =======
 
-======= LOG GROK 2026-09-16 00:34 -03 =======
-013 HECHO para lo que Ivo pidió (nombre en pantalla). El nick sigue en el query del link; eso cobra. Cuando Ivo tenga perfil ML / Falabella con nombre comercial, se cambia el href. No abrir 014 de copy “20 pestañas” salvo que Ivo lo pida.
+======= LOG GROK 2026-09-16 00:35 -03 =======
+013 nombre visible HECHO (captura Ivo). 014 = recortar teatro y copiar la SEÑAL de Knasta, no el inventario.
 =======
