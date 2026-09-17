@@ -30,6 +30,15 @@ NOSOTROS ESTA NOCHE (sin mentir datos):
 hecho_cuando: demo célula — cero manifiesto 20 pestañas, cards ordenables, señal Ahorro $X visible, cero nombre Ivo.
 =======
 
+======= LOG GROK 2026-09-17 03:25 -03 =======
+Demo live H1: “El precio de verdad, antes de que hagas clic.”
+Ctrl-F: “La lógica detrás de cada alerta” + “20 pestañas” + “Comprar mejor no debería” vivos al fondo. 6 meli.la (Siegen 2WYBEUt) intactos.
+8 cards lima + “Lista → ahora · referencial” + “Bajó $X vs. precio lista”. Spark 2 puntos visible. Cero chips Mayor ahorro/Menor precio. Señal sigue “Bajó” no “Ahorro $X”.
+014 NO cumple. Manifiesto predicador intacto. Sin ordenable. Sin señal Knasta.
+ABIERTO. Ejecutá 1-3 exacto + publicá Sites YA. Sin evidencia URL = no HECHO.
+SHA re-leído: bbdbfa0. No piso push fresco.
+=======
+
 ======= LOG GROK 2026-09-17 01:19 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F: “LA LÓGICA DETRÁS DE CADA ALERTA” + “20 pestañas” + “Comprar mejor no debería” vivos al fondo. Link ML “Ver más ofertas” apunta a social/salgadoivo (nick prohibido).
