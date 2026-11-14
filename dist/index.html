@@ -82,6 +82,10 @@
       .market-bar { display: flex; gap: 9px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
       .chip { border: 1px solid var(--line); color: var(--muted); background: transparent; border-radius: 100px; padding: 9px 14px; font-size: 13px; white-space: nowrap; }
       .chip:hover, .chip.active { color: var(--ink); border-color: var(--lime); background: var(--lime); }
+      .sort-bar { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; margin-top: 14px; }
+      .sort-label { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+      .sort-chip { border: 1px solid var(--line); color: var(--muted); background: transparent; border-radius: 100px; padding: 9px 14px; font-size: 13px; white-space: nowrap; }
+      .sort-chip:hover, .sort-chip.active { color: var(--ink); border-color: var(--lime); background: var(--lime); }
       .deal-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; align-items: start; margin-top: 18px; }
       .deal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
       .card-image { display: block; width: calc(100% + 36px); height: 180px; margin: -18px -18px 16px; object-fit: contain; background: #f4f6f5; border: 0; }
@@ -263,6 +267,11 @@
           <button class="chip" data-category="herramientas" aria-selected="false">Herramientas</button>
           <button class="chip" data-category="electro" aria-selected="false">Electrodomésticos</button>
         </div>
+        <div class="sort-bar" role="group" aria-label="Ordenar ofertas">
+          <span class="sort-label">Ordenar por</span>
+          <button class="sort-chip active" type="button" data-sort="discount" aria-pressed="true">Mayor ahorro</button>
+          <button class="sort-chip" type="button" data-sort="price" aria-pressed="false">Menor precio</button>
+        </div>
 
         <div class="deal-layout">
           <div class="deal-grid" id="dealGrid">
@@ -273,7 +282,7 @@
               <span class="meta">Hogar · Inverter · despacho sujeto a comuna</span>
               <div class="price-row"><strong class="price">$439.990</strong><span class="old-price">Antes $699.990</span></div>
               <div class="price-trend" aria-label="Precio de lista 699.990 pesos; ahora 439.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
-              <p class="movement">Bajó $260.000 vs. precio lista</p>
+              <p class="movement">Ahorro $260.000 · referencial</p>
               <p class="store-context">Falabella · confirma stock y despacho</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Oferta fuerte</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
@@ -285,7 +294,7 @@
               <span class="meta">Tecnología · desbloqueado · 128 GB</span>
               <div class="price-row"><strong class="price">$839.990</strong><span class="old-price">Antes $949.990</span></div>
               <div class="price-trend" aria-label="Precio de lista 949.990 pesos; ahora 839.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
-              <p class="movement">Bajó $110.000 vs. precio lista</p>
+              <p class="movement">Ahorro $110.000 · referencial</p>
               <p class="store-context">Falabella · confirma stock y despacho</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
@@ -297,7 +306,7 @@
               <span class="meta">Tecnología · 14″ WUXGA · Windows 11</span>
               <div class="price-row"><strong class="price">$529.990</strong><span class="old-price">Antes $559.990</span></div>
               <div class="price-trend" aria-label="Precio de lista 559.990 pesos; ahora 529.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
-              <p class="movement">Bajó $30.000 vs. precio lista</p>
+              <p class="movement">Descuento bajo · referencial</p>
               <p class="store-context">PC Factory · confirma stock y despacho</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
@@ -309,7 +318,7 @@
               <span class="meta">Hogar · V6C · precio final referencial</span>
               <div class="price-row"><strong class="price">$289.990</strong><span class="old-price">Antes $369.990</span></div>
               <div class="price-trend" aria-label="Precio de lista 369.990 pesos; ahora 289.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
-              <p class="movement">Bajó $80.000 vs. precio lista</p>
+              <p class="movement">Ahorro $80.000 · referencial</p>
               <p class="store-context">Falabella · confirma stock y despacho</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
@@ -321,7 +330,7 @@
               <span class="meta">Herramientas · kit con 2 baterías</span>
               <div class="price-row"><strong class="price">$629.990</strong><span class="old-price">Antes $799.990</span></div>
               <div class="price-trend" aria-label="Precio de lista 799.990 pesos; ahora 629.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
-              <p class="movement">Bajó $170.000 vs. precio lista</p>
+              <p class="movement">Ahorro $170.000 · referencial</p>
               <p class="store-context">Sodimac · confirma stock por tienda</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Buen momento</div><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
@@ -333,7 +342,7 @@
               <span class="meta">Electrodomésticos · control 80–200 °C</span>
               <div class="price-row"><strong class="price">$43.990</strong><span class="old-price">Antes $50.990</span></div>
               <div class="price-trend" aria-label="Precio de lista 50.990 pesos; ahora 43.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
-              <p class="movement">Bajó $7.000 vs. precio lista</p>
+              <p class="movement">Ahorro $7.000 · referencial</p>
               <p class="store-context">Ripley · confirma stock y despacho</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Buen precio</div><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
@@ -345,7 +354,7 @@
               <span class="meta">Tecnología · FreeSync · 5 ms</span>
               <div class="price-row"><strong class="price">$139.990</strong><span class="old-price">Antes $159.990</span></div>
               <div class="price-trend" aria-label="Precio de lista 159.990 pesos; ahora 139.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
-              <p class="movement">Bajó $20.000 vs. precio lista</p>
+              <p class="movement">Ahorro $20.000 · referencial</p>
               <p class="store-context">PC Factory · confirma stock y despacho</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
@@ -357,7 +366,7 @@
               <span class="meta">Hogar · aspira y trapea · 15.000 Pa</span>
               <div class="price-row"><strong class="price">$259.990</strong><span class="old-price">Antes $289.990</span></div>
               <div class="price-trend" aria-label="Precio de lista 289.990 pesos; ahora 259.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,5 84,25" stroke="#d4f562" stroke-width="2" stroke-linecap="round"/><circle cx="4" cy="5" r="3" fill="#d4f562"/><circle cx="84" cy="25" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
-              <p class="movement">Bajó $30.000 vs. precio lista</p>
+              <p class="movement">Ahorro $30.000 · referencial</p>
               <p class="store-context">Falabella · confirma stock y despacho</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Buen precio</div><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
@@ -459,10 +468,12 @@
 
     <script>
       const cards = [...document.querySelectorAll('.deal-card')];
-      const chips = [...document.querySelectorAll('.chip')];
+      const chips = [...document.querySelectorAll('.chip[data-category]')];
+      const sortChips = [...document.querySelectorAll('.sort-chip')];
       const search = document.getElementById('search');
       const offerCount = document.getElementById('offerCount');
       let category = 'all';
+      let sortMode = 'discount';
 
       const formatClp = value => '$' + Math.round(value).toLocaleString('es-CL');
 
@@ -476,9 +487,24 @@
           const movement = card.querySelector('.movement');
           if (badge) badge.textContent = `−${discount}%`;
           if (movement) movement.textContent = list > current
-            ? `Bajó ${formatClp(list - current)} vs. precio lista`
-            : 'Sin baja reciente';
+            ? (discount < 10 ? 'Descuento bajo · referencial' : `Ahorro ${formatClp(list - current)} · referencial`)
+            : 'Sin ahorro · referencial';
         });
+      }
+
+      function sortCards() {
+        const grid = document.getElementById('dealGrid');
+        const sorted = [...cards].sort((a, b) => {
+          const aCurrent = Number(a.dataset.priceCurrent);
+          const bCurrent = Number(b.dataset.priceCurrent);
+          if (sortMode === 'price') return aCurrent - bCurrent;
+          const aList = Number(a.dataset.priceList);
+          const bList = Number(b.dataset.priceList);
+          const aDiscount = aList > 0 ? (aList - aCurrent) / aList : 0;
+          const bDiscount = bList > 0 ? (bList - bCurrent) / bList : 0;
+          return bDiscount - aDiscount;
+        });
+        sorted.forEach(card => grid.appendChild(card));
       }
 
       function applyFilters() {
@@ -515,6 +541,17 @@
         category = chip.dataset.category;
         applyFilters();
       }));
+      sortChips.forEach(chip => chip.addEventListener('click', () => {
+        sortChips.forEach(item => {
+          item.classList.remove('active');
+          item.setAttribute('aria-pressed', 'false');
+        });
+        chip.classList.add('active');
+        chip.setAttribute('aria-pressed', 'true');
+        sortMode = chip.dataset.sort;
+        sortCards();
+        applyFilters();
+      }));
       search.addEventListener('input', applyFilters);
       document.getElementById('searchButton').addEventListener('click', () => {
         document.getElementById('ofertas').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -522,6 +559,7 @@
       });
 
       updateDealSignals();
+      sortCards();
       applyFilters();
 
       document.getElementById('alertForm').addEventListener('submit', async event => {
@@ -636,3 +674,4 @@
     </script>
   </body>
 </html>
+
