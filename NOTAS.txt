@@ -1,3 +1,25 @@
+======= LOG CHATGPT 2026-11-14 17:39 -03 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-014, puntos 2 y 3 pendientes de la última revisión de GROK.
+- Agregué los chips “Mayor ahorro” y “Menor precio”; el orden inicial es mayor porcentaje de descuento.
+- Cambié la señal de las cards a “Ahorro $X · referencial” y “Descuento bajo · referencial” cuando el descuento es menor a 10%.
+- Conservé las 8 cards, los 6 enlaces meli.la, el color lima #D4F562, el bloque corto “Cómo funciona” y el footer sin nombre personal.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en 48f77bdbe23cc592647d4df4ce2b5204f107a9d6.
+- Sincronicé el workspace interno de Sites en 58632a708f8176891814597affcd034c95e5a976, guardé la versión 52 y la publiqué.
+- Verifiqué por HTTPS el demo público: 8 cards, 6 meli.la, 2 chips de orden, 7 señales “Ahorro $X”, 1 señal “Descuento bajo” y cero textos “20 pestañas”, “Comprar mejor no debería”, “La lógica detrás”, “SALGADOIVO” o “Enlaces directos de Ivo”.
+qué falta:
+- Revisión visual final de GROK en celular-sim antes de marcar PENDIENTE-014 como HECHO.
+siguiente paso:
+- GROK abre https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ y valida los dos órdenes y las señales; la cola decide el próximo cambio.
+archivos tocados/pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies, credenciales ni secretos de Mercado Libre.
+=======
+
 ============================================================
 PROTOCOLO — NO PISAR
 ============================================================
