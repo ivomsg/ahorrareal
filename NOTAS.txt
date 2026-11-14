@@ -1,10 +1,9 @@
-======= LOG GROK 2026-11-14 17:50 -03 =======
+======= LOG GROK 2026-11-14 18:14 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F: “20 pestañas / LA LÓGICA / Comprar mejor no debería” = CERO.
-Chips: Mayor ahorro + Menor precio presentes.
-Señales: Ahorro $X (varios) + Descuento bajo. Cero “Bajó”.
-6 meli.la intactos. Footer limpio. Lima ok.
-014 CUMPLE en navegador. Marca HECHO.
+Ctrl-F prohibidas: CERO.
+8 cards con foto producto 371x180 visible arriba. 6 meli.la + Siegen intactos.
+Señales Ahorro $X + Descuento bajo. Chips Mayor ahorro / Menor precio.
+015 CUMPLE en navegador. Marca HECHO.
 =======
 
 ============================================================
@@ -16,20 +15,25 @@ No vamos a ganar a Knasta en 10.000 SKU esta semana. Ganamos en claridad.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-015
+id: PENDIENTE-016
 estado: ABIERTO
-fecha: 2026-11-14 17:50 -03
+fecha: 2026-11-14 18:14 -03
 autor: GROK
 hacer:
-014 HECHO. Ahora el home se ve como texto. Knasta y Ofertitas ganan con la foto grande del producto.
+015 HECHO. Fotos grandes presentes. Ahora el weón del Metro debe ver en 3 segundos: foto + precio grande + si conviene.
 
-1) En cada card de las 8, la imagen del producto debe ser el elemento principal (arriba, grande, no un thumbnail chico o ausente).
-2) Si el producto no tiene imagen_url, usar un placeholder limpio (no roto).
-3) Mantén chips Mayor ahorro / Menor precio, señal Ahorro $X / Descuento bajo, 6 meli.la, lima #D4F562, footer sin nombre, cero manifiesto.
-4) No inventes precios ni fechas. No OAuth. No AdSense.
+1) En cada card: el precio actual ($XXX.XXX) debe ser el texto más grande y bold después de la foto. El “Antes” más chico y tachado.
+2) El % de descuento (ej −37%) y la señal “Ahorro $X” / “Buen momento” deben estar encima o pegados al precio, no escondidos.
+3) Mantén 8 cards, fotos, 6 meli.la, chips de orden, lima #D4F562, cero manifiesto, footer limpio.
+4) No inventes precios. No OAuth. No AdSense.
 5) Publica Sites.
 
-hecho_cuando: demo célula — cada card muestra foto de producto grande y clara + señal Ahorro visible.
+hecho_cuando: demo — en celular simulado el precio y el ahorro se leen en 3 segundos sin scroll horizontal ni texto microscópico.
+=======
+
+======= HECHO 015 =======
+fecha: 2026-11-14 18:14 -03
+8 cards con imagen de producto principal (371px ancho visible). No thumbnails rotos.
 =======
 
 ======= HECHO 014 =======
@@ -44,7 +48,7 @@ qué hice:
 - Cambié la señal de las cards a “Ahorro $X · referencial” y “Descuento bajo · referencial” cuando el descuento es menor a 10%.
 - Conservé las 8 cards, los 6 enlaces meli.la, el color lima #D4F562, el bloque corto “Cómo funciona” y el footer sin nombre personal.
 - Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en 48f77bdbe23cc592647d4df4ce2b5204f107a9d6.
-- Sincronicé el workspace interno de Sites en 58632a708f8176891814597affcd034c95e5a976, guardé la versión 52 y la publiqué.
+- Sincronicé el workspace interno de Sites en 58632a708f8176891814597affcd034c95e5a976, guardé la versión 52 y la publiquié.
 - Verifiqué por HTTPS el demo público: 8 cards, 6 meli.la, 2 chips de orden, 7 señales “Ahorro $X”, 1 señal “Descuento bajo” y cero textos “20 pestañas”, “Comprar mejor no debería”, “La lógica detrás”, “SALGADOIVO” o “Enlaces directos de Ivo”.
 qué falta:
 - Revisión visual final de GROK en celular-sim antes de marcar PENDIENTE-014 como HECHO.
