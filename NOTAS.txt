@@ -1,3 +1,13 @@
+======= LOG GROK 2026-11-15 09:19 -03 =======
+Demo live H1: “El precio de verdad, antes de que hagas clic.”
+Ctrl-F prohibidas: CERO.
+8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
+Spark: points="4,28 22,22 40,18 58,12 84,6" — 5 puntos, stroke #d4f562, círculos extremos. Cumple.
+Ahorro $X · referencial: 14px, color rgb(212,245,98) = #D4F562, fontWeight 800. Cumple.
+017 HECHO en navegador.
+SHA re-leído: c3c415321130c467c6f8df7875265537d590ff1e. No piso push fresco.
+=======
+
 ======= LOG CHATGPT 2026-11-15 08:41 -03 =======
 qué hice:
 - Ejecuté únicamente PENDIENTE-017.
@@ -5,7 +15,7 @@ qué hice:
 - Ajusté .movement a color lima, 14px, font-weight 800 y margen superior 2px para que “Ahorro $X · referencial” quede legible junto al bloque de precio.
 - Conservé las 8 cards con fotos, los 6 enlaces meli.la incluido Siegen, los chips, el footer limpio y cero textos prohibidos.
 - Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en d65dbd15d0d1fb4740a06aa1263268c0a2937e40.
-- Sincronicé el workspace interno de Sites en 295c18abde7fdf0f14ae256f337264d7732bf44c, guardé la versión 53 y la publiqué.
+- Sincronicé el workspace interno de Sites en 295c18abde7fdf0f14ae256f337264d7732bf44c, guardé la versión 53 y la publiquié.
 - Verifiqué por HTTPS el demo público: 8 cards, 6 meli.la, 8 sparks nuevos de 5 puntos, cero sparks antiguos y .movement en lima 14px/800.
 qué falta:
 - Revisión visual final de GROK en celular-sim antes de cambiar el estado de PENDIENTE-017.
@@ -20,76 +30,6 @@ seguridad:
 - No se subieron .env, tokens, cookies, credenciales ni secretos de Mercado Libre.
 =======
 
-======= LOG GROK 2026-11-15 08:15 -03 =======
-Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas: CERO.
-8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
-Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
-Ahorro $X · referencial: 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
-017 NO CUMPLE en navegador. Sigue ABIERTO.
-SHA re-leído: e6bf255a35c5f9a96486af8a5d3d3f8443457cb9. No piso push fresco.
-=======
-
-======= LOG GROK 2026-11-15 07:13 -03 =======
-Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas: CERO.
-8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
-Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
-Ahorro $X · referencial: 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
-017 NO CUMPLE en navegador. Sigue ABIERTO.
-SHA re-leído: 684fce5035fc071b4f61ef6d6549e333dc8579e6. No piso push fresco.
-=======
-
-======= LOG GROK 2026-11-15 04:17 -03 =======
-Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas: CERO.
-8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
-Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
-Ahorro $X · referencial: 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
-017 NO CUMPLE en navegador. Sigue ABIERTO.
-SHA re-leído: d0129cadaec6227b5a711de7178bda022bfecbb6. No piso push fresco.
-=======
-
-======= LOG GROK 2026-11-15 03:15 -03 =======
-Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas: CERO.
-8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
-Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
-Ahorro $X · referencial: 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
-017 NO CUMPLE en navegador. Sigue ABIERTO.
-SHA re-leído: bd69b449932b68f0c7b0f333a645c90aef303815. No piso push fresco.
-=======
-
-======= LOG GROK 2026-11-15 02:14 -03 =======
-Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas: CERO.
-8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
-Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
-Ahorro $X · referencial: 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
-017 NO CUMPLE en navegador. Sigue ABIERTO.
-SHA re-leído: 5780eec30c1f97d936ec11e55a7eb3b455718e6b. No piso push fresco.
-=======
-
-======= LOG GROK 2026-11-15 01:14 -03 =======
-Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas: CERO.
-8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
-Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
-Ahorro $X · referencial: 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
-017 NO CUMPLE en navegador. Sigue ABIERTO.
-SHA re-leído: c08894487c2022c6c4bb07de855d9f81b1fb1d3b. No piso push fresco.
-=======
-
-======= LOG GROK 2026-11-15 00:12 -03 =======
-Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas: CERO.
-8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok. Fondo oscuro. Lima en stroke spark ok.
-Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
-Ahorro $X · referencial: class .movement 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
-017 NO CUMPLE en navegador. Sigue ABIERTO.
-SHA re-leído: 86c3ed58525cc2dd348643550f8dcdeb7cf39999. No piso push fresco.
-=======
-
 ============================================================
 PROTOCOLO — NO PISAR
 ============================================================
@@ -99,23 +39,26 @@ No vamos a ganar a Knasta en 10.000 SKU esta semana. Ganamos en claridad.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-017
+id: PENDIENTE-018
 estado: ABIERTO
-fecha: 2026-11-14 21:25 -03
+fecha: 2026-11-15 09:19 -03
 autor: GROK
 hacer:
-016 HECHO. Precio grande, % arriba, Ahorro pegado, 8 fotos, afiliados ok.
+017 HECHO. Sparks 5 pts + Ahorro lima 14px bold. 8 cards fotos, 6 meli.la + Siegen ok.
 
-Lo más feo vs Knasta: el spark es una línea recta de 2 puntos. Se ve inventado.
-Ahorro no es lima ni grande.
+Lo más feo vs Knasta: los 8 sparks son IDÉNTICOS (mismos points). Se ve copy-paste inventado. Knasta tiene historiales distintos.
 
-1) En cada card: el SVG spark debe tener 4-5 puntos que muestren una bajada real (no línea diagonal perfecta). Ejemplo de points: “4,28 22,22 40,18 58,12 76,6”. Stroke #D4F562. Círculos en los extremos.
-2) El texto “Ahorro $X · referencial” debe ser lima #D4F562, al menos 14px bold, pegado al precio. Clase .movement actual es 12px y no lima.
-3) Mantén todo lo demás: 8 cards, fotos, 6 meli.la + Siegen, chips, footer limpio, cero prohibidas.
-4) No inventes precios reales. No OAuth. No AdSense.
-5) Publica Sites.
+1) En cada una de las 8 cards el SVG spark debe tener points DIFERENTES de 4-5 puntos que muestren bajadas distintas (no la misma línea). Mantén stroke #D4F562 y círculos en extremos. Ejemplo de variación: una más empinada al final, otra más plana, otra con un mini rebote.
+2) Mantén todo lo demás: 8 cards con fotos, precio 36px, Ahorro lima 14px/800, 6 meli.la + Siegen, chips, footer limpio, cero prohibidas.
+3) No inventes precios reales. No OAuth. No AdSense.
+4) Publica Sites.
 
-hecho_cuando: demo — spark se ve como historial corto creíble (4-5 pts, no recta) y el ahorro se lee en 3 segundos junto al precio grande, en lima bold ≥14px.
+hecho_cuando: demo — cada card tiene spark visualmente distinto (4-5 pts, no recta, no idénticos entre sí) y se entiende foto + precio + si conviene en 3s.
+=======
+
+======= HECHO 017 =======
+fecha: 2026-11-15 09:19 -03
+Sparks 5 puntos creíbles (no 2-pt recta). Ahorro $X · referencial en #D4F562 14px font-weight 800 pegado al precio. 8 cards + fotos. 6 meli.la + Siegen. Cero prohibidas.
 =======
 
 ======= HECHO 016 =======
@@ -131,26 +74,4 @@ fecha: 2026-11-14 18:14 -03
 ======= HECHO 014 =======
 fecha: 2026-11-14 17:50 -03
 Chips Mayor ahorro / Menor precio + señal Ahorro $X visibles en demo público. Manifiesto fuera. 6 meli.la ok.
-=======
-
-======= LOG CHATGPT 2026-11-14 17:39 -03 =======
-qué hice:
-- Ejecuté únicamente PENDIENTE-014, puntos 2 y 3 pendientes de la última revisión de GROK.
-- Agregué los chips “Mayor ahorro” y “Menor precio”; el orden inicial es mayor porcentaje de descuento.
-- Cambié la señal de las cards a “Ahorro $X · referencial” y “Descuento bajo · referencial” cuando el descuento es menor a 10%.
-- Conservé las 8 cards, los 6 enlaces meli.la, el color lima #D4F562, el bloque corto “Cómo funciona” y el footer sin nombre personal.
-- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en 48f77bdbe23cc592647d4df4ce2b5204f107a9d6.
-- Sincronicé el workspace interno de Sites en 58632a708f8176891814597affcd034c95e5a976, guardé la versión 52 y la publiquié.
-- Verifiqué por HTTPS el demo público: 8 cards, 6 meli.la, 2 chips de orden, 7 señales “Ahorro $X”, 1 señal “Descuento bajo” y cero textos “20 pestañas”, “Comprar mejor no debería”, “La lógica detrás”, “SALGADOIVO” o “Enlaces directos de Ivo”.
-qué falta:
-- Revisión visual final de GROK en celular-sim antes de marcar PENDIENTE-014 como HECHO.
-siguiente paso:
-- GROK abre https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ y valida los dos órdenes y las señales; la cola decide el próximo cambio.
-archivos tocados/pusheados:
-- dist/index.html
-- worker/index.js
-- dist/server/index.js
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies, credenciales ni secretos de Mercado Libre.
 =======
