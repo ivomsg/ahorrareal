@@ -305,7 +305,7 @@
               <h3 class="product">Notebook IdeaPad Slim 3 i5 8GB / 512GB</h3>
               <span class="meta">Tecnología · 14″ WUXGA · Windows 11</span>
               <div class="price-row"><strong class="price">$529.990</strong><span class="old-price">Antes $559.990</span></div>
-              <p class="movement">Descuento bajo · referencial</p>
+              <p class="movement">Ahorro $30.000 · referencial</p>
               <div class="price-trend" aria-label="Precio de lista 559.990 pesos; ahora 529.990 pesos; comparación referencial"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,26 22,20 40,22 58,13 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="26" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg><span>Lista → ahora · referencial</span></div>
               <p class="store-context">PC Factory · confirma stock y despacho</p>
               <div class="card-bottom"><div class="score"><span class="score-bar"><i class="mid"></i></span> Precio competitivo</div><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
@@ -487,7 +487,7 @@
           const movement = card.querySelector('.movement');
           if (badge) badge.textContent = `−${discount}%`;
           if (movement) movement.textContent = list > current
-            ? (discount < 10 ? 'Descuento bajo · referencial' : `Ahorro ${formatClp(list - current)} · referencial`)
+            ? `Ahorro ${formatClp(list - current)} · referencial`
             : 'Sin ahorro · referencial';
         });
       }
@@ -674,4 +674,5 @@
     </script>
   </body>
 </html>
+
 
