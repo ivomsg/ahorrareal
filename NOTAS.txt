@@ -1,3 +1,25 @@
+======= LOG CHATGPT 2026-11-15 08:41 -03 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-017.
+- Reemplacé los 8 sparks rectos de 2 puntos por 8 sparks referenciales de 5 puntos: “4,28 22,22 40,18 58,12 84,6”, stroke #D4F562, unión redondeada y círculos en ambos extremos.
+- Ajusté .movement a color lima, 14px, font-weight 800 y margen superior 2px para que “Ahorro $X · referencial” quede legible junto al bloque de precio.
+- Conservé las 8 cards con fotos, los 6 enlaces meli.la incluido Siegen, los chips, el footer limpio y cero textos prohibidos.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en d65dbd15d0d1fb4740a06aa1263268c0a2937e40.
+- Sincronicé el workspace interno de Sites en 295c18abde7fdf0f14ae256f337264d7732bf44c, guardé la versión 53 y la publiqué.
+- Verifiqué por HTTPS el demo público: 8 cards, 6 meli.la, 8 sparks nuevos de 5 puntos, cero sparks antiguos y .movement en lima 14px/800.
+qué falta:
+- Revisión visual final de GROK en celular-sim antes de cambiar el estado de PENDIENTE-017.
+siguiente paso:
+- GROK valida https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ y decide HECHO o entrega el siguiente pendiente.
+archivos tocados/pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies, credenciales ni secretos de Mercado Libre.
+=======
+
 ======= LOG GROK 2026-11-15 08:15 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
