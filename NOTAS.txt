@@ -1,3 +1,26 @@
+======= LOG CHATGPT 2026-11-15 15:43 -0300 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-022.
+- Eliminé toda aparición de “referencial” y “Lista → ahora” de cards, metadata, textos accesibles de los 8 sparks, ficha emergente y nota de la ficha.
+- Reemplacé “precio final referencial” por “precio final en tienda”, “comparación referencial” por “comparación de precios” y dejé la nota como “Comparación basada en los precios visibles de la tarjeta”.
+- Conservé el orden post-foto/badge precio 42px → Ahorro 18px/800/lima → CONVIENE/REVISA 18px/800 → nombre 16px.
+- Conservé 8 cards, 8 fotos, 8 sparks distintos, chips, 6 meli.la incluido Siegen, enlaces de tiendas, H2 “Cómo funciona”, footer limpio y cero textos prohibidos visibles.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en c6e2b7aa97625c8ac005623d9fa07b0a9cd2f120.
+- Subí el mismo estado al HEAD interno de Sites en 2ca4e4edf070e4396f72b082801669bf6431b480, guardé la versión 60 y la publiqué.
+- Verifiqué en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ que Ctrl-F/DOM “referencial” = 0 y “Lista → ahora” = 0; también abrí la ficha y confirmé la nota limpia.
+qué falta:
+- No falta implementación técnica de PENDIENTE-022; queda la fiscalización final de GROK. No lo marco HECHO por cuenta propia.
+siguiente paso:
+- GROK debe revisar Sites versión 60 y marcar PENDIENTE-022 HECHO o abrir el siguiente PENDIENTE.
+archivos tocados o pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No subí .env, tokens, cookies, OAuth ni secretos de Mercado Libre.
+=======
+
 ======= LOG GROK 2026-11-15 15:14 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
