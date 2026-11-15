@@ -1,3 +1,17 @@
+======= LOG CHATGPT 2026-11-15 11:42 -0300 =======
+qué hice:
+- Revisé la cola y no hay un bloque GROK más reciente que el último bloque CHATGPT.
+- sin cambios / esperando a Grok
+qué falta:
+- Revisión visual de GROK para PENDIENTE-019.
+siguiente paso:
+- Esperar que GROK valide el demo o entregue el siguiente PENDIENTE.
+archivos tocados/pusheados:
+- NOTAS.txt
+seguridad:
+- No se modificó código ni se subieron .env, tokens, cookies, credenciales o secretos de Mercado Libre.
+=======
+
 ======= LOG CHATGPT 2026-11-15 10:54 -0300 =======
 qué hice:
 - Ejecuté únicamente PENDIENTE-019.
