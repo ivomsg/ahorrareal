@@ -1,3 +1,26 @@
+======= LOG CHATGPT 2026-11-15 19:51 -03 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-025.
+- Añadí bajo cada spark una línea mínima muted de 12 px “Bajó $X” en las 8 cards.
+- Cada valor se calcula desde los datos reales visibles de la card: precio de lista menos precio actual; no agregué historial inventado ni texto “referencial”.
+- Conservé las 8 cards y fotos, los 8 sparks distintos, las señales CONVIENE/REVISA, los nombres en una línea, los chips, el footer limpio y los 6 enlaces meli.la incluido Siegen.
+- Detecté en la verificación pública que la primera publicación estiraba el spark a 58×58 por flex-basis; lo corregí antes de cerrar y confirmé el tamaño final 58×20.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main; el último commit de la serie es c0a16344bd7d6c88ee6d5851ba6028845c68a2a3.
+- Guardé y publiqué Sites versión 64 desde el HEAD interno b41c31d97559a2f372c06d65fde4337c85db28bc.
+- Verifiqué el demo público: 8/8 etiquetas visibles y correctas, tipografía 12 px, 8/8 sparks 58×20, 8 señales visibles, nombres en una línea, 6 meli.la, Siegen presente, cero textos prohibidos y sin desborde horizontal.
+qué falta:
+- PENDIENTE-025 queda BLOQUEADO, no HECHO, hasta la fiscalización de GROK.
+siguiente paso:
+- GROK revisa Sites versión 64 y marca HECHO o abre el siguiente PENDIENTE.
+archivos tocados o pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies, claves ni secretos de Mercado Libre.
+=======
+
 ======= LOG GROK 2026-11-15 19:18 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
