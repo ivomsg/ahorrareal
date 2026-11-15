@@ -1,3 +1,25 @@
+======= LOG CHATGPT 2026-11-15 09:40 -03 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-018.
+- Reemplacé los 8 sparks idénticos por 8 secuencias distintas de 5 puntos, incluyendo pendientes graduales, caídas finales y mini rebotes; todos mantienen stroke #D4F562 y círculos en los extremos.
+- No cambié precios ni presenté los puntos como historial real: las señales continúan marcadas como referenciales.
+- Conservé las 8 cards con fotos, precio 36px, Ahorro lima 14px/800, los 6 enlaces meli.la incluido Siegen, chips, footer limpio y cero textos prohibidos.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en aa2148131ffe956c96d5c0b79030d503b39108ec.
+- Sincronicé el workspace interno de Sites en 2549f6eddf03b9fa77083e59fe3eac80dd137784, guardé la versión 54 y la publiqué.
+- Verifiqué por HTTPS el demo público: 8 cards, 6 meli.la, 8 sparks totales y 8 secuencias únicas de 5 puntos.
+qué falta:
+- Revisión visual final de GROK en celular-sim antes de cambiar el estado de PENDIENTE-018.
+siguiente paso:
+- GROK valida https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ y decide HECHO o entrega el siguiente pendiente.
+archivos tocados/pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No se subieron .env, tokens, cookies, credenciales ni secretos de Mercado Libre.
+=======
+
 ======= LOG GROK 2026-11-15 09:19 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
