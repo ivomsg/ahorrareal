@@ -25,6 +25,7 @@
       }
 
       * { box-sizing: border-box; }
+      [hidden] { display: none !important; }
       html { scroll-behavior: smooth; }
       body {
         margin: 0;
@@ -94,11 +95,9 @@
       .deal-card:not(.live-card) { cursor: pointer; }
       .deal-card:not(.live-card):focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
       .deal-card.hidden { display: none; }
-      .store { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
       .badge { position: absolute; top: 12px; right: 12px; z-index: 2; color: var(--ink); background: var(--lime); border-radius: 10px; padding: 8px 11px; box-shadow: 0 8px 22px rgba(12,17,23,.28); font-size: 16px; line-height: 1; font-weight: 850; }
       .badge.hot { background: var(--lime); color: var(--ink); }
-      .product { margin: 13px 0 5px; min-height: 40px; font-size: 16px; line-height: 1.25; font-weight: 650; }
-      .meta { display: block; color: var(--muted); font-size: 12px; }
+      .product { margin: 13px 0 0; overflow: hidden; color: var(--paper); font-size: 16px; line-height: 1.25; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
       .price-row { display: flex; align-items: baseline; gap: 9px; margin-top: 0; }
       .price { font-size: 42px; line-height: 1; font-weight: 800; letter-spacing: -.05em; }
       .old-price { color: #c6d0d6; text-decoration: line-through; font-size: 14px; font-weight: 600; }
@@ -163,7 +162,8 @@
       .offer-detail-kicker { margin: 0; color: var(--lime); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
       .offer-detail-close { position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: var(--paper); background: transparent; font-size: 25px; }
       .offer-detail-close:focus-visible, .offer-detail-link:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
-      .offer-detail-store, .offer-detail-note { color: var(--muted); font-size: 13px; }
+      .offer-detail-store { color: var(--muted); font-size: 12px; }
+      .offer-detail-note { color: var(--muted); font-size: 13px; }
       .offer-detail-price { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
       .offer-detail-price strong { font-size: 26px; }
       .offer-detail-price span { color: var(--muted); font-size: 13px; }
@@ -270,108 +270,92 @@
 
         <div class="deal-layout">
           <div class="deal-grid" id="dealGrid">
-            <article class="deal-card" data-category="hogar electro" data-search="lavadora secadora carga frontal 12 kg lg" data-price-current="439990" data-price-list="699990">
+            <article class="deal-card" data-category="hogar electro" data-search="lavadora secadora carga frontal 12 kg lg" data-price-current="439990" data-price-list="699990" data-store="LG · Falabella" data-meta="Hogar · Inverter · despacho sujeto a comuna">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/16731299_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Lavadora-secadora carga frontal 12/7 kg" loading="lazy" decoding="async" />
               <span class="badge">−37%</span>
-              <div class="price-row"><strong class="price">$439.990</strong><span class="old-price">Antes $699.990</span></div>
+              <div class="price-row"><strong class="price">$439.990</strong><span class="old-price" hidden>Antes $699.990</span></div>
               <p class="movement">Ahorro $260.000</p>
               <div class="score">CONVIENE</div>
               <h3 class="product">Lavadora-secadora carga frontal 12/7 kg</h3>
-              <span class="meta">Hogar · Inverter · despacho sujeto a comuna</span>
-              <span class="store">LG · Falabella</span>
-              <div class="price-trend" aria-label="Precio de lista 699.990 pesos; ahora 439.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,27 22,25 40,22 58,18 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="27" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg></div>
-              <div class="card-bottom"><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
+              <div class="price-trend" hidden aria-label="Precio de lista 699.990 pesos; ahora 439.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,27 22,25 40,22 58,18 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="27" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg></div>
+              <div class="card-bottom" hidden><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/16731299/Lavadora-Secadora-12-Kg-7-Kg-Inverter-Wd12Vvc5S6C-Lg/16731299?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="tecnologia" data-search="iphone 16 128 gb" data-price-current="839990" data-price-list="949990">
+            <article class="deal-card" data-category="tecnologia" data-search="iphone 16 128 gb" data-price-current="839990" data-price-list="949990" data-store="Apple · Falabella" data-meta="Tecnología · desbloqueado · 128 GB">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/17273278_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="iPhone 16 128 GB" loading="lazy" decoding="async" />
               <span class="badge hot">−12%</span>
-              <div class="price-row"><strong class="price">$839.990</strong><span class="old-price">Antes $949.990</span></div>
+              <div class="price-row"><strong class="price">$839.990</strong><span class="old-price" hidden>Antes $949.990</span></div>
               <p class="movement">Ahorro $110.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">iPhone 16 128 GB</h3>
-              <span class="meta">Tecnología · desbloqueado · 128 GB</span>
-              <span class="store">Apple · Falabella</span>
-              <div class="price-trend" aria-label="Precio de lista 949.990 pesos; ahora 839.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,27 22,26 40,24 58,15 84,7" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="27" r="3" fill="#d4f562"/><circle cx="84" cy="7" r="3" fill="#d4f562"/></svg></div>
-              <div class="card-bottom"><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
+              <div class="price-trend" hidden aria-label="Precio de lista 949.990 pesos; ahora 839.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,27 22,26 40,24 58,15 84,7" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="27" r="3" fill="#d4f562"/><circle cx="84" cy="7" r="3" fill="#d4f562"/></svg></div>
+              <div class="card-bottom" hidden><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/prod121902204/apple-iphone-16/17273278?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="tecnologia" data-search="notebook lenovo ideapad slim 3 i5 8gb 512gb 14" data-price-current="529990" data-price-list="559990">
+            <article class="deal-card" data-category="tecnologia" data-search="notebook lenovo ideapad slim 3 i5 8gb 512gb 14" data-price-current="529990" data-price-list="559990" data-store="Lenovo · PC Factory" data-meta="Tecnología · 14″ WUXGA · Windows 11">
               <img class="card-image" src="https://p3-ofp.static.pub//fes/cms/2025/02/06/zuuuahb3p1wn1dwbt4luewmt77unqy546098.png" alt="Notebook IdeaPad Slim 3 i5 8GB / 512GB" loading="lazy" decoding="async" />
               <span class="badge">−5%</span>
-              <div class="price-row"><strong class="price">$529.990</strong><span class="old-price">Antes $559.990</span></div>
+              <div class="price-row"><strong class="price">$529.990</strong><span class="old-price" hidden>Antes $559.990</span></div>
               <p class="movement">Ahorro $30.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Notebook IdeaPad Slim 3 i5 8GB / 512GB</h3>
-              <span class="meta">Tecnología · 14″ WUXGA · Windows 11</span>
-              <span class="store">Lenovo · PC Factory</span>
-              <div class="price-trend" aria-label="Precio de lista 559.990 pesos; ahora 529.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,26 22,20 40,22 58,13 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="26" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg></div>
-              <div class="card-bottom"><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
+              <div class="price-trend" hidden aria-label="Precio de lista 559.990 pesos; ahora 529.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,26 22,20 40,22 58,13 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="26" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg></div>
+              <div class="card-bottom" hidden><a class="card-action live-link" href="https://www.pcfactory.cl/producto/53815-lenovo-notebook-ideapad-slim-3-gen-10-intel-core-i5-13420h-14-wuxga-60hz-8gb-512gb-ssd-windows-11-gris-83k0002kcl?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="hogar electro" data-search="smart tv 55 led 4k tcl google tv" data-price-current="289990" data-price-list="369990">
+            <article class="deal-card" data-category="hogar electro" data-search="smart tv 55 led 4k tcl google tv" data-price-current="289990" data-price-list="369990" data-store="TCL · Falabella" data-meta="Hogar · V6C · precio final en tienda">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/80527209_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Smart TV TCL 55″ LED 4K Google TV" loading="lazy" decoding="async" />
               <span class="badge hot">−22%</span>
-              <div class="price-row"><strong class="price">$289.990</strong><span class="old-price">Antes $369.990</span></div>
+              <div class="price-row"><strong class="price">$289.990</strong><span class="old-price" hidden>Antes $369.990</span></div>
               <p class="movement">Ahorro $80.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Smart TV TCL 55″ LED 4K Google TV</h3>
-              <span class="meta">Hogar · V6C · precio final en tienda</span>
-              <span class="store">TCL · Falabella</span>
-              <div class="price-trend" aria-label="Precio de lista 369.990 pesos; ahora 289.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,28 22,23 40,19 58,13 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="28" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg></div>
-              <div class="card-bottom"><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
+              <div class="price-trend" hidden aria-label="Precio de lista 369.990 pesos; ahora 289.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,28 22,23 40,19 58,13 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="28" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg></div>
+              <div class="card-bottom" hidden><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80527209/smart-tv-55-led-4k-v6c-google-tv/80527209?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador inalambrico 18v 2 baterias" data-price-current="629990" data-price-list="799990">
+            <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador inalambrico 18v 2 baterias" data-price-current="629990" data-price-list="799990" data-store="Sodimac · Herramientas" data-meta="Herramientas · kit con 2 baterías">
               <img class="card-image" src="https://cdnx.jumpseller.com/toolcenter/image/61550316/thumb/306/306?1742414401=" alt="Taladro atornillador inalámbrico 18V" loading="lazy" decoding="async" />
               <span class="badge">−21%</span>
-              <div class="price-row"><strong class="price">$629.990</strong><span class="old-price">Antes $799.990</span></div>
+              <div class="price-row"><strong class="price">$629.990</strong><span class="old-price" hidden>Antes $799.990</span></div>
               <p class="movement">Ahorro $170.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Taladro atornillador inalámbrico 18V</h3>
-              <span class="meta">Herramientas · kit con 2 baterías</span>
-              <span class="store">Sodimac · Herramientas</span>
-              <div class="price-trend" aria-label="Precio de lista 799.990 pesos; ahora 629.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,28 22,17 40,14 58,13 84,7" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="28" r="3" fill="#d4f562"/><circle cx="84" cy="7" r="3" fill="#d4f562"/></svg></div>
-              <div class="card-bottom"><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
+              <div class="price-trend" hidden aria-label="Precio de lista 799.990 pesos; ahora 629.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,28 22,17 40,14 58,13 84,7" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="28" r="3" fill="#d4f562"/><circle cx="84" cy="7" r="3" fill="#d4f562"/></svg></div>
+              <div class="card-bottom" hidden><a class="card-action live-link" href="https://www.sodimac.cl/sodimac-cl/articulo/110065467/Taladro-atornillador-inalambrico-18V-+-2-baterias/110065472?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="hogar electro" data-search="freidora de aire 5 litros 1350w" data-price-current="43990" data-price-list="50990">
+            <article class="deal-card" data-category="hogar electro" data-search="freidora de aire 5 litros 1350w" data-price-current="43990" data-price-list="50990" data-store="New Line · Ripley" data-meta="Electrodomésticos · control 80–200 °C">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/146689231_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Freidora de aire 5 L · 1350W" loading="lazy" decoding="async" />
               <span class="badge">−14%</span>
-              <div class="price-row"><strong class="price">$43.990</strong><span class="old-price">Antes $50.990</span></div>
+              <div class="price-row"><strong class="price">$43.990</strong><span class="old-price" hidden>Antes $50.990</span></div>
               <p class="movement">Ahorro $7.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Freidora de aire 5 L · 1350W</h3>
-              <span class="meta">Electrodomésticos · control 80–200 °C</span>
-              <span class="store">New Line · Ripley</span>
-              <div class="price-trend" aria-label="Precio de lista 50.990 pesos; ahora 43.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,27 22,22 40,21 58,14 84,8" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="27" r="3" fill="#d4f562"/><circle cx="84" cy="8" r="3" fill="#d4f562"/></svg></div>
-              <div class="card-bottom"><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
+              <div class="price-trend" hidden aria-label="Precio de lista 50.990 pesos; ahora 43.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,27 22,22 40,21 58,14 84,8" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="27" r="3" fill="#d4f562"/><circle cx="84" cy="8" r="3" fill="#d4f562"/></svg></div>
+              <div class="card-bottom" hidden><a class="card-action live-link" href="https://simple.ripley.cl/freidora-de-aire-5-litros-1350w-potencia-air-fryer-premium-mpm10002966759?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="tecnologia" data-search="monitor samsung 24 fhd 75hz ips" data-price-current="139990" data-price-list="159990">
+            <article class="deal-card" data-category="tecnologia" data-search="monitor samsung 24 fhd 75hz ips" data-price-current="139990" data-price-list="159990" data-store="Samsung · PC Factory" data-meta="Tecnología · FreeSync · 5 ms">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/144574206_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Monitor Samsung 24″ FHD 75Hz IPS" loading="lazy" decoding="async" />
               <span class="badge">−13%</span>
-              <div class="price-row"><strong class="price">$139.990</strong><span class="old-price">Antes $159.990</span></div>
+              <div class="price-row"><strong class="price">$139.990</strong><span class="old-price" hidden>Antes $159.990</span></div>
               <p class="movement">Ahorro $20.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Monitor Samsung 24″ FHD 75Hz IPS</h3>
-              <span class="meta">Tecnología · FreeSync · 5 ms</span>
-              <span class="store">Samsung · PC Factory</span>
-              <div class="price-trend" aria-label="Precio de lista 159.990 pesos; ahora 139.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,28 22,24 40,16 58,18 84,7" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="28" r="3" fill="#d4f562"/><circle cx="84" cy="7" r="3" fill="#d4f562"/></svg></div>
-              <div class="card-bottom"><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
+              <div class="price-trend" hidden aria-label="Precio de lista 159.990 pesos; ahora 139.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,28 22,24 40,16 58,18 84,7" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="28" r="3" fill="#d4f562"/><circle cx="84" cy="7" r="3" fill="#d4f562"/></svg></div>
+              <div class="card-bottom" hidden><a class="card-action live-link" href="https://www.pcfactory.cl/producto/52686-samsung-monitor-samsung-24--fhd-75hz-ips-5ms-freesync-lf24t450fqlxzs?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
 
-            <article class="deal-card" data-category="hogar electro" data-search="aspiradora robot xiaomi s40 pro" data-price-current="259990" data-price-list="289990">
+            <article class="deal-card" data-category="hogar electro" data-search="aspiradora robot xiaomi s40 pro" data-price-current="259990" data-price-list="289990" data-store="Xiaomi · Falabella" data-meta="Hogar · aspira y trapea · 15.000 Pa">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/80758823_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Aspiradora robot Xiaomi S40 Pro" loading="lazy" decoding="async" />
               <span class="badge hot">−10%</span>
-              <div class="price-row"><strong class="price">$259.990</strong><span class="old-price">Antes $289.990</span></div>
+              <div class="price-row"><strong class="price">$259.990</strong><span class="old-price" hidden>Antes $289.990</span></div>
               <p class="movement">Ahorro $30.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Aspiradora robot Xiaomi S40 Pro</h3>
-              <span class="meta">Hogar · aspira y trapea · 15.000 Pa</span>
-              <span class="store">Xiaomi · Falabella</span>
-              <div class="price-trend" aria-label="Precio de lista 289.990 pesos; ahora 259.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,27 22,25 40,17 58,16 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="27" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg></div>
-              <div class="card-bottom"><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
+              <div class="price-trend" hidden aria-label="Precio de lista 289.990 pesos; ahora 259.990 pesos; comparación de precios"><svg class="spark" viewBox="0 0 88 30" fill="none" aria-hidden="true"><polyline points="4,27 22,25 40,17 58,16 84,6" stroke="#d4f562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="27" r="3" fill="#d4f562"/><circle cx="84" cy="6" r="3" fill="#d4f562"/></svg></div>
+              <div class="card-bottom" hidden><a class="card-action live-link" href="https://www.falabella.com/falabella-cl/product/80758823/aspiradora-robot-vaccum-s40-pro-xiaomi?utm_source=ahorrareal&amp;utm_medium=web&amp;utm_campaign=demo" target="_blank" rel="nofollow sponsored noopener noreferrer">Ver oferta</a></div>
             </article>
           </div>
 
@@ -518,7 +502,8 @@
         cards.forEach(card => {
           const categories = card.dataset.category.split(' ');
           const matchesCategory = category === 'all' || categories.includes(category);
-          const matchesText = !term || card.dataset.search.includes(term) || card.textContent.toLowerCase().includes(term);
+          const hiddenContext = `${card.dataset.store || ''} ${card.dataset.meta || ''}`.toLowerCase();
+          const matchesText = !term || card.dataset.search.includes(term) || hiddenContext.includes(term) || card.textContent.toLowerCase().includes(term);
           const show = matchesCategory && matchesText;
           card.classList.toggle('hidden', !show);
           if (show) visible++;
@@ -626,7 +611,7 @@
           if (!href) return;
           trigger = card;
           document.getElementById('offerDetailTitle').textContent = card.querySelector('.product').textContent.trim();
-          document.getElementById('offerDetailStore').textContent = card.querySelector('.store').textContent.trim();
+          document.getElementById('offerDetailStore').textContent = [card.dataset.store, card.dataset.meta].filter(Boolean).join(' · ');
           const price = card.querySelector('.price').textContent.trim();
           document.getElementById('offerDetailPrice').textContent = price;
           document.getElementById('offerDetailBefore').textContent = card.querySelector('.old-price')?.textContent.trim() || '';
