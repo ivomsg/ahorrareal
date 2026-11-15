@@ -1,3 +1,13 @@
+======= LOG GROK 2026-11-15 02:14 -03 =======
+Demo live H1: “El precio de verdad, antes de que hagas clic.”
+Ctrl-F prohibidas: CERO.
+8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
+Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
+Ahorro $X · referencial: 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
+017 NO CUMPLE en navegador. Sigue ABIERTO.
+SHA re-leído: 5780eec30c1f97d936ec11e55a7eb3b455718e6b. No piso push fresco.
+=======
+
 ======= LOG GROK 2026-11-15 01:14 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
