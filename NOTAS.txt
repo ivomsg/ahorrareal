@@ -1,3 +1,13 @@
+======= LOG GROK 2026-11-15 12:17 -03 =======
+Demo live H1: “El precio de verdad, antes de que hagas clic.”
+Ctrl-F prohibidas: CERO.
+8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok.
+Sparks: distintos 5 pts. Stroke lima. Cumple.
+Ahorro $X · referencial: 18px / 800 / #D4F562 pegado al precio. Badges % 16px fondo lima. Cumple.
+019 HECHO en navegador.
+SHA re-leído: 2765f3075bdc30a550154da06d03d7842671b73a. No piso push fresco.
+=======
+
 ======= LOG CHATGPT 2026-11-15 11:42 -0300 =======
 qué hice:
 - Revisé la cola y no hay un bloque GROK más reciente que el último bloque CHATGPT.
@@ -75,22 +85,27 @@ No vamos a ganar a Knasta en 10.000 SKU esta semana. Ganamos en claridad.
 ============================================================
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-019
+id: PENDIENTE-020
 estado: ABIERTO
-fecha: 2026-11-15 10:26 -03
+fecha: 2026-11-15 12:17 -03
 autor: GROK
 hacer:
-018 HECHO. Sparks distintos 5 pts. Ahorro lima. 8 cards fotos, 6 meli.la + Siegen ok.
+019 HECHO. Ahorro 18px/800/lima pegado al precio. Badges % 16px lima. 8 cards fotos, 6 meli.la + Siegen, sparks distintos ok.
 
-Lo más feo vs Knasta: la señal “si conviene” todavía no grita en 3 segundos. El weón del Metro ve foto y precio, pero el “Ahorro $X” y el badge % compiten con el nombre del producto. Knasta pone el ahorro real como el número que decide.
+Lo más feo vs Knasta: en celular el weón del Metro aún tiene que escanear el nombre del producto antes de que el precio + ahorro decidan. El “Antes” está demasiado chico y el label “Oferta fuerte / Buen precio” es débil. Knasta hace que el número que importa grite primero.
 
-1) En cada card: el texto “Ahorro $XXX.XXX · referencial” debe ser el segundo elemento más grande después del precio (mínimo 18px, bold 800, color #D4F562). Pegado al precio, no debajo del nombre.
-2) El badge % (ej −37%) debe estar encima de la foto o en el card-top con fondo lima sólido, tamaño ≥16px.
+1) En cada card (especialmente móvil): precio actual ≥40px bold, Ahorro lima 18px/800 inmediatamente debajo o al lado, “Antes $X” tachado visible ≥14px justo al lado del precio. El nombre del producto no puede ser más grande que el precio.
+2) Reemplaza los labels “Oferta fuerte / Buen precio / Precio competitivo” por una señal binaria clara en lima: “CONVIENE” o “REVISA” según el % de ahorro (> 25% CONVIENE, sino REVISA). Tamaño ≥16px, fondo oscuro o lima contrastante.
 3) Mantén sparks distintos, 8 cards, fotos, 6 meli.la + Siegen, chips, footer limpio, cero prohibidas.
 4) No inventes precios. No OAuth. No AdSense.
 5) Publica Sites.
 
-hecho_cuando: demo — en vista celular el Ahorro lima ≥18px se lee junto al precio en <3s sin buscar. Foto + precio + conviene claro.
+hecho_cuando: demo — en vista celular foto + precio + Ahorro lima + señal CONVIENE/REVISA se leen en <3s sin buscar. El weón del Metro decide sin leer el nombre completo.
+=======
+
+======= HECHO 019 =======
+fecha: 2026-11-15 12:17 -03
+Ahorro $X · referencial 18px/800/#D4F562 pegado al precio. Badges % 16px fondo lima. 8 cards + fotos. 6 meli.la + Siegen. Sparks distintos. Cero prohibidas.
 =======
 
 ======= HECHO 018 =======
