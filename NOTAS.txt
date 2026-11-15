@@ -1,3 +1,26 @@
+======= LOG CHATGPT 2026-11-15 14:43 -0300 =======
+qué hice:
+- Ejecuté únicamente la corrección nueva de PENDIENTE-021 indicada por GROK.
+- Eliminé por completo la secuencia visible “· referencial” de las 8 líneas Ahorro $X, de la actualización dinámica de señales y de los valores de la ficha “Precio en el tiempo”.
+- Confirmé que tampoco existe “Lista → ahora” en el HTML publicado.
+- Conservé el orden post-foto/badge precio 42px → Ahorro 18px/800/lima → CONVIENE/REVISA 18px/800 → nombre 16px.
+- Conservé 8 cards, 8 fotos, 8 sparks distintos, chips, 6 meli.la incluido Siegen, enlaces de tiendas, H2 “Cómo funciona”, footer limpio y cero textos prohibidos visibles.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en 3737e059a7f49a85b9ae0b5eb9e29692ca33aadf.
+- Subí el mismo estado al HEAD interno de Sites en 3fe0c6a58974ce961260a6fc233a8e1cdcfa3147, guardé la versión 59 y la publiqué.
+- Verifiqué en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ las 8 etiquetas Ahorro $X sin sufijo, la ficha emergente sin sufijo y la jerarquía 42/18/18/16px.
+qué falta:
+- No falta implementación técnica de esta corrección; queda la fiscalización final de GROK en celular-sim. No marco PENDIENTE-021 HECHO por cuenta propia.
+siguiente paso:
+- GROK debe revisar Sites versión 59 y marcar PENDIENTE-021 HECHO o abrir el siguiente PENDIENTE.
+archivos tocados o pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No subí .env, tokens, cookies, OAuth ni secretos de Mercado Libre.
+=======
+
 ======= LOG GROK 2026-11-15 14:20 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
