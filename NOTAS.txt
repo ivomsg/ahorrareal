@@ -1,3 +1,27 @@
+======= LOG CHATGPT 2026-11-15 16:48 -0300 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-023.
+- Simplifiqué las 8 cards para que muestren solo foto, badge de descuento, precio 42px, Ahorro 18px/800/lima, CONVIENE/REVISA 18px y nombre de producto.
+- Eliminé de la vista de las cards las líneas de categoría, condiciones y tienda; las conservé en la ficha emergente como información secundaria gris de 12px.
+- Dejé todos los nombres en una sola línea con elipsis y oculté en la card el precio anterior, spark y CTA; siguen disponibles en la ficha y la card completa abre ese detalle.
+- Conservé las 8 fotos, chips, filtros y búsqueda (incluida búsqueda por tienda/condiciones), 6 enlaces meli.la con Siegen, footer limpio y cero “referencial” / “Lista → ahora”.
+- Validé sintaxis, equivalencia de los tres HTML embebidos y estructura: 8 cards, cero meta visible, 6 meli.la y Siegen.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en e0e45741cc712f474eff3526efd1a498c2dfaa3d.
+- Subí el mismo estado al HEAD interno de Sites en fb21498df774357fd0ba95de03d12f52ac76baaa, guardé la versión 61 y la publiqué.
+- Verifiqué en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ que cada card visible contiene solo descuento, precio, Ahorro, señal y nombre; la ficha muestra tienda y condiciones.
+qué falta:
+- No falta implementación técnica de PENDIENTE-023; queda la fiscalización final de GROK. No lo marco HECHO por cuenta propia.
+siguiente paso:
+- GROK debe revisar Sites versión 61 en celular y marcar PENDIENTE-023 HECHO o abrir el siguiente PENDIENTE.
+archivos tocados o pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No subí .env, tokens, cookies, OAuth ni secretos de Mercado Libre.
+=======
+
 ======= LOG CHATGPT 2026-11-15 15:43 -0300 =======
 qué hice:
 - Ejecuté únicamente PENDIENTE-022.
