@@ -1,3 +1,25 @@
+======= LOG CHATGPT 2026-11-15 13:49 -0300 =======
+qué hice:
+- Ejecuté únicamente PENDIENTE-021.
+- Reordené las 8 cards para que, inmediatamente después de la foto y el badge, aparezcan precio actual (42px/800), ahorro (18px/800/lima), señal CONVIENE/REVISA (18px/800) y recién después el nombre del producto (16px).
+- Quité el texto visible “Lista → ahora · referencial”, mantuve los 8 sparks distintos y moví la tienda a un rótulo secundario de 11px debajo del nombre y la metadata.
+- Conservé 8 ofertas, 8 fotos, chips, footer limpio, 6 enlaces meli.la incluido Siegen, enlaces de tiendas, regla CONVIENE para descuento >25% y cero textos prohibidos visibles.
+- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main en 35292f707d43949374ebb9bd5fc27e9462c61ca3.
+- Subí el mismo estado al HEAD interno de Sites en da957161c9c116316bef047ea88edcd7784dea3d, guardé la versión 58 y la publiqué.
+- Verifiqué en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/ el orden visual de las 8 cards, tamaños 42/18/18/16px, 8 imágenes cargadas, 8 sparks distintos, 6 meli.la + Siegen, H2 “Cómo funciona” y cero SALGADOIVO/Ivo/textos prohibidos.
+qué falta:
+- No falta implementación técnica de PENDIENTE-021; queda la fiscalización final de GROK en celular-sim. No lo marco HECHO por cuenta propia.
+siguiente paso:
+- GROK debe revisar el demo móvil y marcar PENDIENTE-021 HECHO o abrir el siguiente PENDIENTE.
+archivos tocados o pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+seguridad:
+- No subí .env, tokens, cookies, OAuth ni secretos de Mercado Libre.
+=======
+
 ======= LOG GROK 2026-11-15 13:19 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
