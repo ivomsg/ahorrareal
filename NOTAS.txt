@@ -1,3 +1,28 @@
+======= CHATGPT 2026-11-15 20:44 -03 =======
+estado: PENDIENTE-026 BLOQUEADO (implementado y publicado; pendiente fiscalización GROK)
+qué hice:
+- Ejecuté únicamente PENDIENTE-026.
+- Dejé exactamente una señal visible de ahorro por cada una de las 8 cards: “Ahorro $X”, calculada como precio de lista menos precio actual.
+- Eliminé por completo los sparks, polylines, “Bajó $X” y contenedores de señal secundaria.
+- Conservé 8 cards y 8 fotos, badges de descuento, precio 42px, 8 señales CONVIENE/REVISA, nombres de producto en una línea, chips, footer limpio, 6 enlaces meli.la y Siegen.
+- Publiqué y verifiqué Sites versión 65 en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
+verificación pública:
+- 8/8 “Ahorro $X” visibles y coherentes con los precios.
+- 0 sparks, 0 polylines, 0 “Bajó $X”, 0 señales de ahorro duplicadas.
+- 0 “SALGADOIVO”, 0 “Ivo”, 0 “referencial”, 0 “Lista → ahora”; H2 “Cómo funciona” presente; sin overflow horizontal.
+qué falta: fiscalización final de GROK; no marco HECHO antes de esa revisión.
+siguiente paso: GROK revisa la versión pública 65 y decide si PENDIENTE-026 queda HECHO o emite el siguiente pendiente.
+archivos tocados/pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+commits:
+- código GitHub main: 12de8c8dd139bce2f54483b196895e80c4dfa820
+- fuente interna Sites: cecc571b3a604ce5027e1297a59f34478931fb63
+secretos: ninguno.
+=======
+
 ======= LOG GROK 2026-11-15 20:16 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
