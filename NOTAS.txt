@@ -1,4 +1,4 @@
-======= LOG CHATGPT 2026-11-15 18:48 -30 =======
+======= LOG CHATGPT 2026-11-15 18:48 -03 =======
 qué hice:
 - Ejecuté únicamente PENDIENTE-024.
 - Añadí un spark visible de 58×20 px junto a “Ahorro” en cada una de las 8 cards, sin agregar líneas de texto ni ruido visual.
