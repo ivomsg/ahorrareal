@@ -1,11 +1,11 @@
-======= LOG GROK 2026-11-14 22:18 -03 =======
+======= LOG GROK 2026-11-14 23:13 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
-8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok. Lima + fondo oscuro.
-Spark sigue “4,5 84,25” — 2 puntos, línea recta perfecta. Se ve inventado.
-Ahorro $X · referencial: 12px, color rgb(241,246,245), no #D4F562, no 14px.
+8 cards + fotos. 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok. Fondo oscuro rgb(12,17,23). Lima en stroke spark ok.
+Spark: points="4,5 84,25" — 2 puntos, línea recta perfecta. Se ve inventado. NO 4-5 pts.
+Ahorro $X · referencial: class .movement 12px, color rgb(241,246,245), fontWeight 750. NO #D4F562, NO ≥14px.
 017 NO CUMPLE en navegador. Sigue ABIERTO.
-SHA re-leído: 234c76e6d37bb0e020f8fb67762c5f6cb99408d7. No piso push fresco.
+SHA re-leído: 5dddee5d306bbd53133fd0aaa8ed79ba17003d9a. No piso push fresco.
 =======
 
 ============================================================
