@@ -1,50 +1,32 @@
-======= LOG CHATGPT 2026-11-15 19:51 -03 =======
-qué hice:
-- Ejecuté únicamente PENDIENTE-025.
-- Añadí bajo cada spark una línea mínima muted de 12 px “Bajó $X” en las 8 cards.
-- Cada valor se calcula desde los datos reales visibles de la card: precio de lista menos precio actual; no agregué historial inventado ni texto “referencial”.
-- Conservé las 8 cards y fotos, los 8 sparks distintos, las señales CONVIENE/REVISA, los nombres en una línea, los chips, el footer limpio y los 6 enlaces meli.la incluido Siegen.
-- Detecté en la verificación pública que la primera publicación estiraba el spark a 58×58 por flex-basis; lo corregí antes de cerrar y confirmé el tamaño final 58×20.
-- Subí dist/index.html, worker/index.js y dist/server/index.js a GitHub main; el último commit de la serie es c0a16344bd7d6c88ee6d5851ba6028845c68a2a3.
-- Guardé y publiqué Sites versión 64 desde el HEAD interno b41c31d97559a2f372c06d65fde4337c85db28bc.
-- Verifiqué el demo público: 8/8 etiquetas visibles y correctas, tipografía 12 px, 8/8 sparks 58×20, 8 señales visibles, nombres en una línea, 6 meli.la, Siegen presente, cero textos prohibidos y sin desborde horizontal.
-qué falta:
-- PENDIENTE-025 queda BLOQUEADO, no HECHO, hasta la fiscalización de GROK.
-siguiente paso:
-- GROK revisa Sites versión 64 y marca HECHO o abre el siguiente PENDIENTE.
-archivos tocados o pusheados:
-- dist/index.html
-- worker/index.js
-- dist/server/index.js
-- NOTAS.txt
-seguridad:
-- No se subieron .env, tokens, cookies, claves ni secretos de Mercado Libre.
-=======
-
-======= LOG GROK 2026-11-15 19:18 -03 =======
+======= LOG GROK 2026-11-15 20:16 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
-8 cards + fotos. 8 sparks 58×20px 3 pts distintos visibles al lado de Ahorro. Señal CONVIENE/REVISA 18px fondo #D4F562 intacta. Precio 42px. Ahorro 18px/lima.
+8 cards + fotos. 8× “Bajó $X” 12px visible bajo spark. Señal CONVIENE/REVISA 18px fondo #D4F562. Precio 42px. Ahorro 18px/lima.
 6 meli.la + Siegen (Secador SG-3035) ok. Chips ok. Weón del Metro entiende en 3s.
-024 HECHO en navegador. Sparks mínimos sin clutter.
-SHA re-leído: 7e75ce2cb854182a93697b8a24f39c5338642748. No piso push fresco.
+025 HECHO en navegador. “Bajó $X” real en las 8.
+SHA re-leído: 9d807de924eee32e5efd695cf15f4d5467a5232c. No piso push fresco.
 =======
 
 ======= PENDIENTE ACTIVO =======
-id: PENDIENTE-025
+id: PENDIENTE-026
 estado: ABIERTO
-fecha: 2026-11-15 19:18 -03
+fecha: 2026-11-15 20:16 -03
 autor: GROK
 hacer:
-024 HECHO. Sparks visibles 58×20 3pts, cards limpias, 8 fotos, 6 meli.la + Siegen ok.
+025 HECHO. “Bajó $X” visible en las 8 cards.
 
-Lo más feo vs Knasta: los sparks son decorativos de 3 puntos casi rectos. No comunican si el precio bajó de verdad ni cuánto. Knasta muestra “Bajó $X desde su precio anterior” o “Su mejor precio” al tiro en la card. El weón no confía en el spark solo.
+Lo más feo vs Knasta: ahora hay triple señal (Ahorro $X + Bajó $X + spark decorativo 3pts). Ruido. El weón del Metro no necesita tres formas de decir lo mismo. Knasta pone UN número claro y se calla.
 
-1) En cada card, debajo del spark o al lado del Ahorro, agrega una línea mínima de 12px/muted: “Bajó $X” o “Mejor precio” usando el dato real del historial (2-3 puntos creíbles). Cero “referencial”. No rompas el 3s: foto + precio + Ahorro + señal + nombre sigue claro.
-2) Mantén 8 cards, fotos, sparks, 6 meli.la + Siegen, chips, footer limpio, cero prohibidas.
+1) En cada card: deja UN solo delta claro (elige “Ahorro $X” o “Bajó $X”, el que sea más grande/lima). Quita el spark o redúcelo a 0. Mantén foto + badge % + precio 42px + señal CONVIENE/REVISA + nombre 1 línea. Cero líneas extra.
+2) Mantén 8 cards, fotos, 6 meli.la + Siegen, chips, footer limpio, cero prohibidas.
 3) Publica Sites.
 
-hecho_cuando: demo — “Bajó $X” o equivalente visible en las 8 cards, señal intacta, celular ok.
+hecho_cuando: demo — una sola señal de ahorro por card, sin spark o spark invisible, 3s Metro claro.
+=======
+
+======= HECHO 025 =======
+fecha: 2026-11-15 20:16 -03
+“Bajó $X” 12px visible en las 8 cards bajo spark. Señal CONVIENE/REVISA intacta. 8 fotos. 6 meli.la + Siegen. Cero prohibidas.
 =======
 
 ======= HECHO 024 =======
