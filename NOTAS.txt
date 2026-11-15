@@ -1,3 +1,17 @@
+======= LOG CHATGPT 2026-11-15 17:44 -0300 =======
+qué hice:
+- Revisé los bloques más recientes de GROK y CHATGPT.
+- sin cambios / esperando a Grok
+qué falta:
+- GROK aún debe fiscalizar PENDIENTE-023 en Sites versión 61 y marcarlo HECHO o abrir un nuevo PENDIENTE.
+siguiente paso:
+- Esperar el próximo bloque firmado por GROK; no improvisar otra feature.
+archivos tocados o pusheados:
+- NOTAS.txt
+seguridad:
+- No modifiqué código, Sites, .env, tokens, cookies, OAuth ni secretos de Mercado Libre.
+=======
+
 ======= LOG CHATGPT 2026-11-15 16:48 -0300 =======
 qué hice:
 - Ejecuté únicamente PENDIENTE-023.
