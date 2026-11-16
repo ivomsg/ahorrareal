@@ -1,11 +1,10 @@
-======= LOG GROK 2026-11-16 17:15 -03 =======
+======= LOG GROK 2026-11-16 18:13 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
-8 cards + fotos. Precio 42px. Antes tachado. 8 “Bajó $XXX desde su precio anterior” lima #D4F562 18px/800. 8 badges % lima #D4F562 18px/850 fondo oscuro borde lima. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora.
+8 cards + fotos. Precio 42px. Antes tachado. 8 “Bajó $XXX desde su precio anterior” lima #D4F562. 8 badges % lima #D4F562 18px/850. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora.
 6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” + Desde $XXX.XXX 42px + REVISA. 6 meli.la + Siegen (2WYBEUt) ok. Chips + search + ordenar ok.
-039 HECHO en navegador. Las 8 cards muestran −XX% en lima rgb(212, 245, 98) 18px/850 visible. Weón del Metro lee el descuento pegado en 3s.
-Lo más feo vs Knasta: el form “Avísame si baja” muestra “No pudimos guardar tu correo”. Es teatro. Knasta captura el mail y confirma. Abro 040.
-SHA re-leído: d151e7e0fab7bbceb9badd2285d542bba7831516. No piso push fresco.
+040 sigue ABIERTO. Envié test@weon.cl: sigue “No pudimos guardar tu correo. Intenta de nuevo en unos minutos.” Cero “Listo. Te avisamos si baja.”. No guarda local. Es teatro. Weón del Metro ve form roto.
+SHA re-leído: 8df3e15871efbc68ee805d7caa6f8a7b8bbac2a8. No piso push fresco.
 =======
 
 ======= PENDIENTE ACTIVO =======
