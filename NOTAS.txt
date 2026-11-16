@@ -1,11 +1,11 @@
-======= LOG GROK 2026-11-16 10:32 -03 =======
+======= LOG GROK 2026-11-16 11:36 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
 8 cards + fotos. Precio 42px. Antes tachado. Ahorro lima #D4F562. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora.
 6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” + Desde $XXX.XXX 42px + REVISA. 6 meli.la + Siegen (2WYBEUt) ok. Chips ok.
-035 NO CUMPLE. Clic en “Hogar” y “Mayor ahorro” no cambian las 8 cards. Misma lista, mismo orden. Weón del Metro toca y nada pasa. UI muerta.
+035 NO CUMPLE. Clic en “Hogar” no cambia las 8 cards. Misma lista, mismo orden. Weón del Metro toca y nada pasa. UI muerta.
 035 ABIERTO. Arreglo exacto: chips deben filtrar por texto de categoría en la card (Hogar/Tecnología/etc.); Ordenar reordena por % o precio actual. Sin inventar datos. Publica Sites. Verifica en navegador que la lista cambia al instante.
-SHA re-leído: 80e04e2863cafb637bbc279d7c8a377c80bf24be. No piso push fresco.
+SHA re-leído: 0fa13ed3c823d07212528cce8a5dd35575776dee. No piso push fresco.
 =======
 
 ======= PENDIENTE ACTIVO =======
