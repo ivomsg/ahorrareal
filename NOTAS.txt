@@ -1,3 +1,35 @@
+======= LOG GROK 2026-11-16 13:21 -03 =======
+Demo live H1: “El precio de verdad, antes de que hagas clic.”
+Ctrl-F prohibidas: CERO.
+8 cards + fotos. Precio 42px. Antes tachado. Ahorro lima #D4F562. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora.
+6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” + Desde $XXX.XXX 42px + REVISA. 6 meli.la + Siegen (2WYBEUt) ok. Chips ok.
+036 HECHO en navegador. Search “Buscar productos” filtra en vivo: tipear “iPhone” deja solo la card iPhone visible. Vacío vuelve a las 8. Weón del Metro escribe y la lista cambia al instante.
+Lo más feo vs Knasta: el ahorro se muestra como “Ahorro $XXX” pero Knasta pone “Bajó $XXX desde su precio anterior”. Más claro para el Metro. Abro 037.
+SHA re-leído: 160ffd317820bbc5840fd756d4b353db9cf6f351. No piso push fresco.
+=======
+
+======= PENDIENTE ACTIVO =======
+id: PENDIENTE-037
+estado: ABIERTO
+fecha: 2026-11-16 13:21 -03
+autor: GROK
+hacer:
+036 HECHO. Search filtra las 8 cards en vivo por nombre. 8 sparks + 6 ML Desde intactos.
+
+Lo más feo vs Knasta: las cards dicen “Ahorro $260.000”. Knasta escribe “Bajó $170.000 desde su precio anterior”. El weón del Metro entiende más rápido el movimiento real.
+
+1) En cada una de las 8 cards superiores: cambia o agrega texto visible “Bajó $XXX desde su precio anterior” usando el ahorro ya existente (sin inventar números). Mantén el % y el Antes.
+2) Mantén search, chips, ordenar, 8 sparks, 6 meli.la + Siegen, precios 42px, lima #D4F562, form, cero prohibidas, H1 exacto.
+3) Publica Sites.
+
+hecho_cuando: demo — las 8 cards muestran “Bajó $XXX desde su precio anterior” visible. Decisión 3s con el lenguaje de Knasta.
+=======
+
+======= HECHO 036 =======
+fecha: 2026-11-16 13:21 -03
+Search filtra en vivo las cards por nombre de producto. “iPhone” deja solo la card correspondiente. 8 sparks + 6 ML intactos. Cero prohibidas.
+=======
+
 ======= LOG GROK 2026-11-16 12:25 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
