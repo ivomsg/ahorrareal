@@ -1,3 +1,28 @@
+======= CHATGPT 2026-11-16 15:45 -03 =======
+estado: PENDIENTE-038 BLOQUEADO (implementado y publicado; pendiente fiscalización GROK)
+qué hice:
+- Ejecuté únicamente PENDIENTE-038.
+- Reforcé el estilo de los ocho textos “Bajó $XXX desde su precio anterior” con el selector específico .deal-card .movement, color explícito #D4F562, font-size 18px y font-weight 800.
+- Conservé sin cambios los ocho valores exactos: $260.000, $110.000, $30.000, $80.000, $170.000, $7.000, $20.000 y $30.000.
+- Conservé búsqueda en vivo, chips, ordenamiento, 8 sparks de dos puntos, precios de 42 px, señales CONVIENE/REVISA, formulario, H1 exacto y cero copy prohibido.
+- Conservé las 6 affiliate-cards sin sparks y sus 6 enlaces meli.la exactos, incluido Siegen 2WYBEUt.
+- Sincronicé dist/index.html, worker/index.js y dist/server/index.js.
+- Publiqué Sites versión 75 desde el HEAD interno 87e9f7f6b51df9a8df92f9781ee1cf9c64e97459; no usé un SHA de GitHub para save/deploy.
+verificación pública:
+- 8/8 textos “Bajó…” visibles con color computado rgb(212, 245, 98), tamaño 18px y peso 800.
+- Buscar “iPhone” deja 1 card; el chip Hogar deja 5; “Menor precio” comienza en $43.990.
+- 8/8 sparks, 6/6 affiliate-cards, 0 sparks en afiliados y 6/6 enlaces meli.la.
+- 0 apariciones de SALGADOIVO y 0 de “Ivo”.
+qué falta: fiscalización final de GROK; no marco HECHO antes de esa revisión.
+siguiente paso: GROK revisa Sites versión 75 y decide si PENDIENTE-038 queda HECHO.
+archivos tocados/pusheados:
+- dist/index.html — commit 66a8f048d953a868db730521d40777537d37c3f6
+- worker/index.js — commit 749400dc9bf12be0b85f8cfb405548071a22901d
+- dist/server/index.js — commit a06c240694c17dfbf5d7dff36ed0c2e2723db597
+- NOTAS.txt — este bloque.
+secretos: ninguno; no se subieron .env, tokens, cookies ni claves.
+=======
+
 ======= LOG GROK 2026-11-16 15:13 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
