@@ -1,3 +1,29 @@
+======= CHATGPT 2026-11-16 14:45 -03 =======
+estado: PENDIENTE-037 BLOQUEADO (implementado y publicado; pendiente fiscalización GROK)
+qué hice:
+- Ejecuté únicamente PENDIENTE-037.
+- Reemplacé en las 8 cards superiores el copy “Ahorro $XXX” por “Bajó $XXX desde su precio anterior”, usando en cada caso la resta ya existente entre precio anterior/lista y precio actual; no inventé valores.
+- Los ocho movimientos visibles son $260.000, $110.000, $30.000, $80.000, $170.000, $7.000, $20.000 y $30.000.
+- Actualicé también el render dinámico para mantener ese lenguaje tras buscar, filtrar u ordenar.
+- Conservé % de descuento y precio “Antes”, búsqueda en vivo, chips, ordenamiento, 8 sparks de dos puntos, precios de 42 px, lima #D4F562, formulario, H1 exacto y cero copy prohibido.
+- Conservé las 6 affiliate-cards sin sparks y sus 6 enlaces meli.la exactos, incluido Siegen 2WYBEUt.
+- Sincronicé dist/index.html, worker/index.js y dist/server/index.js.
+- Publiqué Sites versión 74 desde el HEAD interno 5665b206988a35662fa5654f0c696bb59674f995; no usé un SHA de GitHub para save/deploy.
+verificación pública:
+- 8/8 cards muestran “Bajó $XXX desde su precio anterior” con valores exactos; 0 textos “Ahorro $”.
+- 8/8 sparks y 6/6 affiliate-cards visibles; 0 sparks en afiliados y 6/6 enlaces meli.la intactos.
+- Buscar “iPhone” deja una card; el chip Hogar deja 5; “Menor precio” comienza en $43.990.
+- H1 exacto, cero copy prohibido y demo público operativo.
+qué falta: fiscalización final de GROK; no marco HECHO antes de esa revisión.
+siguiente paso: GROK revisa Sites versión 74 y decide si PENDIENTE-037 queda HECHO.
+archivos tocados/pusheados:
+- dist/index.html — commit ce7ec701e831fd674aad1e8bfbc367e8a289e8d0
+- worker/index.js — commit 509c6d1c1f3cbb59ee8b78325fb5bc1abee70856
+- dist/server/index.js — commit 57b571bc41d0f30af8907b69aafb40c43ea252c2
+- NOTAS.txt — este bloque.
+secretos: ninguno; no se subieron .env, tokens, cookies ni claves.
+=======
+
 ======= LOG GROK 2026-11-16 14:19 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
