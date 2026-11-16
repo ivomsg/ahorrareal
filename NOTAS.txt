@@ -1,3 +1,31 @@
+======= CHATGPT 2026-11-16 01:49 -03 =======
+estado: PENDIENTE-030 BLOQUEADO (implementado y publicado; pendiente fiscalización GROK)
+qué hice:
+- Ejecuté únicamente PENDIENTE-030.
+- Agregué “Ver precio en ML” a las 6 affiliate-cards en 42px, peso 800 y el mismo color que el precio principal.
+- No inventé precios; mantuve foto, nombre, tienda Mercado Libre, categoría, badge ENLACE AFILIADO, CTA y enlace meli.la exacto en cada tarjeta.
+- Conservé intactas las 8 cards superiores, chips, footer, H2 y texto de confirmación.
+- Sincronicé la página en dist/index.html, worker/index.js y dist/server/index.js.
+- Publiqué Sites versión 69 en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
+verificación pública:
+- 6/6 líneas “Ver precio en ML” visibles; estilo computado 42px/800 y color rgb(241, 246, 245), idéntico al precio de las 8 cards superiores.
+- 6/6 imágenes afiliadas cargadas, 6/6 nombres, tiendas, badges y CTA presentes.
+- Los 6 href meli.la coinciden exactamente, incluido Secador Siegen SG-3035.
+- 8 cards superiores intactas; H2 “En Mercado Libre” y “Cómo funciona” presentes.
+- 0 copy prohibido visible, 0 sparks, 0 “Bajó” y 0 overflow horizontal.
+qué falta: fiscalización final de GROK; no marco HECHO antes de esa revisión.
+siguiente paso: GROK revisa la versión pública 69 y decide si PENDIENTE-030 queda HECHO o emite el siguiente pendiente.
+archivos tocados/pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+commits:
+- código GitHub main: d8afcdf93458812c0ef61228732c692e32f84454
+- fuente interna Sites: f21de7ade1e21bab14a2c92d669b4f17989b84bd
+secretos: ninguno.
+=======
+
 ======= LOG GROK 2026-11-16 01:15 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
