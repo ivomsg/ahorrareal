@@ -98,7 +98,7 @@
       .badge { position: absolute; top: 12px; right: 12px; z-index: 2; color: var(--ink); background: var(--lime); border-radius: 10px; padding: 8px 11px; box-shadow: 0 8px 22px rgba(12,17,23,.28); font-size: 16px; line-height: 1; font-weight: 850; }
       .badge.hot { background: var(--lime); color: var(--ink); }
       .product { margin: 13px 0 0; overflow: hidden; color: var(--paper); font-size: 16px; line-height: 1.25; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
-      .price-row { display: flex; align-items: baseline; gap: 9px; margin-top: 0; }
+      .price-row { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 0; }
       .price { font-size: 42px; line-height: 1; font-weight: 800; letter-spacing: -.05em; }
       .old-price { color: #c6d0d6; text-decoration: line-through; font-size: 14px; font-weight: 600; }
       .card-bottom { display: flex; justify-content: flex-end; align-items: center; margin-top: 10px; }
@@ -270,7 +270,7 @@
             <article class="deal-card" data-category="hogar electro" data-search="lavadora secadora carga frontal 12 kg lg" data-price-current="439990" data-price-list="699990" data-store="LG · Falabella" data-meta="Hogar · Inverter · despacho sujeto a comuna">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/16731299_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Lavadora-secadora carga frontal 12/7 kg" loading="lazy" decoding="async" />
               <span class="badge">−37%</span>
-              <div class="price-row"><strong class="price">$439.990</strong><span class="old-price" hidden>Antes $699.990</span></div>
+              <div class="price-row"><strong class="price">$439.990</strong><span class="old-price">Antes $699.990</span></div>
               <p class="movement">Ahorro $260.000</p>
               <div class="score">CONVIENE</div>
               <h3 class="product">Lavadora-secadora carga frontal 12/7 kg</h3>
@@ -280,7 +280,7 @@
             <article class="deal-card" data-category="tecnologia" data-search="iphone 16 128 gb" data-price-current="839990" data-price-list="949990" data-store="Apple · Falabella" data-meta="Tecnología · desbloqueado · 128 GB">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/17273278_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="iPhone 16 128 GB" loading="lazy" decoding="async" />
               <span class="badge hot">−12%</span>
-              <div class="price-row"><strong class="price">$839.990</strong><span class="old-price" hidden>Antes $949.990</span></div>
+              <div class="price-row"><strong class="price">$839.990</strong><span class="old-price">Antes $949.990</span></div>
               <p class="movement">Ahorro $110.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">iPhone 16 128 GB</h3>
@@ -290,7 +290,7 @@
             <article class="deal-card" data-category="tecnologia" data-search="notebook lenovo ideapad slim 3 i5 8gb 512gb 14" data-price-current="529990" data-price-list="559990" data-store="Lenovo · PC Factory" data-meta="Tecnología · 14″ WUXGA · Windows 11">
               <img class="card-image" src="https://p3-ofp.static.pub//fes/cms/2025/02/06/zuuuahb3p1wn1dwbt4luewmt77unqy546098.png" alt="Notebook IdeaPad Slim 3 i5 8GB / 512GB" loading="lazy" decoding="async" />
               <span class="badge">−5%</span>
-              <div class="price-row"><strong class="price">$529.990</strong><span class="old-price" hidden>Antes $559.990</span></div>
+              <div class="price-row"><strong class="price">$529.990</strong><span class="old-price">Antes $559.990</span></div>
               <p class="movement">Ahorro $30.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Notebook IdeaPad Slim 3 i5 8GB / 512GB</h3>
@@ -300,7 +300,7 @@
             <article class="deal-card" data-category="hogar electro" data-search="smart tv 55 led 4k tcl google tv" data-price-current="289990" data-price-list="369990" data-store="TCL · Falabella" data-meta="Hogar · V6C · precio final en tienda">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/80527209_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Smart TV TCL 55″ LED 4K Google TV" loading="lazy" decoding="async" />
               <span class="badge hot">−22%</span>
-              <div class="price-row"><strong class="price">$289.990</strong><span class="old-price" hidden>Antes $369.990</span></div>
+              <div class="price-row"><strong class="price">$289.990</strong><span class="old-price">Antes $369.990</span></div>
               <p class="movement">Ahorro $80.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Smart TV TCL 55″ LED 4K Google TV</h3>
@@ -310,7 +310,7 @@
             <article class="deal-card" data-category="herramientas hogar" data-search="taladro atornillador inalambrico 18v 2 baterias" data-price-current="629990" data-price-list="799990" data-store="Sodimac · Herramientas" data-meta="Herramientas · kit con 2 baterías">
               <img class="card-image" src="https://cdnx.jumpseller.com/toolcenter/image/61550316/thumb/306/306?1742414401=" alt="Taladro atornillador inalámbrico 18V" loading="lazy" decoding="async" />
               <span class="badge">−21%</span>
-              <div class="price-row"><strong class="price">$629.990</strong><span class="old-price" hidden>Antes $799.990</span></div>
+              <div class="price-row"><strong class="price">$629.990</strong><span class="old-price">Antes $799.990</span></div>
               <p class="movement">Ahorro $170.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Taladro atornillador inalámbrico 18V</h3>
@@ -320,7 +320,7 @@
             <article class="deal-card" data-category="hogar electro" data-search="freidora de aire 5 litros 1350w" data-price-current="43990" data-price-list="50990" data-store="New Line · Ripley" data-meta="Electrodomésticos · control 80–200 °C">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/146689231_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Freidora de aire 5 L · 1350W" loading="lazy" decoding="async" />
               <span class="badge">−14%</span>
-              <div class="price-row"><strong class="price">$43.990</strong><span class="old-price" hidden>Antes $50.990</span></div>
+              <div class="price-row"><strong class="price">$43.990</strong><span class="old-price">Antes $50.990</span></div>
               <p class="movement">Ahorro $7.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Freidora de aire 5 L · 1350W</h3>
@@ -330,7 +330,7 @@
             <article class="deal-card" data-category="tecnologia" data-search="monitor samsung 24 fhd 75hz ips" data-price-current="139990" data-price-list="159990" data-store="Samsung · PC Factory" data-meta="Tecnología · FreeSync · 5 ms">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/144574206_01/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Monitor Samsung 24″ FHD 75Hz IPS" loading="lazy" decoding="async" />
               <span class="badge">−13%</span>
-              <div class="price-row"><strong class="price">$139.990</strong><span class="old-price" hidden>Antes $159.990</span></div>
+              <div class="price-row"><strong class="price">$139.990</strong><span class="old-price">Antes $159.990</span></div>
               <p class="movement">Ahorro $20.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Monitor Samsung 24″ FHD 75Hz IPS</h3>
@@ -340,7 +340,7 @@
             <article class="deal-card" data-category="hogar electro" data-search="aspiradora robot xiaomi s40 pro" data-price-current="259990" data-price-list="289990" data-store="Xiaomi · Falabella" data-meta="Hogar · aspira y trapea · 15.000 Pa">
               <img class="card-image" src="https://media.falabella.com/falabellaCL/80758823_1/w%3D1200%2Ch%3D1200%2Cfit%3Dcover" alt="Aspiradora robot Xiaomi S40 Pro" loading="lazy" decoding="async" />
               <span class="badge hot">−10%</span>
-              <div class="price-row"><strong class="price">$259.990</strong><span class="old-price" hidden>Antes $289.990</span></div>
+              <div class="price-row"><strong class="price">$259.990</strong><span class="old-price">Antes $289.990</span></div>
               <p class="movement">Ahorro $30.000</p>
               <div class="score">REVISA</div>
               <h3 class="product">Aspiradora robot Xiaomi S40 Pro</h3>
@@ -460,9 +460,11 @@
           if (!Number.isFinite(current) || !Number.isFinite(list) || list <= 0) return;
           const discount = Math.max(0, Math.round(((list - current) / list) * 100));
           const badge = card.querySelector('.badge');
+          const oldPrice = card.querySelector('.old-price');
           const movement = card.querySelector('.movement');
           const score = card.querySelector('.score');
           if (badge) badge.textContent = `−${discount}%`;
+          if (oldPrice) oldPrice.textContent = `Antes ${formatClp(list)}`;
           if (movement) movement.textContent = list > current
             ? `Ahorro ${formatClp(list - current)}`
             : 'Sin ahorro';
