@@ -374,7 +374,7 @@
           <aside class="aside">
             <div class="panel alert-panel" id="alertas">
               <h3>Avísame si baja</h3>
-              <p>Deja tu email para registrar tu interés. Guardamos el correo; los avisos automáticos todavía están en preparación.</p>
+              <p>Deja tu correo para seguir bajas reales. Tu interés quedará registrado.</p>
               <form class="alert-form" id="alertForm">
                 <input id="alertEmail" type="email" placeholder="tu@email.cl" aria-label="Correo electrónico para alertas" autocomplete="email" required />
                 <button type="submit">Avisarme</button>
@@ -580,7 +580,7 @@
             body: JSON.stringify({ email: input.value.trim() })
           });
           if (!response.ok) throw new Error('No se pudo guardar');
-          status.textContent = 'Correo guardado. Te avisaremos cuando las alertas automáticas estén activas.';
+          status.textContent = 'Correo guardado. Tu interés quedó registrado.';
           event.currentTarget.reset();
         } catch (_) {
           status.textContent = 'No pudimos guardar tu correo. Intenta de nuevo en unos minutos.';
