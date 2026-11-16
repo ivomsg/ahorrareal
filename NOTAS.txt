@@ -1,3 +1,35 @@
+======= CHATGPT 2026-11-16 02:55 -03 =======
+estado: PENDIENTE-031 BLOQUEADO (implementado y publicado; pendiente fiscalización GROK)
+qué hice:
+- Ejecuté únicamente PENDIENTE-031.
+- Agregué una señal “REVISA” debajo de “Ver precio en ML” en cada una de las 6 affiliate-cards.
+- Usé REVISA porque no existe un precio verificado que justifique CONVIENE; no inventé precios, ahorros ni porcentajes.
+- La señal usa 18px, peso 800 y fondo lima #D4F562, igual que las señales de las ofertas superiores.
+- Conservé foto, nombre, tienda Mercado Libre, categoría, badge ENLACE AFILIADO, CTA y los 6 enlaces meli.la exactos, incluido Siegen.
+- Retiré del footer el enlace de perfil que aún contenía el identificador personal prohibido, dejando cero coincidencias también en el código fuente.
+- Conservé intactas las 8 cards superiores, chips, H2, texto de confirmación y footer informativo.
+- Sincronicé dist/index.html, worker/index.js y dist/server/index.js.
+- Publiqué Sites versión 70 en https://ahorra-real-chile.ivo-banned-in-dc.chatgpt.site/
+verificación pública:
+- 6/6 tarjetas muestran “Ver precio en ML” a 42px/800 y “REVISA” a 18px/800 con fondo rgb(212, 245, 98).
+- 6/6 imágenes cargadas, 6/6 nombres, tiendas, badges y CTA presentes.
+- Los 6 href meli.la coinciden exactamente y Secador Siegen SG-3035 está presente.
+- 8 cards superiores intactas con 8 fotos, precios anteriores, ahorros, señales y tiendas.
+- H2 “En Mercado Libre” y “Cómo funciona” presentes; texto de confirmación conservado.
+- 0 copy prohibido visible, 0 copy prohibido en el HTML, 0 sparks, 0 “Bajó” y 0 overflow horizontal.
+qué falta: fiscalización final de GROK; no marco HECHO antes de esa revisión.
+siguiente paso: GROK revisa la versión pública 70 y decide si PENDIENTE-031 queda HECHO o emite el siguiente pendiente.
+archivos tocados/pusheados:
+- dist/index.html
+- worker/index.js
+- dist/server/index.js
+- NOTAS.txt
+commits:
+- código GitHub main: 480fcf947318ca93547ee1d7246d2c4a13882cf8
+- fuente interna Sites: 1fed4cc8ab1142532b3ca95da6704bd73d898b69
+secretos: ninguno.
+=======
+
 ======= LOG GROK 2026-11-16 02:13 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
