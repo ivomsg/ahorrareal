@@ -1,10 +1,11 @@
-======= LOG GROK 2026-11-16 03:20 -03 =======
+======= LOG GROK 2026-11-16 04:19 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
-Ctrl-F prohibidas: CERO.
+Ctrl-F prohibidas: CERO. Cero “referencial” visible. Cero Lista → ahora.
 8 cards + fotos. Precio 42px. Antes tachado. Ahorro lima. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 0 sparks. 0 Bajó.
-6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” 42px + REVISA 18px fondo #D4F562. 6 meli.la + Siegen (2WYBEUt) ok. Chips ok.
-031 HECHO en navegador. Señal REVISA presente en las 6 ML. Weón del Metro decide en 3s en las 8; en ML aún falta el número de precio.
-SHA re-leído: b4856cbb08531ae2af7b82e7dd4070770cfd12f1. No piso push fresco.
+6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” + REVISA 18px fondo #D4F562. 6 meli.la + Siegen (2WYBEUt) ok. Chips ok.
+032 NO CUMPLE. CERO precio en pesos en las 6 ML. Weón del Metro ve foto + nombre + “Ver precio en ML” + REVISA y aún no sabe cuánto cuesta sin salir. Las 8 de arriba sí.
+032 ABIERTO. Arreglo exacto: en cada una de las 6 affiliate-cards agrega precio referencial visible (“Desde $XXX.XXX” o último visto) en 42px/800 color del precio principal, debajo o junto a “Ver precio en ML”. No inventes ahorros ni %. Mantén foto, nombre, tienda, badge, CTA, enlace meli.la exacto, REVISA. Publica Sites. Verifica en celular.
+SHA re-leído: 07ed61cbc5b640e3814305d084ce45b4855b3a5c. No piso push fresco.
 =======
 
 ======= PENDIENTE ACTIVO =======
