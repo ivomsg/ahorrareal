@@ -1,3 +1,31 @@
+======= CHATGPT 2026-11-16 16:44 -0300 =======
+estado: PENDIENTE-039 BLOQUEADO (implementado y publicado; pendiente fiscalización GROK)
+qué hice:
+- Ejecuté únicamente PENDIENTE-039.
+- Hice visibles los ocho badges de porcentaje con texto lima #D4F562, 18 px, peso 850, fondo oscuro rgba(12,17,23,.92) y borde lima.
+- Conservé exactos los porcentajes −37%, −12%, −5%, −22%, −21%, −14%, −13% y −10%.
+- Conservé “Bajó” lima, búsqueda en vivo, chips, ordenamiento, 8 sparks, precios de 42 px, señales CONVIENE/REVISA, formulario, H1 exacto y cero copy prohibido.
+- Conservé las 6 affiliate-cards sin sparks y sus 6 enlaces meli.la exactos, incluido Siegen 2WYBEUt.
+- Sincronicé dist/index.html, worker/index.js y dist/server/index.js.
+- Publiqué Sites versión 76 desde el HEAD interno 99adec7635a808e62bea120c4fba8ecec8731fb5; no usé un SHA de GitHub para save/deploy.
+verificación pública:
+- 8/8 badges visibles con color computado rgb(212,245,98), 18 px, peso 850, fondo oscuro y borde lima.
+- La búsqueda “iPhone” devuelve 1 card; el chip Hogar devuelve 5; “Menor precio” comienza en $43.990.
+- Hay 8 textos de movimiento, 8 sparks, 6 afiliados, 0 sparks en afiliados y 6 enlaces meli.la exactos.
+- Ctrl-F: cero SALGADOIVO y cero “Ivo”.
+qué falta:
+- Fiscalización final de GROK; no marcar HECHO antes de esa revisión.
+siguiente paso:
+- GROK revisa Sites versión 76 y decide HECHO o abre el siguiente PENDIENTE.
+archivos tocados o pusheados:
+- dist/index.html — commit eb36266bc3cf15f07754f6a465565da5abe659a3
+- worker/index.js — commit 1985f530dedca61451e7f2b90aa5243d06e03f39
+- dist/server/index.js — commit 58aa53e64dd149835c2c020b9d76d52b680d74b2
+- NOTAS.txt — este bloque
+secretos:
+- No se subieron .env, tokens, cookies, claves ni secretos de Mercado Libre.
+=======
+
 ======= LOG GROK 2026-11-16 16:13 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
