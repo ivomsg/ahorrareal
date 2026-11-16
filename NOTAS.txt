@@ -1,17 +1,17 @@
-======= LOG GROK 2026-11-16 13:21 -03 =======
+======= LOG GROK 2026-11-16 14:19 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
 8 cards + fotos. Precio 42px. Antes tachado. Ahorro lima #D4F562. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora.
 6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” + Desde $XXX.XXX 42px + REVISA. 6 meli.la + Siegen (2WYBEUt) ok. Chips ok.
-036 HECHO en navegador. Search “Buscar productos” filtra en vivo: tipear “iPhone” deja solo la card iPhone visible. Vacío vuelve a las 8. Weón del Metro escribe y la lista cambia al instante.
-Lo más feo vs Knasta: el ahorro se muestra como “Ahorro $XXX” pero Knasta pone “Bajó $XXX desde su precio anterior”. Más claro para el Metro. Abro 037.
-SHA re-leído: 160ffd317820bbc5840fd756d4b353db9cf6f351. No piso push fresco.
+037 NO CUMPLE. CERO “Bajó $XXX desde su precio anterior”. Siguen 8 “Ahorro $XXX”. Weón del Metro lee ahorro estático, no el movimiento en lenguaje Knasta.
+037 ABIERTO. Arreglo exacto: en cada una de las 8 cards superiores reemplaza o agrega texto visible “Bajó $XXX desde su precio anterior” usando el ahorro ya existente (sin inventar números). Mantén el % y el Antes. Publica Sites. Verifica en navegador que el texto aparece.
+SHA re-leído: c0241f5fe1a64ff146ce69c2d03e06309b981f21. No piso push fresco.
 =======
 
 ======= PENDIENTE ACTIVO =======
 id: PENDIENTE-037
 estado: ABIERTO
-fecha: 2026-11-16 13:21 -03
+fecha: 2026-11-16 14:19 -03
 autor: GROK
 hacer:
 036 HECHO. Search filtra las 8 cards en vivo por nombre. 8 sparks + 6 ML Desde intactos.
@@ -30,14 +30,14 @@ fecha: 2026-11-16 13:21 -03
 Search filtra en vivo las cards por nombre de producto. “iPhone” deja solo la card correspondiente. 8 sparks + 6 ML intactos. Cero prohibidas.
 =======
 
-======= LOG GROK 2026-11-16 12:25 -03 =======
+======= LOG GROK 2026-11-16 13:21 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
 8 cards + fotos. Precio 42px. Antes tachado. Ahorro lima #D4F562. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora.
 6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” + Desde $XXX.XXX 42px + REVISA. 6 meli.la + Siegen (2WYBEUt) ok. Chips ok.
-035 HECHO en navegador. Hogar filtra a 5 cards. Mayor ahorro ordena −37% → −5%. Menor precio ordena $43.990 → $839.990. Weón del Metro toca y la lista cambia al instante.
-Lo más feo vs Knasta: el input “Buscar productos” no filtra. Tipeo “iPhone” y siguen las 8. UI muerta en el primer gesto. Abro 036.
-SHA re-leído: 0c5cb7dc249ca54e7e91678acb4e4ea4e3cc3c0b. No piso push fresco.
+036 HECHO en navegador. Search “Buscar productos” filtra en vivo: tipear “iPhone” deja solo la card iPhone visible. Vacío vuelve a las 8. Weón del Metro escribe y la lista cambia al instante.
+Lo más feo vs Knasta: el ahorro se muestra como “Ahorro $XXX” pero Knasta pone “Bajó $XXX desde su precio anterior”. Más claro para el Metro. Abro 037.
+SHA re-leído: 160ffd317820bbc5840fd756d4b353db9cf6f351. No piso push fresco.
 =======
 
 ======= PENDIENTE ACTIVO =======
@@ -62,14 +62,14 @@ fecha: 2026-11-16 12:25 -03
 Chips filtran por categoría (Hogar → 5 cards). Mayor ahorro ordena por % descendente. Menor precio ordena por precio ascendente. Lista cambia al instante. 8 sparks + 6 ML intactos. Cero prohibidas.
 =======
 
-======= LOG GROK 2026-11-16 11:36 -03 =======
+======= LOG GROK 2026-11-16 12:25 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
 8 cards + fotos. Precio 42px. Antes tachado. Ahorro lima #D4F562. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora.
 6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” + Desde $XXX.XXX 42px + REVISA. 6 meli.la + Siegen (2WYBEUt) ok. Chips ok.
-035 NO CUMPLE. Clic en “Hogar” no cambia las 8 cards. Misma lista, mismo orden. Weón del Metro toca y nada pasa. UI muerta.
-035 ABIERTO. Arreglo exacto: chips deben filtrar por texto de categoría en la card (Hogar/Tecnología/etc.); Ordenar reordena por % o precio actual. Sin inventar datos. Publica Sites. Verifica en navegador que la lista cambia al instante.
-SHA re-leído: 0fa13ed3c823d07212528cce8a5dd35575776dee. No piso push fresco.
+035 HECHO en navegador. Hogar filtra a 5 cards. Mayor ahorro ordena −37% → −5%. Menor precio ordena $43.990 → $839.990. Weón del Metro toca y la lista cambia al instante.
+Lo más feo vs Knasta: el input “Buscar productos” no filtra. Tipeo “iPhone” y siguen las 8. UI muerta en el primer gesto. Abro 036.
+SHA re-leído: 0c5cb7dc249ca54e7e91678acb4e4ea4e3cc3c0b. No piso push fresco.
 =======
 
 ======= PENDIENTE ACTIVO =======
@@ -95,14 +95,14 @@ fecha: 2026-11-16 09:20 -03
 Form “Avísame si baja” sin mención a preparación. Copy: “Deja tu correo para seguir bajas reales. Tu interés quedará registrado.” Se lee como lista. 8 sparks + 6 ML intactos. Cero prohibidas.
 =======
 
-======= LOG GROK 2026-11-16 07:13 -03 =======
+======= LOG GROK 2026-11-16 11:36 -03 =======
 Demo live H1: “El precio de verdad, antes de que hagas clic.”
 Ctrl-F prohibidas: CERO.
-8 cards + fotos. Precio 42px. Antes tachado. Ahorro lima #D4F562. CONVIENE/REVISA fondo #D4F562 18px. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora. 0 Bajó inventado.
+8 cards + fotos. Precio 42px. Antes tachado. Ahorro lima #D4F562. CONVIENE/REVISA fondo #D4F562. Tienda bajo nombre. 8 sparks 2 puntos lima (stroke rgb(212, 245, 98)) con aria exacto Antes→ahora.
 6 affiliate-cards: foto + nombre + Mercado Libre + ENLACE AFILIADO + “Ver precio en ML” + Desde $XXX.XXX 42px + REVISA. 6 meli.la + Siegen (2WYBEUt) ok. Chips ok.
-033 HECHO en navegador. Weón del Metro ve foto + precio + movimiento en las 8. Decisión 3s con trazo visible.
-Lo más feo vs Knasta: el form “Avísame si baja” admite que los avisos “todavía están en preparación”. Parece incompleto. Abro 034.
-SHA re-leído: 99972d9637219f71e0677d72143ae3a04625beda. No piso push fresco.
+035 NO CUMPLE. Clic en “Hogar” no cambia las 8 cards. Misma lista, mismo orden. Weón del Metro toca y nada pasa. UI muerta.
+035 ABIERTO. Arreglo exacto: chips deben filtrar por texto de categoría en la card (Hogar/Tecnología/etc.); Ordenar reordena por % o precio actual. Sin inventar datos. Publica Sites. Verifica en navegador que la lista cambia al instante.
+SHA re-leído: 0fa13ed3c823d07212528cce8a5dd35575776dee. No piso push fresco.
 =======
 
 ======= HECHO 033 =======
